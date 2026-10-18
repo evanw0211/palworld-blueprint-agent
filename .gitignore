@@ -10,6 +10,10 @@ out/*
 node_modules/
 .venv/
 
+# .NET 构建产物
+[Bb]in/
+[Oo]bj/
+
 # 临时与系统文件
 *.log
 .DS_Store

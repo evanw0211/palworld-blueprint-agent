@@ -1,0 +1,143 @@
+{
+ "reddit_grovers_first_house": {
+  "label": "Grover's First House (u/ThePunishersHarp)",
+  "code_chars": 13354,
+  "pieces": 262,
+  "types": 55,
+  "edges": 874,
+  "anchor_index": 261,
+  "size_cm": [
+   1407.5,
+   2604.5,
+   1625.0
+  ],
+  "top": [
+   [
+    "JapaneseStyle_WindowWall",
+    54
+   ],
+   [
+    "JapaneseStyle_wall_01",
+    25
+   ],
+   [
+    "JapaneseStyle_foundation",
+    25
+   ],
+   [
+    "JapaneseStyle_roof_01",
+    24
+   ],
+   [
+    "Wooden_roof",
+    20
+   ],
+   [
+    "Curtain01_Wall_Stone",
+    14
+   ],
+   [
+    "Wood_SlantedRoof",
+    12
+   ],
+   [
+    "JapaneseStyle_TriangleWall",
+    7
+   ]
+  ]
+ },
+ "reddit_four_base_complex": {
+  "label": "Four-Base Complex (u/leafnwind)",
+  "code_chars": 73638,
+  "pieces": 1656,
+  "types": 49,
+  "edges": 8836,
+  "anchor_index": 1,
+  "size_cm": [
+   21000,
+   20400,
+   2925
+  ],
+  "top": [
+   [
+    "Ancient_foundation",
+    984
+   ],
+   [
+    "Ancient_TriangleFoundation",
+    214
+   ],
+   [
+    "Glass_wall",
+    159
+   ],
+   [
+    "Glass_roof",
+    88
+   ],
+   [
+    "MedicalPalBed_05",
+    60
+   ],
+   [
+    "Glass_DiagonalWall",
+    32
+   ],
+   [
+    "Wooden_wall",
+    20
+   ],
+   [
+    "Ancient_MedicalPalBed",
+    15
+   ]
+  ]
+ },
+ "reddit_basic_base": {
+  "label": "Basic Base (u/MadsDK21)",
+  "code_chars": 14510,
+  "pieces": 313,
+  "types": 13,
+  "edges": 1466,
+  "anchor_index": 188,
+  "size_cm": [
+   3600,
+   3200.0,
+   1300
+  ],
+  "top": [
+   [
+    "Stone_pillar",
+    77
+   ],
+   [
+    "Stone_Foundation",
+    52
+   ],
+   [
+    "JapaneseStyle_wall_01",
+    48
+   ],
+   [
+    "JapaneseStyle_roof_01",
+    44
+   ],
+   [
+    "JapaneseStyle_SlantedRoof",
+    20
+   ],
+   [
+    "JapaneseStyle_WindowWall",
+    12
+   ],
+   [
+    "JapaneseStyle_Pillar",
+    12
+   ],
+   [
+    "JapaneseStyle_DoorWall_01",
+    10
+   ]
+  ]
+ }
+}

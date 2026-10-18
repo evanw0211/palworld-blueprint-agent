@@ -1,0 +1,46 @@
+{
+ "groups": {
+  "Furniture": {
+   "file": "sheet_Furniture.png",
+   "count": 157
+  },
+  "Foundations": {
+   "file": "sheet_Foundations.png",
+   "count": 132
+  },
+  "Other": {
+   "file": "sheet_Other.png",
+   "count": 91
+  },
+  "Production": {
+   "file": "sheet_Production.png",
+   "count": 45
+  },
+  "Storage": {
+   "file": "sheet_Storage.png",
+   "count": 30
+  },
+  "Infrastructure": {
+   "file": "sheet_Infrastructure.png",
+   "count": 25
+  },
+  "Pal": {
+   "file": "sheet_Pal.png",
+   "count": 23
+  },
+  "Lighting": {
+   "file": "sheet_Lighting.png",
+   "count": 22
+  },
+  "Defenses": {
+   "file": "sheet_Defenses.png",
+   "count": 17
+  },
+  "Food": {
+   "file": "sheet_Food.png",
+   "count": 16
+  }
+ },
+ "tile_px": 128,
+ "cols": 8
+}

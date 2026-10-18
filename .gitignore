@@ -1,0 +1,16 @@
+# Python 字节码
+__pycache__/
+*.py[cod]
+
+# Agent 产出目录：目录保留，产物不入库
+out/*
+!out/.gitkeep
+
+# 依赖与缓存
+node_modules/
+.venv/
+
+# 临时与系统文件
+*.log
+.DS_Store
+Thumbs.db

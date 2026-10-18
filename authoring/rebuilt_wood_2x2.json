@@ -1,0 +1,118 @@
+{
+ "name": "rebuilt_wood_2x2",
+ "anchor": 0,
+ "pieces": [
+  {
+   "id": "Wooden_foundation",
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 0,
+   "y": 400,
+   "z": 0,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -200,
+   "y": 0,
+   "z": 0,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_DoorWall",
+   "x": 0,
+   "y": -200,
+   "z": 0,
+   "yaw": 90.0
+  },
+  {
+   "id": "Wood_WindowWall",
+   "x": 600,
+   "y": 0,
+   "z": 0,
+   "yaw": 180.0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 400,
+   "y": -200,
+   "z": 0,
+   "yaw": 90.0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -200,
+   "y": 400,
+   "z": 0,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 0,
+   "y": 600,
+   "z": 0,
+   "yaw": -90.0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 600,
+   "y": 400,
+   "z": 0,
+   "yaw": 180.0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 400,
+   "y": 600,
+   "z": 0,
+   "yaw": -90.0
+  },
+  {
+   "id": "Wooden_roof",
+   "x": 0,
+   "y": 0,
+   "z": 325,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_roof",
+   "x": 400,
+   "y": 0,
+   "z": 325,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_roof",
+   "x": 0,
+   "y": 400,
+   "z": 325,
+   "yaw": 0.0
+  },
+  {
+   "id": "Wooden_roof",
+   "x": 400,
+   "y": 400,
+   "z": 325,
+   "yaw": 0.0
+  }
+ ]
+}

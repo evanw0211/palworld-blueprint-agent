@@ -1,0 +1,118 @@
+{
+  "anchor": 0,
+  "pieces": [
+    {
+      "id": "Wooden_foundation",
+      "yaw": 0,
+      "y": 0,
+      "z": 0,
+      "x": 0
+    },
+    {
+      "id": "Wooden_foundation",
+      "yaw": 0,
+      "y": 0,
+      "z": 0,
+      "x": 400
+    },
+    {
+      "id": "Wooden_foundation",
+      "yaw": 0,
+      "y": 400,
+      "z": 0,
+      "x": 0
+    },
+    {
+      "id": "Wooden_foundation",
+      "yaw": 0,
+      "y": 400,
+      "z": 0,
+      "x": 400
+    },
+    {
+      "id": "Wooden_DoorWall",
+      "yaw": 180,
+      "y": 0,
+      "z": 0,
+      "x": 600
+    },
+    {
+      "id": "Wood_WindowWall",
+      "yaw": 90,
+      "y": -200,
+      "z": 0,
+      "x": 0
+    },
+    {
+      "id": "Wooden_wall",
+      "yaw": -90,
+      "y": 600,
+      "z": 0,
+      "x": 0
+    },
+    {
+      "id": "Wooden_wall",
+      "yaw": -90,
+      "y": 600,
+      "z": 0,
+      "x": 400
+    },
+    {
+      "id": "Wooden_wall",
+      "yaw": 0,
+      "y": 0,
+      "z": 0,
+      "x": -200
+    },
+    {
+      "id": "Wooden_wall",
+      "yaw": 0,
+      "y": 400,
+      "z": 0,
+      "x": -200
+    },
+    {
+      "id": "Wooden_wall",
+      "yaw": 180,
+      "y": 400,
+      "z": 0,
+      "x": 600
+    },
+    {
+      "id": "Wooden_wall",
+      "yaw": 90,
+      "y": -200,
+      "z": 0,
+      "x": 400
+    },
+    {
+      "id": "Wooden_roof",
+      "yaw": 0,
+      "y": 0,
+      "z": 325,
+      "x": 0
+    },
+    {
+      "id": "Wooden_roof",
+      "yaw": 0,
+      "y": 0,
+      "z": 325,
+      "x": 400
+    },
+    {
+      "id": "Wooden_roof",
+      "yaw": 0,
+      "y": 400,
+      "z": 325,
+      "x": 0
+    },
+    {
+      "id": "Wooden_roof",
+      "yaw": 0,
+      "y": 400,
+      "z": 325,
+      "x": 400
+    }
+  ],
+  "name": "demo_2x2_east_door"
+}

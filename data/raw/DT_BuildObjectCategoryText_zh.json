@@ -1,0 +1,250 @@
+{
+  "DT_BuildObjectCategoryText": {
+    "CATEGORY_TYPE_A_Product": {
+      "TextData": "生产"
+    },
+    "CATEGORY_TYPE_A_Pal": {
+      "TextData": "帕鲁"
+    },
+    "CATEGORY_TYPE_A_Infrastructure": {
+      "TextData": "基础设施"
+    },
+    "CATEGORY_TYPE_A_Food": {
+      "TextData": "食物"
+    },
+    "CATEGORY_TYPE_A_Foundation": {
+      "TextData": "建造"
+    },
+    "CATEGORY_TYPE_A_Defense": {
+      "TextData": "防御"
+    },
+    "CATEGORY_TYPE_A_Other": {
+      "TextData": "其他"
+    },
+    "CATEGORY_TYPE_A_Storage": {
+      "TextData": "收纳"
+    },
+    "CATEGORY_TYPE_A_Light": {
+      "TextData": "照明"
+    },
+    "CATEGORY_TYPE_A_Furniture": {
+      "TextData": "家具"
+    },
+    "CATEGORY_TYPE_A_Dismantle": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Prod_Craft": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Prod_Resource": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Prod_Furnace": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Prod_Medicine": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Pal_Capture": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Pal_Breed": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Pal_Modify": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Infra_Medical": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Infra_Storage": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Infra_Trade": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Infra_GeneratePower": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Infra_Defense": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Infra_Environment": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Food_Basic": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Food_Agriculture": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Food_Cooking": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Food_Livestock": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Found_Basic": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Found_House": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_B_Other": {
+      "TextData": "zh-hans text"
+    },
+    "CATEGORY_TYPE_A_Blueprint": {
+      "TextData": "设计图"
+    },
+    "CATEGORY_TYPE_A_Favorite": {
+      "TextData": "我的收藏"
+    },
+    "CATEGORY_TYPE_UI_Product_Repair": {
+      "TextData": "制作/修理"
+    },
+    "CATEGORY_TYPE_UI_Weapon": {
+      "TextData": "武器"
+    },
+    "CATEGORY_TYPE_UI_Refine": {
+      "TextData": "精炼"
+    },
+    "CATEGORY_TYPE_UI_Medicine": {
+      "TextData": "制药"
+    },
+    "CATEGORY_TYPE_UI_Deforest_Mining": {
+      "TextData": "伐木/挖掘"
+    },
+    "CATEGORY_TYPE_UI_Milling_Crusher": {
+      "TextData": "磨粉/粉碎"
+    },
+    "CATEGORY_TYPE_UI_FishingPond": {
+      "TextData": "垂钓池"
+    },
+    "CATEGORY_TYPE_UI_PalCaptureItem": {
+      "TextData": "帕鲁球"
+    },
+    "CATEGORY_TYPE_UI_PalManagement": {
+      "TextData": "帕鲁管理"
+    },
+    "CATEGORY_TYPE_UI_PalTraining": {
+      "TextData": "帕鲁培育"
+    },
+    "CATEGORY_TYPE_UI_PalWork": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_PalBreeding": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_PalOther": {
+      "TextData": "帕鲁其他"
+    },
+    "CATEGORY_TYPE_UI_Chest": {
+      "TextData": "箱子"
+    },
+    "CATEGORY_TYPE_UI_StorageFurniture": {
+      "TextData": "收纳家具"
+    },
+    "CATEGORY_TYPE_UI_Cooking": {
+      "TextData": "烹饪"
+    },
+    "CATEGORY_TYPE_UI_FeedBox": {
+      "TextData": "饲料箱"
+    },
+    "CATEGORY_TYPE_UI_Farm": {
+      "TextData": "农园"
+    },
+    "CATEGORY_TYPE_UI_Bed": {
+      "TextData": "床（寝具）"
+    },
+    "CATEGORY_TYPE_UI_GenerateElectricity": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Electricity": {
+      "TextData": "电力"
+    },
+    "CATEGORY_TYPE_UI_Spa": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Health": {
+      "TextData": "健康管理"
+    },
+    "CATEGORY_TYPE_UI_Freestanding": {
+      "TextData": "落地式"
+    },
+    "CATEGORY_TYPE_UI_WallHanging": {
+      "TextData": "壁挂式"
+    },
+    "CATEGORY_TYPE_UI_Ceiling": {
+      "TextData": "天花板"
+    },
+    "CATEGORY_TYPE_UI_Wood": {
+      "TextData": "木材"
+    },
+    "CATEGORY_TYPE_UI_Stone": {
+      "TextData": "石材"
+    },
+    "CATEGORY_TYPE_UI_Metal": {
+      "TextData": "金属"
+    },
+    "CATEGORY_TYPE_UI_Glass": {
+      "TextData": "玻璃"
+    },
+    "CATEGORY_TYPE_UI_JapaneseStyle": {
+      "TextData": "和风"
+    },
+    "CATEGORY_TYPE_UI_Clean": {
+      "TextData": "简约"
+    },
+    "CATEGORY_TYPE_UI_Trap": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Interception": {
+      "TextData": "迎击设施"
+    },
+    "CATEGORY_TYPE_UI_Barieer": {
+      "TextData": "防御墙"
+    },
+    "CATEGORY_TYPE_UI_EfficiencEnhancement": {
+      "TextData": "效率强化"
+    },
+    "CATEGORY_TYPE_UI_SignBoard": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_FleaMarket": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Statue": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Raid": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Desk": {
+      "TextData": "桌子"
+    },
+    "CATEGORY_TYPE_UI_Chair": {
+      "TextData": "椅子"
+    },
+    "CATEGORY_TYPE_UI_Carpet": {
+      "TextData": "地毯（铺设物）"
+    },
+    "CATEGORY_TYPE_UI_WallDecoration": {
+      "TextData": "墙面/天花板装饰"
+    },
+    "CATEGORY_TYPE_UI_Houseplants": {
+      "TextData": "植物"
+    },
+    "CATEGORY_TYPE_UI_Flag": {
+      "TextData": "旗帜"
+    },
+    "CATEGORY_TYPE_UI_Ornament": {
+      "TextData": "摆件"
+    },
+    "CATEGORY_TYPE_UI_Other": {
+      "TextData": "其他"
+    },
+    "CATEGORY_TYPE_UI_Ancient": {
+      "TextData": "古代文明"
+    }
+  }
+}

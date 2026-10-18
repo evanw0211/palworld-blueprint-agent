@@ -1,0 +1,148 @@
+{
+  "BP_BuildObject_Glass_Roof": {
+    "blueprint": "BP_BuildObject_Glass_Roof",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Glass/SM_Roof_Glass",
+        "name": "SM_Roof_Glass"
+      }
+    ]
+  },
+  "BP_BuildObject_Glass_Wall": {
+    "blueprint": "BP_BuildObject_Glass_Wall",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Glass/SM_Wall_Glass",
+        "name": "SM_Wall_Glass"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_DoorWall_01": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_DoorWall_01",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_DoorA",
+        "name": "Architecture_JapaneseStyle_DoorA"
+      },
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_DoorA_L",
+        "name": "Architecture_JapaneseStyle_DoorA_L"
+      },
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_DoorA_R",
+        "name": "Architecture_JapaneseStyle_DoorA_R"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_Fence": {
+    "error": "no matching blueprint"
+  },
+  "BP_BuildObject_JapaneseStyle_Pillar": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_Pillar",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_Pillar",
+        "name": "Architecture_JapaneseStyle_Pillar"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_roof_01": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_roof_01",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_Roof",
+        "name": "Architecture_JapaneseStyle_Roof"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_SlantedRoof": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_SlantedRoof",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_RoofC",
+        "name": "Architecture_JapaneseStyle_RoofC"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_stair": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_stair",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_Stair",
+        "name": "Architecture_JapaneseStyle_Stair"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_TriangleWall": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_TriangleWall",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_WallTryangle",
+        "name": "Architecture_JapaneseStyle_WallTryangle"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_Wall_01": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_Wall_01",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_WallA",
+        "name": "Architecture_JapaneseStyle_WallA"
+      }
+    ]
+  },
+  "BP_BuildObject_JapaneseStyle_WindowWall": {
+    "blueprint": "BP_BuildObject_JapaneseStyle_WindowWall",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_JapaneseStyle/Architecture_JapaneseStyle_WallWindow",
+        "name": "Architecture_JapaneseStyle_WallWindow"
+      }
+    ]
+  },
+  "BP_BuildObject_Stone_Foundation": {
+    "blueprint": "BP_BuildObject_Stone_Foundation",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Stone/SM_Floor_Stone",
+        "name": "SM_Floor_Stone"
+      }
+    ]
+  },
+  "BP_BuildObject_Stone_Pillar": {
+    "blueprint": "BP_BuildObject_Stone_Pillar",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Stone/SM_Pillar_Stone",
+        "name": "SM_Pillar_Stone"
+      }
+    ]
+  },
+  "BP_BuildObject_Wooden_Foundation": {
+    "blueprint": "BP_BuildObject_Wood_Foundation",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Wood/SM_Floor_Wood",
+        "name": "SM_Floor_Wood"
+      }
+    ]
+  },
+  "BP_BuildObject_Wooden_Roof": {
+    "blueprint": "BP_BuildObject_Wood_Roof",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Wood/SM_Roof_Wood",
+        "name": "SM_Roof_Wood"
+      }
+    ]
+  },
+  "BP_BuildObject_Wooden_Wall": {
+    "blueprint": "BP_BuildObject_Wood_Wall_V2",
+    "meshes": [
+      {
+        "object_path": "Pal/Content/Pal/Model/Prop/Architecture/Architecture_Wood/SM_Wall_Wood",
+        "name": "SM_Wall_Wood"
+      }
+    ]
+  }
+}

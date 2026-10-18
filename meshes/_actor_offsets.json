@@ -1,0 +1,236 @@
+{
+ "Glass_roof": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "Glass_wall": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_DoorWall_01": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_Fence": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_Pillar": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_SlantedRoof": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_TriangleWall": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_WindowWall": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_roof_01": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_stair": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "JapaneseStyle_wall_01": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "Stone_Foundation": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ },
+ "Stone_pillar": {
+  "translation": {
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "rotation": {
+   "w": 1,
+   "x": 0,
+   "y": 0,
+   "z": 0
+  },
+  "scale": {
+   "x": 1,
+   "y": 1,
+   "z": 1
+  }
+ }
+}

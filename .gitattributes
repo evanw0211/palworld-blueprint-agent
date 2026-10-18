@@ -1,0 +1,7 @@
+# 文本按行尾自动归一，二进制资源不做转换
+* text=auto
+
+*.png binary
+*.glb binary
+*.usmap binary
+*.xlsx binary

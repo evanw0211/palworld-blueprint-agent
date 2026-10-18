@@ -1,0 +1,17 @@
+{
+  "BP_BuildObject_Wood_DoorWall": {
+    "primary": "SM_Doorbase_Wood",
+    "primary_file": "BP_BuildObject_Wood_DoorWall.glb",
+    "parts": [
+      "SM_Door_Wood",
+      "SM_Doorbase_Wood"
+    ]
+  },
+  "BP_BuildObject_Wood_WindowWall": {
+    "primary": "SM_WallWindow_Wood",
+    "primary_file": "BP_BuildObject_Wood_WindowWall.glb",
+    "parts": [
+      "SM_WallWindow_Wood"
+    ]
+  }
+}

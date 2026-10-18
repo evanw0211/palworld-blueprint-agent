@@ -1,0 +1,20 @@
+{
+ "Glass_roof": "BP_BuildObject_Glass_Roof",
+ "Glass_wall": "BP_BuildObject_Glass_Wall",
+ "JapaneseStyle_DoorWall_01": "BP_BuildObject_JapaneseStyle_DoorWall_01",
+ "JapaneseStyle_Fence": "BP_BuildObject_JapaneseStyle_Fence",
+ "JapaneseStyle_Pillar": "BP_BuildObject_JapaneseStyle_Pillar",
+ "JapaneseStyle_SlantedRoof": "BP_BuildObject_JapaneseStyle_SlantedRoof",
+ "JapaneseStyle_TriangleWall": "BP_BuildObject_JapaneseStyle_TriangleWall",
+ "JapaneseStyle_WindowWall": "BP_BuildObject_JapaneseStyle_WindowWall",
+ "JapaneseStyle_roof_01": "BP_BuildObject_JapaneseStyle_roof_01",
+ "JapaneseStyle_stair": "BP_BuildObject_JapaneseStyle_stair",
+ "JapaneseStyle_wall_01": "BP_BuildObject_JapaneseStyle_Wall_01",
+ "Stone_Foundation": "BP_BuildObject_Stone_Foundation",
+ "Stone_pillar": "BP_BuildObject_Stone_Pillar",
+ "Wooden_wall": "BP_BuildObject_Wooden_Wall",
+ "Wooden_roof": "BP_BuildObject_Wooden_Roof",
+ "Wooden_foundation": "BP_BuildObject_Wooden_Foundation",
+ "Wooden_DoorWall": "BP_BuildObject_Wood_DoorWall",
+ "Wood_WindowWall": "BP_BuildObject_Wood_WindowWall"
+}

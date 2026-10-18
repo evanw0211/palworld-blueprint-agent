@@ -1,0 +1,10 @@
+{
+  "buildings": [
+    {
+      "bp": "BP_BuildObject_Wood_DoorWall"
+    },
+    {
+      "bp": "BP_BuildObject_Wood_WindowWall"
+    }
+  ]
+}

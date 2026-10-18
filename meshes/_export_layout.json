@@ -1,0 +1,53 @@
+{
+ "site": "blueprints",
+ "buildings": [
+  {
+   "bp": "BP_BuildObject_Glass_Roof"
+  },
+  {
+   "bp": "BP_BuildObject_Glass_Wall"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_DoorWall_01"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_Fence"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_Pillar"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_SlantedRoof"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_TriangleWall"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_Wall_01"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_WindowWall"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_roof_01"
+  },
+  {
+   "bp": "BP_BuildObject_JapaneseStyle_stair"
+  },
+  {
+   "bp": "BP_BuildObject_Stone_Foundation"
+  },
+  {
+   "bp": "BP_BuildObject_Stone_Pillar"
+  },
+  {
+   "bp": "BP_BuildObject_Wooden_Foundation"
+  },
+  {
+   "bp": "BP_BuildObject_Wooden_Roof"
+  },
+  {
+   "bp": "BP_BuildObject_Wooden_Wall"
+  }
+ ]
+}

@@ -1,0 +1,1855 @@
+{
+  "DT_MapObjectNameText_Common": {
+    "MAPOBJECT_NAME_DummyFoliage": {
+      "TextData": "树"
+    },
+    "MAPOBJECT_NAME_BlastFurnace": {
+      "TextData": "原始的炉子"
+    },
+    "MAPOBJECT_NAME_BlastFurnace2": {
+      "TextData": "改善后的炉子"
+    },
+    "MAPOBJECT_NAME_BlastFurnace3": {
+      "TextData": "电气炉"
+    },
+    "MAPOBJECT_NAME_BlastFurnace4_Old": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_BlastFurnace5": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_CampFire": {
+      "TextData": "篝火"
+    },
+    "MAPOBJECT_NAME_CharacterRankUp": {
+      "TextData": "帕鲁浓缩机"
+    },
+    "MAPOBJECT_NAME_CookingStove": {
+      "TextData": "料理锅"
+    },
+    "MAPOBJECT_NAME_DamagableRock0001": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0002": {
+      "TextData": "金属矿石"
+    },
+    "MAPOBJECT_NAME_DamagableRock0003": {
+      "TextData": "纯水晶"
+    },
+    "MAPOBJECT_NAME_DamagableRock0004": {
+      "TextData": "煤炭"
+    },
+    "MAPOBJECT_NAME_DamagableRock0005": {
+      "TextData": "帕鲁矿石"
+    },
+    "MAPOBJECT_NAME_DamagableRock0006": {
+      "TextData": "硫磺"
+    },
+    "MAPOBJECT_NAME_DamagableRock0007": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0008": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0009": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0010": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0011": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0012": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0013": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_DamagableRock0014": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0015": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DamagableRock0016": {
+      "TextData": "石头"
+    },
+    "MAPOBJECT_NAME_DeathPenaltyChest": {
+      "TextData": "死亡掉落"
+    },
+    "MAPOBJECT_NAME_DefenseGatlingGun": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_DefenseMachinegun": {
+      "TextData": "固定式机关枪"
+    },
+    "MAPOBJECT_NAME_DefenseMinigun": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_DefenseMissile": {
+      "TextData": "固定式导弹发射器"
+    },
+    "MAPOBJECT_NAME_DefenseBowGun": {
+      "TextData": "固定式十字弓"
+    },
+    "MAPOBJECT_NAME_DefenseWait": {
+      "TextData": "沙袋"
+    },
+    "MAPOBJECT_NAME_DUMMY": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator": {
+      "TextData": "发电机"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator_Slave": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator2": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator3": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_ElectricKitchen": {
+      "TextData": "电气厨房"
+    },
+    "MAPOBJECT_NAME_Factory_Comfortable_01": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Factory_Comfortable_02": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_01": {
+      "TextData": "优质作业台"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_02": {
+      "TextData": "作业流水线工厂"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_03": {
+      "TextData": "作业流水线工厂 II"
+    },
+    "MAPOBJECT_NAME_FarmBlock": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Grade01": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Grade02": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Grade03": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_wheet": {
+      "TextData": "小麦园"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_tomato": {
+      "TextData": "番茄园"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Lettuce": {
+      "TextData": "生菜园"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Berries": {
+      "TextData": "野莓园"
+    },
+    "MAPOBJECT_NAME_FastTravelPoint": {
+      "TextData": "巨鹫之像"
+    },
+    "MAPOBJECT_NAME_Floor": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Floor_Stone": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Floor_Wood": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_FoliageLogTest": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_HighTechKitchen": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_ItemChest": {
+      "TextData": "木箱"
+    },
+    "MAPOBJECT_NAME_ItemChest_02": {
+      "TextData": "金属箱"
+    },
+    "MAPOBJECT_NAME_ItemChest_03": {
+      "TextData": "精炼金属箱"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_02": {
+      "TextData": "稻草帕鲁床"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_03": {
+      "TextData": "松软帕鲁床"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_04": {
+      "TextData": "大型帕鲁床"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_01": {
+      "TextData": "中世纪制药台"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_02": {
+      "TextData": "电气制药台"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_03_Old": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_PalFoodBox": {
+      "TextData": "饲料箱"
+    },
+    "MAPOBJECT_NAME_PalStorage": {
+      "TextData": "帕鲁终端"
+    },
+    "MAPOBJECT_NAME_PalBoxV2": {
+      "TextData": "帕鲁终端"
+    },
+    "MAPOBJECT_NAME_DisplayCharacter": {
+      "TextData": "观赏笼"
+    },
+    "MAPOBJECT_NAME_PickupItem_Flint": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_PickupItem_Log": {
+      "TextData": "木材"
+    },
+    "MAPOBJECT_NAME_PickupItem_RedBerry": {
+      "TextData": "红色野莓"
+    },
+    "MAPOBJECT_NAME_PickupItem_Stone": {
+      "TextData": "石子"
+    },
+    "MAPOBJECT_NAME_PickupItem_Potato": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_PlayerBed_02": {
+      "TextData": "劣质的床"
+    },
+    "MAPOBJECT_NAME_PlayerBed_03": {
+      "TextData": "优质的床"
+    },
+    "MAPOBJECT_NAME_PlayerBed": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_ShippingItemBox": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_01": {
+      "TextData": "帕鲁球制作台"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_02": {
+      "TextData": "帕鲁球流水线工厂"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_03": {
+      "TextData": "帕鲁球流水线工厂II"
+    },
+    "MAPOBJECT_NAME_SphereFactory_White_01": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_SphereFactory_White_02": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_SphereFactory_White_03": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_StationDeforest": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Stonehouse1": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_StonePit": {
+      "TextData": "采石场"
+    },
+    "MAPOBJECT_NAME_CopperMine": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_SteelMine": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Strawhouse1": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_TEST_TestGlobalContainer": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Wall": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Wall_Stone": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Wall_Wood": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WeaponChest": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Base": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Clean_01": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Clean_02": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Clean_03": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_01": {
+      "TextData": "武器制作台"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_02": {
+      "TextData": "武器流水线工厂"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_03": {
+      "TextData": "武器流水线工厂II"
+    },
+    "MAPOBJECT_NAME_WeaponFactry": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Well": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WoodHouse1": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_WorkBench": {
+      "TextData": "原始的作业台"
+    },
+    "MAPOBJECT_NAME_RecoverOtomo": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_PalEgg": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Fire": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Water": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Leaf": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Electricity": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Ice": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Earth": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Dark": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_PalEgg_Dragon": {
+      "TextData": "帕鲁蛋"
+    },
+    "MAPOBJECT_NAME_HatchingPalEgg": {
+      "TextData": "帕鲁蛋孵化器"
+    },
+    "MAPOBJECT_NAME_TowerFastTravelPoint": {
+      "TextData": "巨鹫之像"
+    },
+    "MAPOBJECT_NAME_StationDeforest2": {
+      "TextData": "伐木场"
+    },
+    "MAPOBJECT_NAME_WorkBench_SkillUnlock": {
+      "TextData": "帕鲁装备制作台"
+    },
+    "MAPOBJECT_NAME_WorkBench_SkillCard": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Foundation": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Roof": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Stairs": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Wooden_foundation": {
+      "TextData": "木制地基"
+    },
+    "MAPOBJECT_NAME_Wooden_wall": {
+      "TextData": "木制墙壁"
+    },
+    "MAPOBJECT_NAME_Wooden_roof": {
+      "TextData": "木制屋顶"
+    },
+    "MAPOBJECT_NAME_Wooden_stair": {
+      "TextData": "木制楼梯"
+    },
+    "MAPOBJECT_NAME_Wooden_DoorWall": {
+      "TextData": "木门"
+    },
+    "MAPOBJECT_NAME_Stone_foundation": {
+      "TextData": "石制地基"
+    },
+    "MAPOBJECT_NAME_Stone_wall": {
+      "TextData": "石制墙壁"
+    },
+    "MAPOBJECT_NAME_Stone_roof": {
+      "TextData": "石制屋顶"
+    },
+    "MAPOBJECT_NAME_Stone_stair": {
+      "TextData": "石制楼梯"
+    },
+    "MAPOBJECT_NAME_Metal_foundation": {
+      "TextData": "金属地基"
+    },
+    "MAPOBJECT_NAME_Metal_wall": {
+      "TextData": "金属墙壁"
+    },
+    "MAPOBJECT_NAME_Metal_roof": {
+      "TextData": "金属屋顶"
+    },
+    "MAPOBJECT_NAME_Metal_stair": {
+      "TextData": "金属楼梯"
+    },
+    "MAPOBJECT_NAME_Heater": {
+      "TextData": "取暖器"
+    },
+    "MAPOBJECT_NAME_ElectricHeater": {
+      "TextData": "电气取暖器"
+    },
+    "MAPOBJECT_NAME_Cooler": {
+      "TextData": "降温器"
+    },
+    "MAPOBJECT_NAME_ElectricCooler": {
+      "TextData": "电气降温器"
+    },
+    "MAPOBJECT_NAME_Torch": {
+      "TextData": "固定式火把"
+    },
+    "MAPOBJECT_NAME_WallTorch": {
+      "TextData": "壁挂火把"
+    },
+    "MAPOBJECT_NAME_Lamp": {
+      "TextData": "固定式电灯"
+    },
+    "MAPOBJECT_NAME_CeilingLamp": {
+      "TextData": "天花板吊灯"
+    },
+    "MAPOBJECT_NAME_LargeLamp": {
+      "TextData": "大型固定式灯具"
+    },
+    "MAPOBJECT_NAME_LargeCeilingLamp": {
+      "TextData": "大型天花板吊灯"
+    },
+    "MAPOBJECT_NAME_BuildableGoddessStatue": {
+      "TextData": "力量石像"
+    },
+    "MAPOBJECT_NAME_Spa": {
+      "TextData": "温泉"
+    },
+    "MAPOBJECT_NAME_Spa2": {
+      "TextData": "优质温泉"
+    },
+    "MAPOBJECT_NAME_PickupItem_Mushroom": {
+      "TextData": "蘑菇"
+    },
+    "MAPOBJECT_NAME_PickupItem_Poppy": {
+      "TextData": "美丽花朵"
+    },
+    "MAPOBJECT_NAME_DefenseWall": {
+      "TextData": "石制防御墙"
+    },
+    "MAPOBJECT_NAME_Crusher": {
+      "TextData": "粉碎机"
+    },
+    "MAPOBJECT_NAME_WoodCrusher": {
+      "TextData": "拆除木头架"
+    },
+    "MAPOBJECT_NAME_FlourMill": {
+      "TextData": "磨粉机"
+    },
+    "MAPOBJECT_NAME_Trap_LegHold": {
+      "TextData": "捕兽夹（小）"
+    },
+    "MAPOBJECT_NAME_Trap_LegHold_Big": {
+      "TextData": "捕兽夹（大）"
+    },
+    "MAPOBJECT_NAME_Trap_Noose": {
+      "TextData": "套索陷阱"
+    },
+    "MAPOBJECT_NAME_Trap_MovingPanel": {
+      "TextData": "移动面板"
+    },
+    "MAPOBJECT_NAME_Trap_MineElecShock": {
+      "TextData": "电击地雷"
+    },
+    "MAPOBJECT_NAME_Trap_MineFreeze": {
+      "TextData": "结冰地雷"
+    },
+    "MAPOBJECT_NAME_Trap_MineAttack": {
+      "TextData": "地雷"
+    },
+    "MAPOBJECT_NAME_BreedFarm": {
+      "TextData": "配种牧场"
+    },
+    "MAPOBJECT_NAME_ToolBoxV2": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_ToolBoxV1": {
+      "TextData": "大型工具箱"
+    },
+    "MAPOBJECT_NAME_OlympicCauldron": {
+      "TextData": "圣火台"
+    },
+    "MAPOBJECT_NAME_Fountain": {
+      "TextData": "喷泉"
+    },
+    "MAPOBJECT_NAME_Silo": {
+      "TextData": "筒仓"
+    },
+    "MAPOBJECT_NAME_TransmissionTower": {
+      "TextData": "输电塔"
+    },
+    "MAPOBJECT_NAME_FlowerBed": {
+      "TextData": "花坛"
+    },
+    "MAPOBJECT_NAME_Stump": {
+      "TextData": "树桩和斧头"
+    },
+    "MAPOBJECT_NAME_MiningTool": {
+      "TextData": "矿车"
+    },
+    "MAPOBJECT_NAME_Cauldron": {
+      "TextData": "魔女之釜"
+    },
+    "MAPOBJECT_NAME_Snowman": {
+      "TextData": "雪人"
+    },
+    "MAPOBJECT_NAME_Stone_DoorWall": {
+      "TextData": "石门"
+    },
+    "MAPOBJECT_NAME_Metal_DoorWall": {
+      "TextData": "金属门"
+    },
+    "MAPOBJECT_NAME_CoolerBox": {
+      "TextData": "保冷箱"
+    },
+    "MAPOBJECT_NAME_Refrigerator": {
+      "TextData": "冰箱"
+    },
+    "MAPOBJECT_NAME_Decal_PalSticker_PinkCat": {
+      "TextData": "tuppanyan贴纸"
+    },
+    "MAPOBJECT_NAME_MonsterFarm": {
+      "TextData": "家畜牧场"
+    },
+    "MAPOBJECT_NAME_Wood_Gate": {
+      "TextData": "木制大门"
+    },
+    "MAPOBJECT_NAME_Stone_Gate": {
+      "TextData": "石制大门"
+    },
+    "MAPOBJECT_NAME_Metal_Gate": {
+      "TextData": "金属大门"
+    },
+    "MAPOBJECT_NAME_RepairBench": {
+      "TextData": "修理台"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkHard": {
+      "TextData": "监控台"
+    },
+    "MAPOBJECT_NAME_Signboard": {
+      "TextData": "告示牌"
+    },
+    "MAPOBJECT_NAME_BaseCampBattleDirector": {
+      "TextData": "警钟"
+    },
+    "MAPOBJECT_NAME_TableSquare_Wood": {
+      "TextData": "方桌"
+    },
+    "MAPOBJECT_NAME_TableCircular_Wood": {
+      "TextData": "圆桌"
+    },
+    "MAPOBJECT_NAME_Bench_Wood": {
+      "TextData": "木制长椅"
+    },
+    "MAPOBJECT_NAME_Stool_Wood": {
+      "TextData": "木制凳子"
+    },
+    "MAPOBJECT_NAME_Stool_High_Wood": {
+      "TextData": "木制高脚凳"
+    },
+    "MAPOBJECT_NAME_Barrel_Wood": {
+      "TextData": "木桶"
+    },
+    "MAPOBJECT_NAME_Box_Wood": {
+      "TextData": "木制箱子"
+    },
+    "MAPOBJECT_NAME_Shelf_Wood": {
+      "TextData": "木制架子"
+    },
+    "MAPOBJECT_NAME_Shelf_Cask_Wood": {
+      "TextData": "木制酒桶架"
+    },
+    "MAPOBJECT_NAME_Shelf_Hang01_Wood": {
+      "TextData": "木制壁挂式架子"
+    },
+    "MAPOBJECT_NAME_Shelf_Hang02_Wood": {
+      "TextData": "木制壁挂式装饰架子"
+    },
+    "MAPOBJECT_NAME_Counter_Wood": {
+      "TextData": "木制吧台"
+    },
+    "MAPOBJECT_NAME_Rug_Wood": {
+      "TextData": "毛皮地毯"
+    },
+    "MAPOBJECT_NAME_Ivy01": {
+      "TextData": "悬挂式大型藤蔓"
+    },
+    "MAPOBJECT_NAME_Ivy02": {
+      "TextData": "悬挂式小型藤蔓"
+    },
+    "MAPOBJECT_NAME_Ivy03": {
+      "TextData": "悬挂式长型藤蔓"
+    },
+    "MAPOBJECT_NAME_DamagedScarecrow": {
+      "TextData": "受损的稻草人"
+    },
+    "MAPOBJECT_NAME_Chair01_Wood": {
+      "TextData": "木椅"
+    },
+    "MAPOBJECT_NAME_Barrel01_Iron": {
+      "TextData": "红色铁桶"
+    },
+    "MAPOBJECT_NAME_Barrel02_Iron": {
+      "TextData": "蓝色铁桶"
+    },
+    "MAPOBJECT_NAME_Barrel03_Iron": {
+      "TextData": "绿色铁桶"
+    },
+    "MAPOBJECT_NAME_Box01_Iron": {
+      "TextData": "铁制箱子"
+    },
+    "MAPOBJECT_NAME_Box02_Iron": {
+      "TextData": "帆布铁制箱子"
+    },
+    "MAPOBJECT_NAME_CableCoil01_Iron": {
+      "TextData": "电缆盘"
+    },
+    "MAPOBJECT_NAME_Chair01_Iron": {
+      "TextData": "皮制椅子"
+    },
+    "MAPOBJECT_NAME_Chair02_Iron": {
+      "TextData": "铁制椅子"
+    },
+    "MAPOBJECT_NAME_Clock01_Wall_Iron": {
+      "TextData": "挂钟"
+    },
+    "MAPOBJECT_NAME_Container01_Iron": {
+      "TextData": "大型集装箱"
+    },
+    "MAPOBJECT_NAME_GarbageBag_Iron": {
+      "TextData": "垃圾袋"
+    },
+    "MAPOBJECT_NAME_GoalSoccer_Iron": {
+      "TextData": "足球球门"
+    },
+    "MAPOBJECT_NAME_MachineGame01_Iron": {
+      "TextData": "夹娃娃机"
+    },
+    "MAPOBJECT_NAME_MachineVending01_Iron": {
+      "TextData": "可乐自动贩卖机"
+    },
+    "MAPOBJECT_NAME_PipeClay01_Iron": {
+      "TextData": "陶管"
+    },
+    "MAPOBJECT_NAME_Shelf01_Iron": {
+      "TextData": "铁制架子"
+    },
+    "MAPOBJECT_NAME_Shelf02_Iron": {
+      "TextData": "铁制长架"
+    },
+    "MAPOBJECT_NAME_Shelf03_Iron": {
+      "TextData": "橘色储物柜"
+    },
+    "MAPOBJECT_NAME_Shelf04_Iron": {
+      "TextData": "储物柜"
+    },
+    "MAPOBJECT_NAME_SignExit_Ceiling_Iron": {
+      "TextData": "天花板紧急出口标志"
+    },
+    "MAPOBJECT_NAME_SignExit_Wall_Iron": {
+      "TextData": "墙壁紧急出口标志"
+    },
+    "MAPOBJECT_NAME_Sofa01_Iron": {
+      "TextData": "单人皮制沙发"
+    },
+    "MAPOBJECT_NAME_Sofa02_Iron": {
+      "TextData": "双人皮制沙发"
+    },
+    "MAPOBJECT_NAME_Stool01_Iron": {
+      "TextData": "铁制凳子"
+    },
+    "MAPOBJECT_NAME_TableCircular01_Iron": {
+      "TextData": "铁制圆桌"
+    },
+    "MAPOBJECT_NAME_TableSide01_Iron": {
+      "TextData": "铁木边桌"
+    },
+    "MAPOBJECT_NAME_TableSquare01_Iron": {
+      "TextData": "铁木桌子"
+    },
+    "MAPOBJECT_NAME_TableSquare02_Iron": {
+      "TextData": "铁木茶几"
+    },
+    "MAPOBJECT_NAME_Tire01_Iron": {
+      "TextData": "轮胎"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade01_Iron": {
+      "TextData": "路障"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade02_Iron": {
+      "TextData": "橘色路障"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade03_Iron": {
+      "TextData": "铁制红色路障"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade04_Iron": {
+      "TextData": "铁制白色路障"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade05_Iron": {
+      "TextData": "铁制篱笆"
+    },
+    "MAPOBJECT_NAME_TrafficCone01_Iron": {
+      "TextData": "三角锥"
+    },
+    "MAPOBJECT_NAME_TrafficCone02_Iron": {
+      "TextData": "宽版交通锥"
+    },
+    "MAPOBJECT_NAME_TrafficCone03_Iron": {
+      "TextData": "窄版交通锥"
+    },
+    "MAPOBJECT_NAME_TrafficLight01_Iron": {
+      "TextData": "信号灯"
+    },
+    "MAPOBJECT_NAME_BathTub_Stone": {
+      "TextData": "古典式浴缸"
+    },
+    "MAPOBJECT_NAME_Box01_Stone": {
+      "TextData": "古典式编织箱"
+    },
+    "MAPOBJECT_NAME_Chair01_Stone": {
+      "TextData": "古典式木椅"
+    },
+    "MAPOBJECT_NAME_Chair02_Stone": {
+      "TextData": "古典式绿色木椅"
+    },
+    "MAPOBJECT_NAME_Clock01_Stone": {
+      "TextData": "古典式座钟"
+    },
+    "MAPOBJECT_NAME_Curtain01_Wall_Stone": {
+      "TextData": "古典式窗帘"
+    },
+    "MAPOBJECT_NAME_Desk01_Stone": {
+      "TextData": "古典式书桌"
+    },
+    "MAPOBJECT_NAME_Globe01_Stone": {
+      "TextData": "古典式地球仪"
+    },
+    "MAPOBJECT_NAME_Mirror01_Stone": {
+      "TextData": "古典式椭圆镜子"
+    },
+    "MAPOBJECT_NAME_Mirror02_Stone": {
+      "TextData": "古典式镜子"
+    },
+    "MAPOBJECT_NAME_Mirror01_Wall_Stone": {
+      "TextData": "古典式壁挂镜子"
+    },
+    "MAPOBJECT_NAME_Partition_Stone": {
+      "TextData": "古典式屏风"
+    },
+    "MAPOBJECT_NAME_Piano01_Stone": {
+      "TextData": "大钢琴"
+    },
+    "MAPOBJECT_NAME_Piano02_Stone": {
+      "TextData": "立式钢琴"
+    },
+    "MAPOBJECT_NAME_Rug01_Stone": {
+      "TextData": "古典式地毯"
+    },
+    "MAPOBJECT_NAME_Rug02_Stone": {
+      "TextData": "古典式红色地毯"
+    },
+    "MAPOBJECT_NAME_Rug03_Stone": {
+      "TextData": "古典式绿色地毯"
+    },
+    "MAPOBJECT_NAME_Rug04_Stone": {
+      "TextData": "古典式长条地毯"
+    },
+    "MAPOBJECT_NAME_Shelf01_Stone": {
+      "TextData": "古典式书架"
+    },
+    "MAPOBJECT_NAME_Shelf02_Stone": {
+      "TextData": "古典式衣橱"
+    },
+    "MAPOBJECT_NAME_Shelf03_Stone": {
+      "TextData": "古典式抽屉柜"
+    },
+    "MAPOBJECT_NAME_Shelf04_Stone": {
+      "TextData": "古典式床头柜"
+    },
+    "MAPOBJECT_NAME_Shelf05_Stone": {
+      "TextData": "古典式橱柜"
+    },
+    "MAPOBJECT_NAME_Shelf06_Stone": {
+      "TextData": "古典式长型橱柜"
+    },
+    "MAPOBJECT_NAME_Shelf07_Stone": {
+      "TextData": "古典式大型橱柜"
+    },
+    "MAPOBJECT_NAME_Shelf01_Wall_Stone": {
+      "TextData": "古典式壁橱"
+    },
+    "MAPOBJECT_NAME_Sofa01_Stone": {
+      "TextData": "古典式单人沙发"
+    },
+    "MAPOBJECT_NAME_Sofa02_Stone": {
+      "TextData": "古典式双人沙发"
+    },
+    "MAPOBJECT_NAME_Sofa03_Stone": {
+      "TextData": "古典式脚凳"
+    },
+    "MAPOBJECT_NAME_Stool01_Stone": {
+      "TextData": "古典式凳子"
+    },
+    "MAPOBJECT_NAME_Stove01_Stone": {
+      "TextData": "古典式火炉"
+    },
+    "MAPOBJECT_NAME_TableCircular01_Stone": {
+      "TextData": "古典式圆桌"
+    },
+    "MAPOBJECT_NAME_TableDresser01_Stone": {
+      "TextData": "古典式化妆台"
+    },
+    "MAPOBJECT_NAME_TableSink01_Stone": {
+      "TextData": "古典式洗手台"
+    },
+    "MAPOBJECT_NAME_Toilet01_Stone": {
+      "TextData": "古典式马桶"
+    },
+    "MAPOBJECT_NAME_ToiletHolder01_Stone": {
+      "TextData": "古典式圆筒卫生纸架"
+    },
+    "MAPOBJECT_NAME_TowlRack01_Stone": {
+      "TextData": "古典式毛巾架"
+    },
+    "MAPOBJECT_NAME_Plant01_Plant": {
+      "TextData": "观赏植物"
+    },
+    "MAPOBJECT_NAME_Plant02_Plant": {
+      "TextData": "椅子上的观赏植物"
+    },
+    "MAPOBJECT_NAME_Plant03_Plant": {
+      "TextData": "桌上观赏植物"
+    },
+    "MAPOBJECT_NAME_Plant04_Plant": {
+      "TextData": "盆栽观赏植物"
+    },
+    "MAPOBJECT_NAME_Light_FloorLamp01": {
+      "TextData": "古典式棕色落地灯"
+    },
+    "MAPOBJECT_NAME_Light_FloorLamp02": {
+      "TextData": "古典式红色落地灯"
+    },
+    "MAPOBJECT_NAME_Light_LightPole01": {
+      "TextData": "普通路灯"
+    },
+    "MAPOBJECT_NAME_Light_LightPole02": {
+      "TextData": "双臂路灯"
+    },
+    "MAPOBJECT_NAME_Light_LightPole03": {
+      "TextData": "复古路灯"
+    },
+    "MAPOBJECT_NAME_Light_LightPole04": {
+      "TextData": "时髦路灯"
+    },
+    "MAPOBJECT_NAME_Light_FirePlace01": {
+      "TextData": "砖制暖炉"
+    },
+    "MAPOBJECT_NAME_DefenseWall_Wood": {
+      "TextData": "木制防御墙"
+    },
+    "MAPOBJECT_NAME_DefenseWall_Metal": {
+      "TextData": "金属防御墙"
+    },
+    "MAPOBJECT_NAME_Light_FirePlace02": {
+      "TextData": "暖炉"
+    },
+    "MAPOBJECT_NAME_Light_CandleSticks_Top": {
+      "TextData": "水晶吊灯"
+    },
+    "MAPOBJECT_NAME_Light_CandleSticks_Wall": {
+      "TextData": "壁灯"
+    },
+    "MAPOBJECT_NAME_Television01_Iron": {
+      "TextData": "老旧电视机"
+    },
+    "MAPOBJECT_NAME_Desk01_Iron": {
+      "TextData": "铁制书桌"
+    },
+    "MAPOBJECT_NAME_Shelf01_Wall_Iron": {
+      "TextData": "铁制壁架"
+    },
+    "MAPOBJECT_NAME_TrafficSign01_Iron": {
+      "TextData": "禁止帕鲁通行的道路标志"
+    },
+    "MAPOBJECT_NAME_TrafficSign02_Iron": {
+      "TextData": "停下的道路标志"
+    },
+    "MAPOBJECT_NAME_TrafficSign03_Iron": {
+      "TextData": "当心紫霞鹿的标志"
+    },
+    "MAPOBJECT_NAME_TrafficSign04_Iron": {
+      "TextData": "当心森猛犸的标志"
+    },
+    "MAPOBJECT_NAME_Wood_WindowWall": {
+      "TextData": "木制带窗墙壁"
+    },
+    "MAPOBJECT_NAME_Stone_WindowWall": {
+      "TextData": "石制带窗墙壁"
+    },
+    "MAPOBJECT_NAME_Metal_WindowWall": {
+      "TextData": "金属带窗墙壁"
+    },
+    "MAPOBJECT_NAME_Wood_TriangleWall": {
+      "TextData": "木制三角墙"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleWall": {
+      "TextData": "石制三角墙"
+    },
+    "MAPOBJECT_NAME_Metal_TriangleWall": {
+      "TextData": "金属三角墙"
+    },
+    "MAPOBJECT_NAME_Wood_SlantedRoof": {
+      "TextData": "木制斜屋顶"
+    },
+    "MAPOBJECT_NAME_Stone_SlantedRoof": {
+      "TextData": "石制斜屋顶"
+    },
+    "MAPOBJECT_NAME_Metal_SlantedRoof": {
+      "TextData": "金属斜屋顶"
+    },
+    "MAPOBJECT_NAME_Chair01_Pal": {
+      "TextData": "青蛙椅"
+    },
+    "MAPOBJECT_NAME_Altar": {
+      "TextData": "召唤的祭坛"
+    },
+    "MAPOBJECT_NAME_CopperPit": {
+      "TextData": "金属采矿场"
+    },
+    "MAPOBJECT_NAME_CopperPit_2": {
+      "TextData": "金属采矿场Ⅱ"
+    },
+    "MAPOBJECT_NAME_ElectricHatchingPalEgg": {
+      "TextData": "电能帕鲁蛋孵化器"
+    },
+    "MAPOBJECT_NAME_PickupItem_CaveMushroom": {
+      "TextData": "洞穴蘑菇"
+    },
+    "MAPOBJECT_NAME_CoolerPalFoodBox": {
+      "TextData": "低温保鲜饲料箱"
+    },
+    "MAPOBJECT_NAME_AntiAircraft_LaserTower": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_AntiAircraft_MachineGun": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Oilrig": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_OilRig": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_SulfurPit": {
+      "TextData": "硫磺采矿场"
+    },
+    "MAPOBJECT_NAME_CoalPit": {
+      "TextData": "石炭采矿场"
+    },
+    "MAPOBJECT_NAME_IceCrusher": {
+      "TextData": "冷冻粉碎机"
+    },
+    "MAPOBJECT_NAME_DismantlingConveyor": {
+      "TextData": "帕鲁解体传送带"
+    },
+    "MAPOBJECT_NAME_WallSignboard": {
+      "TextData": "壁挂看板"
+    },
+    "MAPOBJECT_NAME_Glass_foundation": {
+      "TextData": "玻璃地基"
+    },
+    "MAPOBJECT_NAME_Glass_wall": {
+      "TextData": "玻璃墙壁"
+    },
+    "MAPOBJECT_NAME_Glass_roof": {
+      "TextData": "玻璃屋顶"
+    },
+    "MAPOBJECT_NAME_Glass_stair": {
+      "TextData": "玻璃楼梯"
+    },
+    "MAPOBJECT_NAME_Glass_DoorWall": {
+      "TextData": "玻璃门"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleWall": {
+      "TextData": "玻璃三角墙"
+    },
+    "MAPOBJECT_NAME_Glass_SlantedRoof": {
+      "TextData": "玻璃斜屋顶"
+    },
+    "MAPOBJECT_NAME_Glass_WindowWall": {
+      "TextData": "玻璃带窗墙壁"
+    },
+    "MAPOBJECT_NAME_Wooden_Pillar": {
+      "TextData": "木制立柱"
+    },
+    "MAPOBJECT_NAME_Stone_Pillar": {
+      "TextData": "石制立柱"
+    },
+    "MAPOBJECT_NAME_Metal_Pillars": {
+      "TextData": "金属立柱"
+    },
+    "MAPOBJECT_NAME_Glass_Pillars": {
+      "TextData": "玻璃立柱"
+    },
+    "MAPOBJECT_NAME_MeteorFall": {
+      "TextData": "陨石"
+    },
+    "MAPOBJECT_NAME_MeteorDrop_pickup": {
+      "TextData": "陨石"
+    },
+    "MAPOBJECT_NAME_SupplyFall": {
+      "TextData": "补给物资"
+    },
+    "MAPOBJECT_NAME_SupplyDrop": {
+      "TextData": "补给物资"
+    },
+    "MAPOBJECT_NAME_MeteorDrop_Damagable": {
+      "TextData": "陨石"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator_Large": {
+      "TextData": "大型发电机"
+    },
+    "MAPOBJECT_NAME_OilPump": {
+      "TextData": "原油提炼机"
+    },
+    "MAPOBJECT_NAME_TreasureBox_RequiredLongHold": {
+      "TextData": "废品（长按采集）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Attack_01": {
+      "TextData": "力量之莲（小）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Attack_02": {
+      "TextData": "力量之莲（大）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_HP_01": {
+      "TextData": "生命之莲（小）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_HP_02": {
+      "TextData": "生命之莲（大）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Stamina_01": {
+      "TextData": "耐力之莲（小）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Stamina_02": {
+      "TextData": "耐力之莲（大）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Workspeed_01": {
+      "TextData": "巧手之莲（小）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Workspeed_02": {
+      "TextData": "巧手之莲（大）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Weight_01": {
+      "TextData": "耐重之莲（小）"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Weight_02": {
+      "TextData": "耐重之莲（大）"
+    },
+    "MAPOBJECT_NAME_SkinChange": {
+      "TextData": "帕鲁装扮机"
+    },
+    "MAPOBJECT_NAME_PickupItem_DogCoin": {
+      "TextData": "汪汪币"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_wall_01": {
+      "TextData": "和风墙壁"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_wall_02": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DoorWall_01": {
+      "TextData": "和风门A"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DoorWall_02": {
+      "TextData": "和风门B"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DoorWall_03": {
+      "TextData": "和风门C"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_ConnectingWall": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_roof_01": {
+      "TextData": "和风屋顶A"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_roof_02": {
+      "TextData": "和风屋顶B"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_SlantedRoof": {
+      "TextData": "和风斜屋顶"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleWall": {
+      "TextData": "和风三角墙"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_WindowWall": {
+      "TextData": "和风带窗墙壁"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_foundation": {
+      "TextData": "和风地基"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_stair": {
+      "TextData": "和风楼梯"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_Pillar": {
+      "TextData": "和风立柱"
+    },
+    "MAPOBJECT_NAME_ItemBooth": {
+      "TextData": "跳蚤市场（道具）"
+    },
+    "MAPOBJECT_NAME_PalBooth": {
+      "TextData": "跳蚤市场（帕鲁）"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Carrot": {
+      "TextData": "胡萝卜园"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Onion": {
+      "TextData": "洋葱园"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Potato": {
+      "TextData": "土豆园"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_04": {
+      "TextData": "高等文明帕鲁球工厂"
+    },
+    "MAPOBJECT_NAME_MultiElectricHatchingPalEgg": {
+      "TextData": "大型电能帕鲁蛋孵化器"
+    },
+    "MAPOBJECT_NAME_HugeKitchen": {
+      "TextData": "大型厨房"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_04": {
+      "TextData": "高等文明作业工厂"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_04": {
+      "TextData": "高等文明武器工厂"
+    },
+    "MAPOBJECT_NAME_SanityDecrease1": {
+      "TextData": "α波发生器"
+    },
+    "MAPOBJECT_NAME_WorkSpeedIncrease1": {
+      "TextData": "β波发生器"
+    },
+    "MAPOBJECT_NAME_QuartzPit": {
+      "TextData": "纯水晶采矿场"
+    },
+    "MAPOBJECT_NAME_Factory_Money": {
+      "TextData": "金币制造工厂"
+    },
+    "MAPOBJECT_NAME_ItemChest_04": {
+      "TextData": "高等文明箱子"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_05": {
+      "TextData": "高等文明帕鲁胶囊"
+    },
+    "MAPOBJECT_NAME_BaseCampItemDispenser": {
+      "TextData": "道具存取机"
+    },
+    "MAPOBJECT_NAME_GuildChest": {
+      "TextData": "公会箱子"
+    },
+    "MAPOBJECT_NAME_WoodCreator": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_Expedition": {
+      "TextData": "帕鲁远征所"
+    },
+    "MAPOBJECT_NAME_Lab": {
+      "TextData": "帕鲁工作研究所"
+    },
+    "MAPOBJECT_NAME_OperatingTable": {
+      "TextData": "帕鲁手术台"
+    },
+    "MAPOBJECT_NAME_ManualElectricGenerator": {
+      "TextData": "人力发电机"
+    },
+    "MAPOBJECT_NAME_Farm_SkillFruits": {
+      "TextData": "技能果树园"
+    },
+    "MAPOBJECT_NAME_Wooden_ladder": {
+      "TextData": "梯子"
+    },
+    "MAPOBJECT_NAME_PalMedicineBox": {
+      "TextData": "药品柜"
+    },
+    "MAPOBJECT_NAME_EnergyStorage_Electric": {
+      "TextData": "蓄电器"
+    },
+    "MAPOBJECT_NAME_BlastFurnace4": {
+      "TextData": "巨大熔炉"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_03": {
+      "TextData": "高等文明制药台"
+    },
+    "MAPOBJECT_NAME_PickupItem_NightStone": {
+      "TextData": "夜星砂"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Fire": {
+      "TextData": "业火宝箱"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Water": {
+      "TextData": "流水宝箱"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Electric": {
+      "TextData": "雷鸣宝箱"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Ivy": {
+      "TextData": "草属性宝箱"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Ice": {
+      "TextData": "冰属性宝箱"
+    },
+    "MAPOBJECT_NAME_Headstone": {
+      "TextData": "墓碑"
+    },
+    "MAPOBJECT_NAME_Byobu": {
+      "TextData": "屏风"
+    },
+    "MAPOBJECT_NAME_Kakejiku": {
+      "TextData": "挂轴"
+    },
+    "MAPOBJECT_NAME_Zaisu": {
+      "TextData": "无腿靠椅"
+    },
+    "MAPOBJECT_NAME_Zabuton": {
+      "TextData": "坐垫"
+    },
+    "MAPOBJECT_NAME_Irori": {
+      "TextData": "地炉"
+    },
+    "MAPOBJECT_NAME_Toro": {
+      "TextData": "石灯笼"
+    },
+    "MAPOBJECT_NAME_Andon": {
+      "TextData": "行灯"
+    },
+    "MAPOBJECT_NAME_Shishiodoshi": {
+      "TextData": "鹿威"
+    },
+    "MAPOBJECT_NAME_Bonsai": {
+      "TextData": "盆栽"
+    },
+    "MAPOBJECT_NAME_Koro": {
+      "TextData": "香炉"
+    },
+    "MAPOBJECT_NAME_Seika": {
+      "TextData": "日式插花"
+    },
+    "MAPOBJECT_NAME_Tansu": {
+      "TextData": "抽屉柜"
+    },
+    "MAPOBJECT_NAME_Fudukue": {
+      "TextData": "日式矮桌"
+    },
+    "MAPOBJECT_NAME_GlobalPalStorage": {
+      "TextData": "跨界帕鲁终端"
+    },
+    "MAPOBJECT_NAME_CompositeDesk": {
+      "TextData": "制图桌"
+    },
+    "MAPOBJECT_NAME_DimensionPalStorage": {
+      "TextData": "帕鲁次元仓库"
+    },
+    "MAPOBJECT_NAME_Wire_Fence": {
+      "TextData": "铁丝网围栏"
+    },
+    "MAPOBJECT_NAME_LilyQueenStatue": {
+      "TextData": "百合女王雕像"
+    },
+    "MAPOBJECT_NAME_ConservationGroupBannerA": {
+      "TextData": "帕鲁保护团体旗帜"
+    },
+    "MAPOBJECT_NAME_ConservationGroupBannerB": {
+      "TextData": "帕鲁保护团体横幅"
+    },
+    "MAPOBJECT_NAME_Hunter_GangFlag": {
+      "TextData": "盗猎团旗帜"
+    },
+    "MAPOBJECT_NAME_PalCage": {
+      "TextData": "空笼子"
+    },
+    "MAPOBJECT_NAME_WoodenBarricade": {
+      "TextData": "木制路障"
+    },
+    "MAPOBJECT_NAME_WallTorch02": {
+      "TextData": "庄严壁挂火把"
+    },
+    "MAPOBJECT_NAME_CandleStand": {
+      "TextData": "庄严烛台"
+    },
+    "MAPOBJECT_NAME_FireStand": {
+      "TextData": "仪式用烛台"
+    },
+    "MAPOBJECT_NAME_Wood_Fence": {
+      "TextData": "木制栅栏"
+    },
+    "MAPOBJECT_NAME_Stone_Fence": {
+      "TextData": "石制栅栏"
+    },
+    "MAPOBJECT_NAME_Iron_Fence": {
+      "TextData": "金属栅栏"
+    },
+    "MAPOBJECT_NAME_Glass_Fence": {
+      "TextData": "玻璃栅栏"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_Fence": {
+      "TextData": "和风栅栏"
+    },
+    "MAPOBJECT_NAME_SF_Fence": {
+      "TextData": "简约栅栏"
+    },
+    "MAPOBJECT_NAME_CrystalPit": {
+      "TextData": "六棱晶矿采矿场"
+    },
+    "MAPOBJECT_NAME_Spa3": {
+      "TextData": "和风温泉"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkerExtraStation": {
+      "TextData": "帕鲁终端控制台"
+    },
+    "MAPOBJECT_NAME_LanternTop": {
+      "TextData": "日式白灯笼"
+    },
+    "MAPOBJECT_NAME_Shrine_Lantern": {
+      "TextData": "神社赤灯笼"
+    },
+    "MAPOBJECT_NAME_GuardianDogStatue": {
+      "TextData": "八云犬雕像"
+    },
+    "MAPOBJECT_NAME_MultiHatchingPalEgg": {
+      "TextData": "大型帕鲁蛋孵化器"
+    },
+    "MAPOBJECT_NAME_SF_foundation": {
+      "TextData": "简约地基"
+    },
+    "MAPOBJECT_NAME_SF_wall": {
+      "TextData": "简约墙壁"
+    },
+    "MAPOBJECT_NAME_SF_roof": {
+      "TextData": "简约屋顶"
+    },
+    "MAPOBJECT_NAME_SF_stair": {
+      "TextData": "简约楼梯"
+    },
+    "MAPOBJECT_NAME_SF_DoorWall": {
+      "TextData": "简约门"
+    },
+    "MAPOBJECT_NAME_SF_TriangleWall": {
+      "TextData": "简约三角墙"
+    },
+    "MAPOBJECT_NAME_SF_SlantedRoof": {
+      "TextData": "简约斜屋顶"
+    },
+    "MAPOBJECT_NAME_SF_WindowWall": {
+      "TextData": "简约带窗墙壁"
+    },
+    "MAPOBJECT_NAME_SF_Pillars": {
+      "TextData": "简约立柱"
+    },
+    "MAPOBJECT_NAME_SF_Desk": {
+      "TextData": "研究室风格书桌"
+    },
+    "MAPOBJECT_NAME_SF_Chair": {
+      "TextData": "研究室风格椅子"
+    },
+    "MAPOBJECT_NAME_Hunter_Flag": {
+      "TextData": "盗猎团团旗"
+    },
+    "MAPOBJECT_NAME_Hunter_Banner": {
+      "TextData": "盗猎团挂旗"
+    },
+    "MAPOBJECT_NAME_Believer_Flag": {
+      "TextData": "帕鲁保护团体团旗"
+    },
+    "MAPOBJECT_NAME_Believer_Banner": {
+      "TextData": "帕鲁保护团体挂旗"
+    },
+    "MAPOBJECT_NAME_FireCult_Flag": {
+      "TextData": "永炎同心会会旗"
+    },
+    "MAPOBJECT_NAME_FireCult_Banner": {
+      "TextData": "永炎同心会挂旗"
+    },
+    "MAPOBJECT_NAME_Police_Flag": {
+      "TextData": "自卫队队旗"
+    },
+    "MAPOBJECT_NAME_Police_Banner": {
+      "TextData": "自卫队挂旗"
+    },
+    "MAPOBJECT_NAME_Scientist_Flag": {
+      "TextData": "基因研究部队队旗"
+    },
+    "MAPOBJECT_NAME_Scientist_Banner": {
+      "TextData": "基因研究部队挂旗"
+    },
+    "MAPOBJECT_NAME_Ninja_Flag": {
+      "TextData": "月花众团旗"
+    },
+    "MAPOBJECT_NAME_Ninja_Banner": {
+      "TextData": "月花众挂旗"
+    },
+    "MAPOBJECT_NAME_FishingPond1": {
+      "TextData": "垂钓池"
+    },
+    "MAPOBJECT_NAME_FishingPond2": {
+      "TextData": "大型垂钓池"
+    },
+    "MAPOBJECT_NAME_DamagableRock0019": {
+      "TextData": "六棱晶矿"
+    },
+    "MAPOBJECT_NAME_YakushimaBoss002_Relic": {
+      "TextData": "月亮领主雕像"
+    },
+    "MAPOBJECT_NAME_Wooden_TriangleFoundation": {
+      "TextData": "木制三角地基"
+    },
+    "MAPOBJECT_NAME_Wooden_DiagonalWall": {
+      "TextData": "木制对角墙"
+    },
+    "MAPOBJECT_NAME_Wooden_TriangleRoof": {
+      "TextData": "木制三角屋顶"
+    },
+    "MAPOBJECT_NAME_Wooden_TriangleStairsCorner": {
+      "TextData": "木制拐角屋顶"
+    },
+    "MAPOBJECT_NAME_Wood_TriangleWallReverse": {
+      "TextData": "木制三角墙（反向）"
+    },
+    "MAPOBJECT_NAME_Wooden_WallGate": {
+      "TextData": "木制帕鲁用通道口"
+    },
+    "MAPOBJECT_NAME_Wooden_SlopedRoofCorner": {
+      "TextData": "木制三角斜屋顶"
+    },
+    "MAPOBJECT_NAME_Wooden_PyramidRoof": {
+      "TextData": "木制方锥屋顶"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleFoundation": {
+      "TextData": "石制三角地基"
+    },
+    "MAPOBJECT_NAME_Stone_DiagonalWall": {
+      "TextData": "石制对角墙"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleRoof": {
+      "TextData": "石制三角屋顶"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleStairsCorner": {
+      "TextData": "石制拐角屋顶"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleWallReverse": {
+      "TextData": "石制三角墙（反向）"
+    },
+    "MAPOBJECT_NAME_Stone_WallGate": {
+      "TextData": "石制帕鲁用通道口"
+    },
+    "MAPOBJECT_NAME_Stone_SlopedRoofCorner": {
+      "TextData": "石制三角斜屋顶"
+    },
+    "MAPOBJECT_NAME_Stone_PyramidRoof": {
+      "TextData": "石制方锥屋顶"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleFoundation": {
+      "TextData": "金属三角地基"
+    },
+    "MAPOBJECT_NAME_Iron_DiagonalWall": {
+      "TextData": "金属对角墙"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleRoof": {
+      "TextData": "金属三角屋顶"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleStairsCorner": {
+      "TextData": "金属拐角屋顶"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleWallReverse": {
+      "TextData": "金属三角墙（反向）"
+    },
+    "MAPOBJECT_NAME_Iron_WallGate": {
+      "TextData": "金属帕鲁用通道口"
+    },
+    "MAPOBJECT_NAME_Iron_SlopedRoofCorner": {
+      "TextData": "金属三角斜屋顶"
+    },
+    "MAPOBJECT_NAME_Iron_PyramidRoof": {
+      "TextData": "金属方锥屋顶"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleFoundation": {
+      "TextData": "玻璃三角地基"
+    },
+    "MAPOBJECT_NAME_Glass_DiagonalWall": {
+      "TextData": "玻璃对角墙"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleRoof": {
+      "TextData": "玻璃三角屋顶"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleStairsCorner": {
+      "TextData": "玻璃拐角屋顶"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleWallReverse": {
+      "TextData": "玻璃三角墙（反向）"
+    },
+    "MAPOBJECT_NAME_Glass_WallGate": {
+      "TextData": "玻璃帕鲁用通道口"
+    },
+    "MAPOBJECT_NAME_Glass_SlopedRoofCorner": {
+      "TextData": "玻璃三角斜屋顶"
+    },
+    "MAPOBJECT_NAME_Glass_PyramidRoof": {
+      "TextData": "玻璃方锥屋顶"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleFoundation": {
+      "TextData": "和风三角地基"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DiagonalWall": {
+      "TextData": "和风对角墙"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleRoof_01": {
+      "TextData": "和风三角屋顶A"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleRoof_02": {
+      "TextData": "和风三角屋顶B"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleStairsCorner_01": {
+      "TextData": "和风拐角屋顶"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleStairsCorner_02": {
+      "TextData": "zh-hans text"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleWallReverse": {
+      "TextData": "和风三角墙（反向）"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_WallGate": {
+      "TextData": "和风帕鲁用通道口"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_SlopedRoofCorner": {
+      "TextData": "和风三角斜屋顶"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_PyramidRoof": {
+      "TextData": "和风方锥屋顶"
+    },
+    "MAPOBJECT_NAME_SF_TriangleFoundation": {
+      "TextData": "简约三角地基"
+    },
+    "MAPOBJECT_NAME_SF_DiagonalWall": {
+      "TextData": "简约对角墙"
+    },
+    "MAPOBJECT_NAME_SF_TriangleRoof": {
+      "TextData": "简约三角屋顶"
+    },
+    "MAPOBJECT_NAME_SF_TriangleStairsCorner": {
+      "TextData": "简约拐角屋顶"
+    },
+    "MAPOBJECT_NAME_SF_TriangleWallReverse": {
+      "TextData": "简约三角墙（反向）"
+    },
+    "MAPOBJECT_NAME_SF_WallGate": {
+      "TextData": "简约帕鲁用通道口"
+    },
+    "MAPOBJECT_NAME_SF_SlopedRoofCorner": {
+      "TextData": "简约三角斜屋顶"
+    },
+    "MAPOBJECT_NAME_SF_PyramidRoof": {
+      "TextData": "简约方锥屋顶"
+    },
+    "MAPOBJECT_NAME_AncientRelicRecycler": {
+      "TextData": "古代文明遗物转换器"
+    },
+    "MAPOBJECT_NAME_DamagableBone0001": {
+      "TextData": "古代的遗骨"
+    },
+    "MAPOBJECT_NAME_DamagableRock0022": {
+      "TextData": "古代的熔岩块"
+    },
+    "MAPOBJECT_NAME_AncientWorkBench": {
+      "TextData": "古代文明工作台"
+    },
+    "MAPOBJECT_NAME_AncientElectricGenerator": {
+      "TextData": "古代文明发电机"
+    },
+    "MAPOBJECT_NAME_AncientBlastFurnace": {
+      "TextData": "古代文明炉"
+    },
+    "MAPOBJECT_NAME_AncientCookingStove": {
+      "TextData": "古代文明厨房"
+    },
+    "MAPOBJECT_NAME_AncientMultiProduct": {
+      "TextData": "古代文明物质生成器"
+    },
+    "MAPOBJECT_NAME_AncientFarmBlock": {
+      "TextData": "古代文明栽培器"
+    },
+    "MAPOBJECT_NAME_DefenseMachinegun_AutoTurret": {
+      "TextData": "古代文明防御塔"
+    },
+    "MAPOBJECT_NAME_MultiElectricHatchingPalEggWithBreed": {
+      "TextData": "古代文明配种器"
+    },
+    "MAPOBJECT_NAME_DamagableRock0020": {
+      "TextData": "烈阳金属"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkHard03": {
+      "TextData": "古代文明监控台"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleFoundation": {
+      "TextData": "古代文明三角地基"
+    },
+    "MAPOBJECT_NAME_Ancient_DiagonalWall": {
+      "TextData": "古代文明对角墙"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleRoof": {
+      "TextData": "古代文明三角屋顶"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleStairsCorner": {
+      "TextData": "古代文明拐角屋顶"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleWallReverse": {
+      "TextData": "古代文明三角墙（反向）"
+    },
+    "MAPOBJECT_NAME_Ancient_WallGate": {
+      "TextData": "古代文明帕鲁用通道口"
+    },
+    "MAPOBJECT_NAME_Ancient_SlopedRoofCorner": {
+      "TextData": "古代文明三角斜屋顶"
+    },
+    "MAPOBJECT_NAME_Ancient_PyramidRoof": {
+      "TextData": "古代文明方锥屋顶"
+    },
+    "MAPOBJECT_NAME_Ancient_foundation": {
+      "TextData": "古代文明地基"
+    },
+    "MAPOBJECT_NAME_Ancient_wall": {
+      "TextData": "古代文明墙"
+    },
+    "MAPOBJECT_NAME_Ancient_roof": {
+      "TextData": "古代文明屋顶"
+    },
+    "MAPOBJECT_NAME_Ancient_stair": {
+      "TextData": "古代文明楼梯"
+    },
+    "MAPOBJECT_NAME_Ancient_DoorWall": {
+      "TextData": "古代文明门"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleWall": {
+      "TextData": "古代文明三角墙"
+    },
+    "MAPOBJECT_NAME_Ancient_SlantedRoof": {
+      "TextData": "古代文明斜屋顶"
+    },
+    "MAPOBJECT_NAME_Ancient_WindowWall": {
+      "TextData": "古代文明带窗墙壁"
+    },
+    "MAPOBJECT_NAME_Ancient_Pillars": {
+      "TextData": "古代文明立柱"
+    },
+    "MAPOBJECT_NAME_Ancient_Fence": {
+      "TextData": "古代文明栅栏"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Green": {
+      "TextData": "仿真树木A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Green": {
+      "TextData": "仿真树木B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Green": {
+      "TextData": "仿真树木C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Red": {
+      "TextData": "仿真红叶树A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Red": {
+      "TextData": "仿真红叶树B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Red": {
+      "TextData": "仿真红叶树C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Yellow": {
+      "TextData": "仿真黄叶树A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Yellow": {
+      "TextData": "仿真黄叶树B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Yellow": {
+      "TextData": "仿真黄叶树C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Cherry": {
+      "TextData": "仿真樱花树A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Cherry": {
+      "TextData": "仿真樱花树B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Cherry": {
+      "TextData": "仿真樱花树C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Tropical": {
+      "TextData": "仿真热带树木A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Tropical": {
+      "TextData": "仿真热带树木B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Tropical": {
+      "TextData": "仿真热带树木C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Snow": {
+      "TextData": "仿真积雪树木A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Snow": {
+      "TextData": "仿真积雪树木B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Snow": {
+      "TextData": "仿真积雪树木C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Desert": {
+      "TextData": "仿真沙漠树木A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Desert": {
+      "TextData": "仿真沙漠树木B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Desert": {
+      "TextData": "仿真沙漠树木C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Bamboo": {
+      "TextData": "仿真竹子A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Bamboo": {
+      "TextData": "仿真竹子B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Bamboo": {
+      "TextData": "仿真竹子C"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Green": {
+      "TextData": "仿真树丛"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Yellow": {
+      "TextData": "仿真黄叶树丛"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Flower": {
+      "TextData": "仿真开花树丛A"
+    },
+    "MAPOBJECT_NAME_FurnitureBush02_Flower": {
+      "TextData": "仿真开花树丛B"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Tropical": {
+      "TextData": "仿真热带树丛"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Snow": {
+      "TextData": "仿真白色树丛"
+    },
+    "MAPOBJECT_NAME_FurnitureStone01": {
+      "TextData": "仿真岩石"
+    },
+    "MAPOBJECT_NAME_TableCircular_Wood_None": {
+      "TextData": "整洁的圆桌"
+    },
+    "MAPOBJECT_NAME_TableSquare_Wood_None": {
+      "TextData": "整洁的方桌"
+    },
+    "MAPOBJECT_NAME_JetDragonStatue": {
+      "TextData": "空涡龙雕像"
+    },
+    "MAPOBJECT_NAME_IceHorseStatue": {
+      "TextData": "唤冬兽雕像"
+    },
+    "MAPOBJECT_NAME_ArcadeVideoGame": {
+      "TextData": "街机游戏机台"
+    },
+    "MAPOBJECT_NAME_Ancient_MedicalPalBed": {
+      "TextData": "古代文明帕鲁床"
+    },
+    "MAPOBJECT_NAME_Ancient_AirConditioner": {
+      "TextData": "古代文明空调"
+    },
+    "MAPOBJECT_NAME_Ancient_Spa": {
+      "TextData": "古代文明温泉"
+    },
+    "MAPOBJECT_NAME_Clinic": {
+      "TextData": "诊疗所"
+    },
+    "MAPOBJECT_NAME_Ancient_Clinic": {
+      "TextData": "古代文明诊疗所"
+    },
+    "MAPOBJECT_NAME_SkyIslandOrePit": {
+      "TextData": "烈阳金属采矿场"
+    },
+    "MAPOBJECT_NAME_DarkIsland_Flag": {
+      "TextData": "天坠之民团旗"
+    },
+    "MAPOBJECT_NAME_DarkIsland_Banner": {
+      "TextData": "天坠之民挂旗"
+    },
+    "MAPOBJECT_NAME_SkyIsland_Flag": {
+      "TextData": "苍天的盟约盟旗"
+    },
+    "MAPOBJECT_NAME_SkyIsland_Banner": {
+      "TextData": "苍天的盟约挂旗"
+    },
+    "MAPOBJECT_NAME_StationDeforest3": {
+      "TextData": "伐木场Ⅱ"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkHard02": {
+      "TextData": "优质监控台"
+    },
+    "MAPOBJECT_NAME_Wooden_SlopedRoofCornerReverse": {
+      "TextData": "木制三角斜屋顶（反向）"
+    },
+    "MAPOBJECT_NAME_Stone_SlopedRoofCornerReverse": {
+      "TextData": "石制三角斜屋顶（反向）"
+    },
+    "MAPOBJECT_NAME_Iron_SlopedRoofCornerReverse": {
+      "TextData": "金属三角斜屋顶（反向）"
+    },
+    "MAPOBJECT_NAME_Glass_SlopedRoofCornerReverse": {
+      "TextData": "玻璃三角斜屋顶（反向）"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_SlopedRoofCornerReverse": {
+      "TextData": "和风三角斜屋顶（反向）"
+    },
+    "MAPOBJECT_NAME_SF_SlopedRoofCornerReverse": {
+      "TextData": "简约三角斜屋顶（反向）"
+    },
+    "MAPOBJECT_NAME_Ancient_SlopedRoofCornerReverse": {
+      "TextData": "古代文明三角斜屋顶（反向）"
+    },
+    "MAPOBJECT_NAME_OilPump02": {
+      "TextData": "原油提炼机 高压型"
+    },
+    "MAPOBJECT_NAME_DamagableWood0001": {
+      "TextData": "古代树皮"
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "DT_BuildObjectCategoryText": {
+    "CATEGORY_TYPE_A_Product": {
+      "TextData": "Production"
+    },
+    "CATEGORY_TYPE_A_Pal": {
+      "TextData": "Pal"
+    },
+    "CATEGORY_TYPE_A_Infrastructure": {
+      "TextData": "Infrastructure"
+    },
+    "CATEGORY_TYPE_A_Food": {
+      "TextData": "Food"
+    },
+    "CATEGORY_TYPE_A_Foundation": {
+      "TextData": "Foundations"
+    },
+    "CATEGORY_TYPE_A_Defense": {
+      "TextData": "Defenses"
+    },
+    "CATEGORY_TYPE_A_Other": {
+      "TextData": "Other"
+    },
+    "CATEGORY_TYPE_A_Storage": {
+      "TextData": "Storage"
+    },
+    "CATEGORY_TYPE_A_Light": {
+      "TextData": "Lighting"
+    },
+    "CATEGORY_TYPE_A_Furniture": {
+      "TextData": "Furniture"
+    },
+    "CATEGORY_TYPE_A_Dismantle": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Prod_Craft": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Prod_Resource": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Prod_Furnace": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Prod_Medicine": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Pal_Capture": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Pal_Breed": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Pal_Modify": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Infra_Medical": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Infra_Storage": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Infra_Trade": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Infra_GeneratePower": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Infra_Defense": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Infra_Environment": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Food_Basic": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Food_Agriculture": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Food_Cooking": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Food_Livestock": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Found_Basic": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Found_House": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_B_Other": {
+      "TextData": "ex Text"
+    },
+    "CATEGORY_TYPE_A_Blueprint": {
+      "TextData": "Schematics"
+    },
+    "CATEGORY_TYPE_A_Favorite": {
+      "TextData": "Favorite"
+    },
+    "CATEGORY_TYPE_UI_Product_Repair": {
+      "TextData": "Crafting/Repair"
+    },
+    "CATEGORY_TYPE_UI_Weapon": {
+      "TextData": "Weapons"
+    },
+    "CATEGORY_TYPE_UI_Refine": {
+      "TextData": "Refinement"
+    },
+    "CATEGORY_TYPE_UI_Medicine": {
+      "TextData": "Medicine Production"
+    },
+    "CATEGORY_TYPE_UI_Deforest_Mining": {
+      "TextData": "Lumbering/Mining"
+    },
+    "CATEGORY_TYPE_UI_Milling_Crusher": {
+      "TextData": "Milling/Crushing"
+    },
+    "CATEGORY_TYPE_UI_FishingPond": {
+      "TextData": "Fishing Holes"
+    },
+    "CATEGORY_TYPE_UI_PalCaptureItem": {
+      "TextData": "Spheres"
+    },
+    "CATEGORY_TYPE_UI_PalManagement": {
+      "TextData": "Pal Management"
+    },
+    "CATEGORY_TYPE_UI_PalTraining": {
+      "TextData": "Pal Training"
+    },
+    "CATEGORY_TYPE_UI_PalWork": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_PalBreeding": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_PalOther": {
+      "TextData": "Pal (Other)"
+    },
+    "CATEGORY_TYPE_UI_Chest": {
+      "TextData": "Chests"
+    },
+    "CATEGORY_TYPE_UI_StorageFurniture": {
+      "TextData": "Storage"
+    },
+    "CATEGORY_TYPE_UI_Cooking": {
+      "TextData": "Cooking"
+    },
+    "CATEGORY_TYPE_UI_FeedBox": {
+      "TextData": "Feed Box"
+    },
+    "CATEGORY_TYPE_UI_Farm": {
+      "TextData": "Farming"
+    },
+    "CATEGORY_TYPE_UI_Bed": {
+      "TextData": "Bedding"
+    },
+    "CATEGORY_TYPE_UI_GenerateElectricity": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Electricity": {
+      "TextData": "Electricity"
+    },
+    "CATEGORY_TYPE_UI_Spa": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Health": {
+      "TextData": "Health Care"
+    },
+    "CATEGORY_TYPE_UI_Freestanding": {
+      "TextData": "Placeables"
+    },
+    "CATEGORY_TYPE_UI_WallHanging": {
+      "TextData": "Wall Mounts"
+    },
+    "CATEGORY_TYPE_UI_Ceiling": {
+      "TextData": "Ceilings"
+    },
+    "CATEGORY_TYPE_UI_Wood": {
+      "TextData": "Wood"
+    },
+    "CATEGORY_TYPE_UI_Stone": {
+      "TextData": "Stone"
+    },
+    "CATEGORY_TYPE_UI_Metal": {
+      "TextData": "Metal"
+    },
+    "CATEGORY_TYPE_UI_Glass": {
+      "TextData": "Glass"
+    },
+    "CATEGORY_TYPE_UI_JapaneseStyle": {
+      "TextData": "Japanese-Style"
+    },
+    "CATEGORY_TYPE_UI_Clean": {
+      "TextData": "Clean"
+    },
+    "CATEGORY_TYPE_UI_Trap": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Interception": {
+      "TextData": "Defensive Structures"
+    },
+    "CATEGORY_TYPE_UI_Barieer": {
+      "TextData": "Defensive Walls"
+    },
+    "CATEGORY_TYPE_UI_EfficiencEnhancement": {
+      "TextData": "Efficiency Enhancement"
+    },
+    "CATEGORY_TYPE_UI_SignBoard": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_FleaMarket": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Statue": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Raid": {
+      "TextData": "-"
+    },
+    "CATEGORY_TYPE_UI_Desk": {
+      "TextData": "Tables"
+    },
+    "CATEGORY_TYPE_UI_Chair": {
+      "TextData": "Chairs"
+    },
+    "CATEGORY_TYPE_UI_Carpet": {
+      "TextData": "Carpets (Floor Coverings)"
+    },
+    "CATEGORY_TYPE_UI_WallDecoration": {
+      "TextData": "Wall & Ceiling Decor"
+    },
+    "CATEGORY_TYPE_UI_Houseplants": {
+      "TextData": "Plants"
+    },
+    "CATEGORY_TYPE_UI_Flag": {
+      "TextData": "Flags"
+    },
+    "CATEGORY_TYPE_UI_Ornament": {
+      "TextData": "Decorations"
+    },
+    "CATEGORY_TYPE_UI_Other": {
+      "TextData": "Other"
+    },
+    "CATEGORY_TYPE_UI_Ancient": {
+      "TextData": "Ancient Civilization"
+    }
+  }
+}

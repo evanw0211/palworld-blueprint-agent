@@ -1,0 +1,1855 @@
+{
+  "DT_MapObjectNameText_Common": {
+    "MAPOBJECT_NAME_DummyFoliage": {
+      "TextData": "Tree"
+    },
+    "MAPOBJECT_NAME_BlastFurnace": {
+      "TextData": "Primitive Furnace"
+    },
+    "MAPOBJECT_NAME_BlastFurnace2": {
+      "TextData": "Improved Furnace"
+    },
+    "MAPOBJECT_NAME_BlastFurnace3": {
+      "TextData": "Electric Furnace"
+    },
+    "MAPOBJECT_NAME_BlastFurnace4_Old": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_BlastFurnace5": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_CampFire": {
+      "TextData": "Campfire"
+    },
+    "MAPOBJECT_NAME_CharacterRankUp": {
+      "TextData": "Pal Essence Condenser"
+    },
+    "MAPOBJECT_NAME_CookingStove": {
+      "TextData": "Cooking Pot"
+    },
+    "MAPOBJECT_NAME_DamagableRock0001": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0002": {
+      "TextData": "Copper Ore"
+    },
+    "MAPOBJECT_NAME_DamagableRock0003": {
+      "TextData": "Pure Quartz"
+    },
+    "MAPOBJECT_NAME_DamagableRock0004": {
+      "TextData": "Coal"
+    },
+    "MAPOBJECT_NAME_DamagableRock0005": {
+      "TextData": "Paldium Ore"
+    },
+    "MAPOBJECT_NAME_DamagableRock0006": {
+      "TextData": "Sulfur"
+    },
+    "MAPOBJECT_NAME_DamagableRock0007": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0008": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0009": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0010": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0011": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0012": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0013": {
+      "TextData": "SandStone"
+    },
+    "MAPOBJECT_NAME_DamagableRock0014": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0015": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DamagableRock0016": {
+      "TextData": "Rock"
+    },
+    "MAPOBJECT_NAME_DeathPenaltyChest": {
+      "TextData": "Death Chest"
+    },
+    "MAPOBJECT_NAME_DefenseGatlingGun": {
+      "TextData": "Mounted Gatling Gun"
+    },
+    "MAPOBJECT_NAME_DefenseMachinegun": {
+      "TextData": "Mounted Machine Gun"
+    },
+    "MAPOBJECT_NAME_DefenseMinigun": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_DefenseMissile": {
+      "TextData": "Mounted Missile Launcher"
+    },
+    "MAPOBJECT_NAME_DefenseBowGun": {
+      "TextData": "Mounted Crossbow"
+    },
+    "MAPOBJECT_NAME_DefenseWait": {
+      "TextData": "Sandbag"
+    },
+    "MAPOBJECT_NAME_DUMMY": {
+      "TextData": "Workbench"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator": {
+      "TextData": "Power Generator"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator_Slave": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator2": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator3": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_ElectricKitchen": {
+      "TextData": "Electric Kitchen"
+    },
+    "MAPOBJECT_NAME_Factory_Comfortable_01": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_Factory_Comfortable_02": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_01": {
+      "TextData": "High-Quality Workbench"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_02": {
+      "TextData": "Production Assembly Line"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_03": {
+      "TextData": "Production Assembly Line II"
+    },
+    "MAPOBJECT_NAME_FarmBlock": {
+      "TextData": "Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Grade01": {
+      "TextData": "Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Grade02": {
+      "TextData": "Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Grade03": {
+      "TextData": "Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_wheet": {
+      "TextData": "Wheat Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_tomato": {
+      "TextData": "Tomato Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Lettuce": {
+      "TextData": "Lettuce Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Berries": {
+      "TextData": "Berry Plantation"
+    },
+    "MAPOBJECT_NAME_FastTravelPoint": {
+      "TextData": "Great Eagle Statue"
+    },
+    "MAPOBJECT_NAME_Floor": {
+      "TextData": "Floor"
+    },
+    "MAPOBJECT_NAME_Floor_Stone": {
+      "TextData": "Floor"
+    },
+    "MAPOBJECT_NAME_Floor_Wood": {
+      "TextData": "Floor"
+    },
+    "MAPOBJECT_NAME_FoliageLogTest": {
+      "TextData": "Log"
+    },
+    "MAPOBJECT_NAME_HighTechKitchen": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_ItemChest": {
+      "TextData": "Wooden Chest"
+    },
+    "MAPOBJECT_NAME_ItemChest_02": {
+      "TextData": "Metal Chest"
+    },
+    "MAPOBJECT_NAME_ItemChest_03": {
+      "TextData": "Refined Metal Chest"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_02": {
+      "TextData": "Straw Pal Bed"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_03": {
+      "TextData": "Fluffy Pal Bed"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_04": {
+      "TextData": "Large Pal Bed"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_01": {
+      "TextData": "Medieval Medicine Workbench"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_02": {
+      "TextData": "Electric Medicine Workbench"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_03_Old": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_PalFoodBox": {
+      "TextData": "Feed Box"
+    },
+    "MAPOBJECT_NAME_PalStorage": {
+      "TextData": "Palbox"
+    },
+    "MAPOBJECT_NAME_PalBoxV2": {
+      "TextData": "Palbox"
+    },
+    "MAPOBJECT_NAME_DisplayCharacter": {
+      "TextData": "Viewing Cage"
+    },
+    "MAPOBJECT_NAME_PickupItem_Flint": {
+      "TextData": "Flint Stone"
+    },
+    "MAPOBJECT_NAME_PickupItem_Log": {
+      "TextData": "Lumber"
+    },
+    "MAPOBJECT_NAME_PickupItem_RedBerry": {
+      "TextData": "Red Berry"
+    },
+    "MAPOBJECT_NAME_PickupItem_Stone": {
+      "TextData": "Small Rock"
+    },
+    "MAPOBJECT_NAME_PickupItem_Potato": {
+      "TextData": "Potato"
+    },
+    "MAPOBJECT_NAME_PlayerBed_02": {
+      "TextData": "Shoddy Bed"
+    },
+    "MAPOBJECT_NAME_PlayerBed_03": {
+      "TextData": "Fine Bed"
+    },
+    "MAPOBJECT_NAME_PlayerBed": {
+      "TextData": "Human Bed"
+    },
+    "MAPOBJECT_NAME_ShippingItemBox": {
+      "TextData": "Shipping Box"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_01": {
+      "TextData": "Sphere Workbench"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_02": {
+      "TextData": "Sphere Assembly Line"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_03": {
+      "TextData": "Sphere Assembly Line II"
+    },
+    "MAPOBJECT_NAME_SphereFactory_White_01": {
+      "TextData": "Superior Sphere Factory Ⅰ"
+    },
+    "MAPOBJECT_NAME_SphereFactory_White_02": {
+      "TextData": "Superior Sphere Factory Ⅱ"
+    },
+    "MAPOBJECT_NAME_SphereFactory_White_03": {
+      "TextData": "Superior Sphere Factory Ⅲ"
+    },
+    "MAPOBJECT_NAME_StationDeforest": {
+      "TextData": "Stone Pit"
+    },
+    "MAPOBJECT_NAME_Stonehouse1": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_StonePit": {
+      "TextData": "Stone Pit"
+    },
+    "MAPOBJECT_NAME_CopperMine": {
+      "TextData": "CopperMine"
+    },
+    "MAPOBJECT_NAME_SteelMine": {
+      "TextData": "SteelMine"
+    },
+    "MAPOBJECT_NAME_Strawhouse1": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_TEST_TestGlobalContainer": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_Wall": {
+      "TextData": "Wall"
+    },
+    "MAPOBJECT_NAME_Wall_Stone": {
+      "TextData": "Wall"
+    },
+    "MAPOBJECT_NAME_Wall_Wood": {
+      "TextData": "Wall"
+    },
+    "MAPOBJECT_NAME_WeaponChest": {
+      "TextData": "Weapon Chest"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Base": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Clean_01": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Clean_02": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Clean_03": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_01": {
+      "TextData": "Weapon Workbench"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_02": {
+      "TextData": "Weapon Assembly Line"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_03": {
+      "TextData": "Weapon Assembly Line II"
+    },
+    "MAPOBJECT_NAME_WeaponFactry": {
+      "TextData": "Weapon Factory"
+    },
+    "MAPOBJECT_NAME_Well": {
+      "TextData": "Water Well"
+    },
+    "MAPOBJECT_NAME_WoodHouse1": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_WorkBench": {
+      "TextData": "Primitive Workbench"
+    },
+    "MAPOBJECT_NAME_RecoverOtomo": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_PalEgg": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Fire": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Water": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Leaf": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Electricity": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Ice": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Earth": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Dark": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_PalEgg_Dragon": {
+      "TextData": "Pal Egg"
+    },
+    "MAPOBJECT_NAME_HatchingPalEgg": {
+      "TextData": "Egg Incubator"
+    },
+    "MAPOBJECT_NAME_TowerFastTravelPoint": {
+      "TextData": "Great Eagle Statue"
+    },
+    "MAPOBJECT_NAME_StationDeforest2": {
+      "TextData": "Logging Site"
+    },
+    "MAPOBJECT_NAME_WorkBench_SkillUnlock": {
+      "TextData": "Pal Gear Workbench"
+    },
+    "MAPOBJECT_NAME_WorkBench_SkillCard": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_Foundation": {
+      "TextData": "Foundation"
+    },
+    "MAPOBJECT_NAME_Roof": {
+      "TextData": "Roof"
+    },
+    "MAPOBJECT_NAME_Stairs": {
+      "TextData": "Stairs"
+    },
+    "MAPOBJECT_NAME_Wooden_foundation": {
+      "TextData": "Wooden Foundation"
+    },
+    "MAPOBJECT_NAME_Wooden_wall": {
+      "TextData": "Wooden Wall"
+    },
+    "MAPOBJECT_NAME_Wooden_roof": {
+      "TextData": "Wooden Roof"
+    },
+    "MAPOBJECT_NAME_Wooden_stair": {
+      "TextData": "Wooden Stairs"
+    },
+    "MAPOBJECT_NAME_Wooden_DoorWall": {
+      "TextData": "Wooden Door"
+    },
+    "MAPOBJECT_NAME_Stone_foundation": {
+      "TextData": "Stone Foundation"
+    },
+    "MAPOBJECT_NAME_Stone_wall": {
+      "TextData": "Stone Wall"
+    },
+    "MAPOBJECT_NAME_Stone_roof": {
+      "TextData": "Stone Roof"
+    },
+    "MAPOBJECT_NAME_Stone_stair": {
+      "TextData": "Stone Stairs"
+    },
+    "MAPOBJECT_NAME_Metal_foundation": {
+      "TextData": "Metal Foundation"
+    },
+    "MAPOBJECT_NAME_Metal_wall": {
+      "TextData": "Metal Wall"
+    },
+    "MAPOBJECT_NAME_Metal_roof": {
+      "TextData": "Metal Roof"
+    },
+    "MAPOBJECT_NAME_Metal_stair": {
+      "TextData": "Metal Stairs"
+    },
+    "MAPOBJECT_NAME_Heater": {
+      "TextData": "Heater"
+    },
+    "MAPOBJECT_NAME_ElectricHeater": {
+      "TextData": "Electric Heater"
+    },
+    "MAPOBJECT_NAME_Cooler": {
+      "TextData": "Cooler"
+    },
+    "MAPOBJECT_NAME_ElectricCooler": {
+      "TextData": "Electric Cooler"
+    },
+    "MAPOBJECT_NAME_Torch": {
+      "TextData": "Mounted Torch"
+    },
+    "MAPOBJECT_NAME_WallTorch": {
+      "TextData": "Wall Torch"
+    },
+    "MAPOBJECT_NAME_Lamp": {
+      "TextData": "Lamp"
+    },
+    "MAPOBJECT_NAME_CeilingLamp": {
+      "TextData": "Ceiling Lamp"
+    },
+    "MAPOBJECT_NAME_LargeLamp": {
+      "TextData": "Large Mounted Lamp"
+    },
+    "MAPOBJECT_NAME_LargeCeilingLamp": {
+      "TextData": "Large Ceiling Lamp"
+    },
+    "MAPOBJECT_NAME_BuildableGoddessStatue": {
+      "TextData": "Statue of Power"
+    },
+    "MAPOBJECT_NAME_Spa": {
+      "TextData": "Hot Spring"
+    },
+    "MAPOBJECT_NAME_Spa2": {
+      "TextData": "High Quality Hot Spring"
+    },
+    "MAPOBJECT_NAME_PickupItem_Mushroom": {
+      "TextData": "Mushroom"
+    },
+    "MAPOBJECT_NAME_PickupItem_Poppy": {
+      "TextData": "Beautiful Flower"
+    },
+    "MAPOBJECT_NAME_DefenseWall": {
+      "TextData": "Stone Defensive Wall"
+    },
+    "MAPOBJECT_NAME_Crusher": {
+      "TextData": "Crusher"
+    },
+    "MAPOBJECT_NAME_WoodCrusher": {
+      "TextData": "Wood Dismantling Table"
+    },
+    "MAPOBJECT_NAME_FlourMill": {
+      "TextData": "Mill"
+    },
+    "MAPOBJECT_NAME_Trap_LegHold": {
+      "TextData": "Bear Trap (Small)"
+    },
+    "MAPOBJECT_NAME_Trap_LegHold_Big": {
+      "TextData": "Bear Trap (Large)"
+    },
+    "MAPOBJECT_NAME_Trap_Noose": {
+      "TextData": "Hanging Trap"
+    },
+    "MAPOBJECT_NAME_Trap_MovingPanel": {
+      "TextData": "Moving Panels"
+    },
+    "MAPOBJECT_NAME_Trap_MineElecShock": {
+      "TextData": "Electric Mine"
+    },
+    "MAPOBJECT_NAME_Trap_MineFreeze": {
+      "TextData": "Ice Mine"
+    },
+    "MAPOBJECT_NAME_Trap_MineAttack": {
+      "TextData": "Mine"
+    },
+    "MAPOBJECT_NAME_BreedFarm": {
+      "TextData": "Breeding Farm"
+    },
+    "MAPOBJECT_NAME_ToolBoxV2": {
+      "TextData": "ToolBox"
+    },
+    "MAPOBJECT_NAME_ToolBoxV1": {
+      "TextData": "Large Toolbox"
+    },
+    "MAPOBJECT_NAME_OlympicCauldron": {
+      "TextData": "Flame Cauldron"
+    },
+    "MAPOBJECT_NAME_Fountain": {
+      "TextData": "Water Fountain"
+    },
+    "MAPOBJECT_NAME_Silo": {
+      "TextData": "Silo"
+    },
+    "MAPOBJECT_NAME_TransmissionTower": {
+      "TextData": "Electric Pylon"
+    },
+    "MAPOBJECT_NAME_FlowerBed": {
+      "TextData": "Flower Bed"
+    },
+    "MAPOBJECT_NAME_Stump": {
+      "TextData": "Stump and Axe"
+    },
+    "MAPOBJECT_NAME_MiningTool": {
+      "TextData": "Mining Cart"
+    },
+    "MAPOBJECT_NAME_Cauldron": {
+      "TextData": "Witch Cauldron"
+    },
+    "MAPOBJECT_NAME_Snowman": {
+      "TextData": "Snowman"
+    },
+    "MAPOBJECT_NAME_Stone_DoorWall": {
+      "TextData": "Stone Door"
+    },
+    "MAPOBJECT_NAME_Metal_DoorWall": {
+      "TextData": "Metal Door"
+    },
+    "MAPOBJECT_NAME_CoolerBox": {
+      "TextData": "Cooler Box"
+    },
+    "MAPOBJECT_NAME_Refrigerator": {
+      "TextData": "Refrigerator"
+    },
+    "MAPOBJECT_NAME_Decal_PalSticker_PinkCat": {
+      "TextData": "Tuppanyan sticker"
+    },
+    "MAPOBJECT_NAME_MonsterFarm": {
+      "TextData": "Ranch"
+    },
+    "MAPOBJECT_NAME_Wood_Gate": {
+      "TextData": "Wooden Gate"
+    },
+    "MAPOBJECT_NAME_Stone_Gate": {
+      "TextData": "Stone Gate"
+    },
+    "MAPOBJECT_NAME_Metal_Gate": {
+      "TextData": "Iron Gate"
+    },
+    "MAPOBJECT_NAME_RepairBench": {
+      "TextData": "Repair Bench"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkHard": {
+      "TextData": "Monitoring Stand"
+    },
+    "MAPOBJECT_NAME_Signboard": {
+      "TextData": "Sign"
+    },
+    "MAPOBJECT_NAME_BaseCampBattleDirector": {
+      "TextData": "Alarm Bell"
+    },
+    "MAPOBJECT_NAME_TableSquare_Wood": {
+      "TextData": "Square Table"
+    },
+    "MAPOBJECT_NAME_TableCircular_Wood": {
+      "TextData": "Round Table"
+    },
+    "MAPOBJECT_NAME_Bench_Wood": {
+      "TextData": "Wooden Bench"
+    },
+    "MAPOBJECT_NAME_Stool_Wood": {
+      "TextData": "Wooden Stool"
+    },
+    "MAPOBJECT_NAME_Stool_High_Wood": {
+      "TextData": "Wooden Bar Stool"
+    },
+    "MAPOBJECT_NAME_Barrel_Wood": {
+      "TextData": "Wooden Barrel"
+    },
+    "MAPOBJECT_NAME_Box_Wood": {
+      "TextData": "Wooden Box"
+    },
+    "MAPOBJECT_NAME_Shelf_Wood": {
+      "TextData": "Wooden Shelf"
+    },
+    "MAPOBJECT_NAME_Shelf_Cask_Wood": {
+      "TextData": "Wooden Barrel Shelf"
+    },
+    "MAPOBJECT_NAME_Shelf_Hang01_Wood": {
+      "TextData": "Wooden Wall Shelf"
+    },
+    "MAPOBJECT_NAME_Shelf_Hang02_Wood": {
+      "TextData": "Wooden Decorative Wall Shelf"
+    },
+    "MAPOBJECT_NAME_Counter_Wood": {
+      "TextData": "Wooden Counter"
+    },
+    "MAPOBJECT_NAME_Rug_Wood": {
+      "TextData": "Fur rug"
+    },
+    "MAPOBJECT_NAME_Ivy01": {
+      "TextData": "Big Wall Ivy"
+    },
+    "MAPOBJECT_NAME_Ivy02": {
+      "TextData": "Small Wall Ivy"
+    },
+    "MAPOBJECT_NAME_Ivy03": {
+      "TextData": "Horizontal Wall Ivy"
+    },
+    "MAPOBJECT_NAME_DamagedScarecrow": {
+      "TextData": "Training Dummy"
+    },
+    "MAPOBJECT_NAME_Chair01_Wood": {
+      "TextData": "Wooden Chair"
+    },
+    "MAPOBJECT_NAME_Barrel01_Iron": {
+      "TextData": "Red Metal Barrel"
+    },
+    "MAPOBJECT_NAME_Barrel02_Iron": {
+      "TextData": "Blue Metal Barrel"
+    },
+    "MAPOBJECT_NAME_Barrel03_Iron": {
+      "TextData": "Green Metal Barrel"
+    },
+    "MAPOBJECT_NAME_Box01_Iron": {
+      "TextData": "Small Container"
+    },
+    "MAPOBJECT_NAME_Box02_Iron": {
+      "TextData": "Cloth Covered Container"
+    },
+    "MAPOBJECT_NAME_CableCoil01_Iron": {
+      "TextData": "Cable Reel"
+    },
+    "MAPOBJECT_NAME_Chair01_Iron": {
+      "TextData": "Leather Chair"
+    },
+    "MAPOBJECT_NAME_Chair02_Iron": {
+      "TextData": "Iron Chair"
+    },
+    "MAPOBJECT_NAME_Clock01_Wall_Iron": {
+      "TextData": "Wall Clock"
+    },
+    "MAPOBJECT_NAME_Container01_Iron": {
+      "TextData": "Large Container"
+    },
+    "MAPOBJECT_NAME_GarbageBag_Iron": {
+      "TextData": "Garbage Bag"
+    },
+    "MAPOBJECT_NAME_GoalSoccer_Iron": {
+      "TextData": "Soccer Goal"
+    },
+    "MAPOBJECT_NAME_MachineGame01_Iron": {
+      "TextData": "Claw Machine"
+    },
+    "MAPOBJECT_NAME_MachineVending01_Iron": {
+      "TextData": "Cola Vending Machine"
+    },
+    "MAPOBJECT_NAME_PipeClay01_Iron": {
+      "TextData": "Earthen Pipe"
+    },
+    "MAPOBJECT_NAME_Shelf01_Iron": {
+      "TextData": "Iron Shelf"
+    },
+    "MAPOBJECT_NAME_Shelf02_Iron": {
+      "TextData": "Long Iron Shelf"
+    },
+    "MAPOBJECT_NAME_Shelf03_Iron": {
+      "TextData": "Orange Locker"
+    },
+    "MAPOBJECT_NAME_Shelf04_Iron": {
+      "TextData": "Locker"
+    },
+    "MAPOBJECT_NAME_SignExit_Ceiling_Iron": {
+      "TextData": "Emergency Exit Ceiling Sign"
+    },
+    "MAPOBJECT_NAME_SignExit_Wall_Iron": {
+      "TextData": "Emergency Exit Wall Sign"
+    },
+    "MAPOBJECT_NAME_Sofa01_Iron": {
+      "TextData": "Leather Armchair"
+    },
+    "MAPOBJECT_NAME_Sofa02_Iron": {
+      "TextData": "Leather Couch"
+    },
+    "MAPOBJECT_NAME_Stool01_Iron": {
+      "TextData": "Iron Stool"
+    },
+    "MAPOBJECT_NAME_TableCircular01_Iron": {
+      "TextData": "Round Iron Table"
+    },
+    "MAPOBJECT_NAME_TableSide01_Iron": {
+      "TextData": "Ironwood Side Table"
+    },
+    "MAPOBJECT_NAME_TableSquare01_Iron": {
+      "TextData": "Ironwood Table"
+    },
+    "MAPOBJECT_NAME_TableSquare02_Iron": {
+      "TextData": "Ironwood Low Table"
+    },
+    "MAPOBJECT_NAME_Tire01_Iron": {
+      "TextData": "Tire"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade01_Iron": {
+      "TextData": "Barricade"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade02_Iron": {
+      "TextData": "Orange Barricade"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade03_Iron": {
+      "TextData": "Red Iron Barricade"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade04_Iron": {
+      "TextData": "White Iron Barricade"
+    },
+    "MAPOBJECT_NAME_TrafficBarricade05_Iron": {
+      "TextData": "Iron Fence"
+    },
+    "MAPOBJECT_NAME_TrafficCone01_Iron": {
+      "TextData": "Traffic Cone"
+    },
+    "MAPOBJECT_NAME_TrafficCone02_Iron": {
+      "TextData": "Fat Traffic Cone"
+    },
+    "MAPOBJECT_NAME_TrafficCone03_Iron": {
+      "TextData": "Skinny Traffic Cone"
+    },
+    "MAPOBJECT_NAME_TrafficLight01_Iron": {
+      "TextData": "Traffic Light"
+    },
+    "MAPOBJECT_NAME_BathTub_Stone": {
+      "TextData": "Antique Bathtub"
+    },
+    "MAPOBJECT_NAME_Box01_Stone": {
+      "TextData": "Antique Braided Basket"
+    },
+    "MAPOBJECT_NAME_Chair01_Stone": {
+      "TextData": "Antique Wooden Chair"
+    },
+    "MAPOBJECT_NAME_Chair02_Stone": {
+      "TextData": "Antique Green Wooden Chair"
+    },
+    "MAPOBJECT_NAME_Clock01_Stone": {
+      "TextData": "Antique Grandfather Clock"
+    },
+    "MAPOBJECT_NAME_Curtain01_Wall_Stone": {
+      "TextData": "Antique Curtain"
+    },
+    "MAPOBJECT_NAME_Desk01_Stone": {
+      "TextData": "Antique Desk"
+    },
+    "MAPOBJECT_NAME_Globe01_Stone": {
+      "TextData": "Antique Globe"
+    },
+    "MAPOBJECT_NAME_Mirror01_Stone": {
+      "TextData": "Antique Oval Mirror"
+    },
+    "MAPOBJECT_NAME_Mirror02_Stone": {
+      "TextData": "Antique Mirror"
+    },
+    "MAPOBJECT_NAME_Mirror01_Wall_Stone": {
+      "TextData": "Antique Wall Mirror"
+    },
+    "MAPOBJECT_NAME_Partition_Stone": {
+      "TextData": "Antique Partition"
+    },
+    "MAPOBJECT_NAME_Piano01_Stone": {
+      "TextData": "Grand Piano"
+    },
+    "MAPOBJECT_NAME_Piano02_Stone": {
+      "TextData": "Upright Piano"
+    },
+    "MAPOBJECT_NAME_Rug01_Stone": {
+      "TextData": "Antique Carpet"
+    },
+    "MAPOBJECT_NAME_Rug02_Stone": {
+      "TextData": "Antique Red Carpet"
+    },
+    "MAPOBJECT_NAME_Rug03_Stone": {
+      "TextData": "Antique Green Carpet"
+    },
+    "MAPOBJECT_NAME_Rug04_Stone": {
+      "TextData": "Antique Long Carpet"
+    },
+    "MAPOBJECT_NAME_Shelf01_Stone": {
+      "TextData": "Antique Bookshelf"
+    },
+    "MAPOBJECT_NAME_Shelf02_Stone": {
+      "TextData": "Antique Wardrobe"
+    },
+    "MAPOBJECT_NAME_Shelf03_Stone": {
+      "TextData": "Antique Chest"
+    },
+    "MAPOBJECT_NAME_Shelf04_Stone": {
+      "TextData": "Antique Side Chest"
+    },
+    "MAPOBJECT_NAME_Shelf05_Stone": {
+      "TextData": "Antique Cabinet"
+    },
+    "MAPOBJECT_NAME_Shelf06_Stone": {
+      "TextData": "Antique Long Cabinet"
+    },
+    "MAPOBJECT_NAME_Shelf07_Stone": {
+      "TextData": "Large Antique Cabinet"
+    },
+    "MAPOBJECT_NAME_Shelf01_Wall_Stone": {
+      "TextData": "Antique Wall Cabinet"
+    },
+    "MAPOBJECT_NAME_Sofa01_Stone": {
+      "TextData": "Antique Armchair"
+    },
+    "MAPOBJECT_NAME_Sofa02_Stone": {
+      "TextData": "Antique Couch"
+    },
+    "MAPOBJECT_NAME_Sofa03_Stone": {
+      "TextData": "Antique Ottoman"
+    },
+    "MAPOBJECT_NAME_Stool01_Stone": {
+      "TextData": "Antique Stool"
+    },
+    "MAPOBJECT_NAME_Stove01_Stone": {
+      "TextData": "Antique Stove"
+    },
+    "MAPOBJECT_NAME_TableCircular01_Stone": {
+      "TextData": "Antique Round Table"
+    },
+    "MAPOBJECT_NAME_TableDresser01_Stone": {
+      "TextData": "Antique Dresser"
+    },
+    "MAPOBJECT_NAME_TableSink01_Stone": {
+      "TextData": "Antique Washstand"
+    },
+    "MAPOBJECT_NAME_Toilet01_Stone": {
+      "TextData": "Antique Toilet"
+    },
+    "MAPOBJECT_NAME_ToiletHolder01_Stone": {
+      "TextData": "Antique Toilet Paper Holder"
+    },
+    "MAPOBJECT_NAME_TowlRack01_Stone": {
+      "TextData": "Antique Towel Rack"
+    },
+    "MAPOBJECT_NAME_Plant01_Plant": {
+      "TextData": "Houseplant"
+    },
+    "MAPOBJECT_NAME_Plant02_Plant": {
+      "TextData": "Houseplant and Chair"
+    },
+    "MAPOBJECT_NAME_Plant03_Plant": {
+      "TextData": "Tabletop Houseplant"
+    },
+    "MAPOBJECT_NAME_Plant04_Plant": {
+      "TextData": "Potted Houseplant"
+    },
+    "MAPOBJECT_NAME_Light_FloorLamp01": {
+      "TextData": "Antique Brown Floor Lamp"
+    },
+    "MAPOBJECT_NAME_Light_FloorLamp02": {
+      "TextData": "Antique Red Floor Lamp"
+    },
+    "MAPOBJECT_NAME_Light_LightPole01": {
+      "TextData": "Simple Street Lamp"
+    },
+    "MAPOBJECT_NAME_Light_LightPole02": {
+      "TextData": "Double Street Lamp"
+    },
+    "MAPOBJECT_NAME_Light_LightPole03": {
+      "TextData": "Retro Street Lamp"
+    },
+    "MAPOBJECT_NAME_Light_LightPole04": {
+      "TextData": "Stylish Street Lamp"
+    },
+    "MAPOBJECT_NAME_Light_FirePlace01": {
+      "TextData": "Brick Fireplace"
+    },
+    "MAPOBJECT_NAME_DefenseWall_Wood": {
+      "TextData": "Wooden Defensive Wall"
+    },
+    "MAPOBJECT_NAME_DefenseWall_Metal": {
+      "TextData": "Metal Defensive Wall"
+    },
+    "MAPOBJECT_NAME_Light_FirePlace02": {
+      "TextData": "Fireplace"
+    },
+    "MAPOBJECT_NAME_Light_CandleSticks_Top": {
+      "TextData": "Chandelier"
+    },
+    "MAPOBJECT_NAME_Light_CandleSticks_Wall": {
+      "TextData": "Wall Lamp"
+    },
+    "MAPOBJECT_NAME_Television01_Iron": {
+      "TextData": "Old TV"
+    },
+    "MAPOBJECT_NAME_Desk01_Iron": {
+      "TextData": "Iron Desk"
+    },
+    "MAPOBJECT_NAME_Shelf01_Wall_Iron": {
+      "TextData": "Iron Wall Shelf"
+    },
+    "MAPOBJECT_NAME_TrafficSign01_Iron": {
+      "TextData": "No Pals Beyond Sign"
+    },
+    "MAPOBJECT_NAME_TrafficSign02_Iron": {
+      "TextData": "Stop Sign"
+    },
+    "MAPOBJECT_NAME_TrafficSign03_Iron": {
+      "TextData": "Beware of Eikthyrdeer Sign"
+    },
+    "MAPOBJECT_NAME_TrafficSign04_Iron": {
+      "TextData": "Beware of Mammorest Sign"
+    },
+    "MAPOBJECT_NAME_Wood_WindowWall": {
+      "TextData": "Wooden Wall and Window"
+    },
+    "MAPOBJECT_NAME_Stone_WindowWall": {
+      "TextData": "Stone Wall and Window"
+    },
+    "MAPOBJECT_NAME_Metal_WindowWall": {
+      "TextData": "Metal Wall and Window"
+    },
+    "MAPOBJECT_NAME_Wood_TriangleWall": {
+      "TextData": "Wooden Triangular Wall"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleWall": {
+      "TextData": "Stone Triangular Wall"
+    },
+    "MAPOBJECT_NAME_Metal_TriangleWall": {
+      "TextData": "Metal Triangular Wall"
+    },
+    "MAPOBJECT_NAME_Wood_SlantedRoof": {
+      "TextData": "Wooden Slanted Roof"
+    },
+    "MAPOBJECT_NAME_Stone_SlantedRoof": {
+      "TextData": "Stone Slanted Roof"
+    },
+    "MAPOBJECT_NAME_Metal_SlantedRoof": {
+      "TextData": "Metal Slanted Roof"
+    },
+    "MAPOBJECT_NAME_Chair01_Pal": {
+      "TextData": "Frog Chair"
+    },
+    "MAPOBJECT_NAME_Altar": {
+      "TextData": "Summoning Altar"
+    },
+    "MAPOBJECT_NAME_CopperPit": {
+      "TextData": "Ore Mining Site"
+    },
+    "MAPOBJECT_NAME_CopperPit_2": {
+      "TextData": "Ore Mining Site II"
+    },
+    "MAPOBJECT_NAME_ElectricHatchingPalEgg": {
+      "TextData": "Electric Egg Incubator"
+    },
+    "MAPOBJECT_NAME_PickupItem_CaveMushroom": {
+      "TextData": "Grotto Mushroom"
+    },
+    "MAPOBJECT_NAME_CoolerPalFoodBox": {
+      "TextData": "Cold Food Box"
+    },
+    "MAPOBJECT_NAME_AntiAircraft_LaserTower": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_AntiAircraft_MachineGun": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Oilrig": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_OilRig": {
+      "TextData": "-"
+    },
+    "MAPOBJECT_NAME_SulfurPit": {
+      "TextData": "Sulfur Quarry"
+    },
+    "MAPOBJECT_NAME_CoalPit": {
+      "TextData": "Coal Quarry"
+    },
+    "MAPOBJECT_NAME_IceCrusher": {
+      "TextData": "Cryogenic Crusher"
+    },
+    "MAPOBJECT_NAME_DismantlingConveyor": {
+      "TextData": "Pal Disassembly Conveyor"
+    },
+    "MAPOBJECT_NAME_WallSignboard": {
+      "TextData": "Wall-Mounted Sign"
+    },
+    "MAPOBJECT_NAME_Glass_foundation": {
+      "TextData": "Glass Foundation"
+    },
+    "MAPOBJECT_NAME_Glass_wall": {
+      "TextData": "Glass Wall"
+    },
+    "MAPOBJECT_NAME_Glass_roof": {
+      "TextData": "Glass Roof"
+    },
+    "MAPOBJECT_NAME_Glass_stair": {
+      "TextData": "Glass Stairs"
+    },
+    "MAPOBJECT_NAME_Glass_DoorWall": {
+      "TextData": "Glass Wall and Door"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleWall": {
+      "TextData": "Glass Triangular Wall"
+    },
+    "MAPOBJECT_NAME_Glass_SlantedRoof": {
+      "TextData": "Glass Slanted Roof"
+    },
+    "MAPOBJECT_NAME_Glass_WindowWall": {
+      "TextData": "Glass Wall and Window"
+    },
+    "MAPOBJECT_NAME_Wooden_Pillar": {
+      "TextData": "Wooden Pillar"
+    },
+    "MAPOBJECT_NAME_Stone_Pillar": {
+      "TextData": "Stone Pillar"
+    },
+    "MAPOBJECT_NAME_Metal_Pillars": {
+      "TextData": "Metal Pillar"
+    },
+    "MAPOBJECT_NAME_Glass_Pillars": {
+      "TextData": "Glass Pillar"
+    },
+    "MAPOBJECT_NAME_MeteorFall": {
+      "TextData": "Meteorite"
+    },
+    "MAPOBJECT_NAME_MeteorDrop_pickup": {
+      "TextData": "Meteorite"
+    },
+    "MAPOBJECT_NAME_SupplyFall": {
+      "TextData": "Supplies"
+    },
+    "MAPOBJECT_NAME_SupplyDrop": {
+      "TextData": "Supplies"
+    },
+    "MAPOBJECT_NAME_MeteorDrop_Damagable": {
+      "TextData": "Meteorite"
+    },
+    "MAPOBJECT_NAME_ElectricGenerator_Large": {
+      "TextData": "Large Power Generator"
+    },
+    "MAPOBJECT_NAME_OilPump": {
+      "TextData": "Crude Oil Extractor"
+    },
+    "MAPOBJECT_NAME_TreasureBox_RequiredLongHold": {
+      "TextData": "Junk (Hold to collect)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Attack_01": {
+      "TextData": "Power Lotus (Small)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Attack_02": {
+      "TextData": "Power Lotus (Large)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_HP_01": {
+      "TextData": "Life Lotus (Small)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_HP_02": {
+      "TextData": "Life Lotus (Large)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Stamina_01": {
+      "TextData": "Stamina Lotus (Small)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Stamina_02": {
+      "TextData": "Stamina Lotus (Large)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Workspeed_01": {
+      "TextData": "Speed Lotus (Small)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Workspeed_02": {
+      "TextData": "Speed Lotus (Large)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Weight_01": {
+      "TextData": "Carry Lotus (Small)"
+    },
+    "MAPOBJECT_NAME_PickupItem_Lotus_Weight_02": {
+      "TextData": "Carry Lotus (Large)"
+    },
+    "MAPOBJECT_NAME_SkinChange": {
+      "TextData": "Pal Dressing Facility"
+    },
+    "MAPOBJECT_NAME_PickupItem_DogCoin": {
+      "TextData": "Dog Coin"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_wall_01": {
+      "TextData": "Japanese-Style Wall"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_wall_02": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DoorWall_01": {
+      "TextData": "Japanese-Style Door A"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DoorWall_02": {
+      "TextData": "Japanese-Style Door B"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DoorWall_03": {
+      "TextData": "Japanese-Style Door C"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_ConnectingWall": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_roof_01": {
+      "TextData": "Japanese-Style Roof A"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_roof_02": {
+      "TextData": "Japanese-Style Roof B"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_SlantedRoof": {
+      "TextData": "Japanese-Style Slanted Roof"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleWall": {
+      "TextData": "Japanese-Style Triangular Wall"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_WindowWall": {
+      "TextData": "Japanese-Style Wall and Window"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_foundation": {
+      "TextData": "Japanese-Style Foundation"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_stair": {
+      "TextData": "Japanese-Style Stairs"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_Pillar": {
+      "TextData": "Japanese-Style Pillar"
+    },
+    "MAPOBJECT_NAME_ItemBooth": {
+      "TextData": "Flea Market (Items)"
+    },
+    "MAPOBJECT_NAME_PalBooth": {
+      "TextData": "Flea Market (Pals)"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Carrot": {
+      "TextData": "Carrot Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Onion": {
+      "TextData": "Onion Plantation"
+    },
+    "MAPOBJECT_NAME_FarmBlockV2_Potato": {
+      "TextData": "Potato Plantation"
+    },
+    "MAPOBJECT_NAME_SphereFactory_Black_04": {
+      "TextData": "Advanced Sphere Assembly Line"
+    },
+    "MAPOBJECT_NAME_MultiElectricHatchingPalEgg": {
+      "TextData": "Large-Scale Electric Egg Incubator"
+    },
+    "MAPOBJECT_NAME_HugeKitchen": {
+      "TextData": "Large-Scale Stone Oven"
+    },
+    "MAPOBJECT_NAME_Factory_Hard_04": {
+      "TextData": "Advanced Workshop"
+    },
+    "MAPOBJECT_NAME_WeaponFactory_Dirty_04": {
+      "TextData": "Advanced Weapon Assembly Line"
+    },
+    "MAPOBJECT_NAME_SanityDecrease1": {
+      "TextData": "Alpha Wave Generator"
+    },
+    "MAPOBJECT_NAME_WorkSpeedIncrease1": {
+      "TextData": "Beta Wave Generator"
+    },
+    "MAPOBJECT_NAME_QuartzPit": {
+      "TextData": "Pure Quartz Quarry"
+    },
+    "MAPOBJECT_NAME_Factory_Money": {
+      "TextData": "Gold Coin Assembly Line"
+    },
+    "MAPOBJECT_NAME_ItemChest_04": {
+      "TextData": "Advanced Chest"
+    },
+    "MAPOBJECT_NAME_MedicalPalBed_05": {
+      "TextData": "Pal Pod"
+    },
+    "MAPOBJECT_NAME_BaseCampItemDispenser": {
+      "TextData": "Item Retrieval Machine"
+    },
+    "MAPOBJECT_NAME_GuildChest": {
+      "TextData": "Guild Chest"
+    },
+    "MAPOBJECT_NAME_WoodCreator": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_Expedition": {
+      "TextData": "Pal Expedition Station"
+    },
+    "MAPOBJECT_NAME_Lab": {
+      "TextData": "Pal Labor Research Lab"
+    },
+    "MAPOBJECT_NAME_OperatingTable": {
+      "TextData": "Pal Surgery Table"
+    },
+    "MAPOBJECT_NAME_ManualElectricGenerator": {
+      "TextData": "Human-Powered Generator"
+    },
+    "MAPOBJECT_NAME_Farm_SkillFruits": {
+      "TextData": "Skillfruit Orchard"
+    },
+    "MAPOBJECT_NAME_Wooden_ladder": {
+      "TextData": "Ladder"
+    },
+    "MAPOBJECT_NAME_PalMedicineBox": {
+      "TextData": "Medicine Rack"
+    },
+    "MAPOBJECT_NAME_EnergyStorage_Electric": {
+      "TextData": "Accumulator"
+    },
+    "MAPOBJECT_NAME_BlastFurnace4": {
+      "TextData": "Gigantic Furnace"
+    },
+    "MAPOBJECT_NAME_MedicineFacility_03": {
+      "TextData": "Advanced Medicine Workbench"
+    },
+    "MAPOBJECT_NAME_PickupItem_NightStone": {
+      "TextData": "Nightstar Sand"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Fire": {
+      "TextData": "Elemental Treasure Chest (Fire)"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Water": {
+      "TextData": "Elemental Treasure Chest (Water)"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Electric": {
+      "TextData": "Elemental Treasure Chest (Electric)"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Ivy": {
+      "TextData": "Elemental Treasure Chest (Grass)"
+    },
+    "MAPOBJECT_NAME_TreasureBox_Ice": {
+      "TextData": "Elemental Treasure Chest (Ice)"
+    },
+    "MAPOBJECT_NAME_Headstone": {
+      "TextData": "Tombstone"
+    },
+    "MAPOBJECT_NAME_Byobu": {
+      "TextData": "Folding Screen"
+    },
+    "MAPOBJECT_NAME_Kakejiku": {
+      "TextData": "Hanging Scroll"
+    },
+    "MAPOBJECT_NAME_Zaisu": {
+      "TextData": "Japanese Floor Chair"
+    },
+    "MAPOBJECT_NAME_Zabuton": {
+      "TextData": "Japanese Floor Cushion"
+    },
+    "MAPOBJECT_NAME_Irori": {
+      "TextData": "Japanese Hearth"
+    },
+    "MAPOBJECT_NAME_Toro": {
+      "TextData": "Stone Lantern"
+    },
+    "MAPOBJECT_NAME_Andon": {
+      "TextData": "Japanese Paper Lantern"
+    },
+    "MAPOBJECT_NAME_Shishiodoshi": {
+      "TextData": "Deer Scare"
+    },
+    "MAPOBJECT_NAME_Bonsai": {
+      "TextData": "Bonsai"
+    },
+    "MAPOBJECT_NAME_Koro": {
+      "TextData": "Incense Burner"
+    },
+    "MAPOBJECT_NAME_Seika": {
+      "TextData": "Flower Arrangement"
+    },
+    "MAPOBJECT_NAME_Tansu": {
+      "TextData": "Japanese-Style Chest"
+    },
+    "MAPOBJECT_NAME_Fudukue": {
+      "TextData": "Japanese Writing Table"
+    },
+    "MAPOBJECT_NAME_GlobalPalStorage": {
+      "TextData": "Global Palbox"
+    },
+    "MAPOBJECT_NAME_CompositeDesk": {
+      "TextData": "Drafting Table"
+    },
+    "MAPOBJECT_NAME_DimensionPalStorage": {
+      "TextData": "Dimensional Pal Storage"
+    },
+    "MAPOBJECT_NAME_Wire_Fence": {
+      "TextData": "Wire Fence"
+    },
+    "MAPOBJECT_NAME_LilyQueenStatue": {
+      "TextData": "Lyleen Statue"
+    },
+    "MAPOBJECT_NAME_ConservationGroupBannerA": {
+      "TextData": "Free Pal Alliance Flag"
+    },
+    "MAPOBJECT_NAME_ConservationGroupBannerB": {
+      "TextData": "Free Pal Alliance Horizontal Banner"
+    },
+    "MAPOBJECT_NAME_Hunter_GangFlag": {
+      "TextData": "Rayne Syndicate Flag"
+    },
+    "MAPOBJECT_NAME_PalCage": {
+      "TextData": "Aerial Cage"
+    },
+    "MAPOBJECT_NAME_WoodenBarricade": {
+      "TextData": "Wooden Barricade"
+    },
+    "MAPOBJECT_NAME_WallTorch02": {
+      "TextData": "Majestic Wall Torch"
+    },
+    "MAPOBJECT_NAME_CandleStand": {
+      "TextData": "Majestic Candlestick"
+    },
+    "MAPOBJECT_NAME_FireStand": {
+      "TextData": "Ceremonial Candlestick"
+    },
+    "MAPOBJECT_NAME_Wood_Fence": {
+      "TextData": "Wooden Fence"
+    },
+    "MAPOBJECT_NAME_Stone_Fence": {
+      "TextData": "Stone Fence"
+    },
+    "MAPOBJECT_NAME_Iron_Fence": {
+      "TextData": "Metal Fence"
+    },
+    "MAPOBJECT_NAME_Glass_Fence": {
+      "TextData": "Glass Fence"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_Fence": {
+      "TextData": "Japanese-Style Fence"
+    },
+    "MAPOBJECT_NAME_SF_Fence": {
+      "TextData": "Clean Fence"
+    },
+    "MAPOBJECT_NAME_CrystalPit": {
+      "TextData": "Hexolite Quartz Mine"
+    },
+    "MAPOBJECT_NAME_Spa3": {
+      "TextData": "Japanese-Style Hot Spring"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkerExtraStation": {
+      "TextData": "Palbox Control Device"
+    },
+    "MAPOBJECT_NAME_LanternTop": {
+      "TextData": "Paper Lantern"
+    },
+    "MAPOBJECT_NAME_Shrine_Lantern": {
+      "TextData": "Red Wooden Lantern"
+    },
+    "MAPOBJECT_NAME_GuardianDogStatue": {
+      "TextData": "Yakumo Statue"
+    },
+    "MAPOBJECT_NAME_MultiHatchingPalEgg": {
+      "TextData": "Large Incubator"
+    },
+    "MAPOBJECT_NAME_SF_foundation": {
+      "TextData": "Clean Foundation"
+    },
+    "MAPOBJECT_NAME_SF_wall": {
+      "TextData": "Clean Wall"
+    },
+    "MAPOBJECT_NAME_SF_roof": {
+      "TextData": "Clean Roof"
+    },
+    "MAPOBJECT_NAME_SF_stair": {
+      "TextData": "Clean Stairs"
+    },
+    "MAPOBJECT_NAME_SF_DoorWall": {
+      "TextData": "Clean Wall and Door"
+    },
+    "MAPOBJECT_NAME_SF_TriangleWall": {
+      "TextData": "Clean Triangular Wall"
+    },
+    "MAPOBJECT_NAME_SF_SlantedRoof": {
+      "TextData": "Clean Slanted Roof"
+    },
+    "MAPOBJECT_NAME_SF_WindowWall": {
+      "TextData": "Clean Wall and Window"
+    },
+    "MAPOBJECT_NAME_SF_Pillars": {
+      "TextData": "Clean Pillar"
+    },
+    "MAPOBJECT_NAME_SF_Desk": {
+      "TextData": "Laboratory Desk"
+    },
+    "MAPOBJECT_NAME_SF_Chair": {
+      "TextData": "Laboratory Chair"
+    },
+    "MAPOBJECT_NAME_Hunter_Flag": {
+      "TextData": "Rayne Syndicate Standard"
+    },
+    "MAPOBJECT_NAME_Hunter_Banner": {
+      "TextData": "Rayne Syndicate Vertical Banner"
+    },
+    "MAPOBJECT_NAME_Believer_Flag": {
+      "TextData": "Free Pal Alliance Standard"
+    },
+    "MAPOBJECT_NAME_Believer_Banner": {
+      "TextData": "Free Pal Alliance Vertical Banner"
+    },
+    "MAPOBJECT_NAME_FireCult_Flag": {
+      "TextData": "Brothers of the Eternal Pyre Standard"
+    },
+    "MAPOBJECT_NAME_FireCult_Banner": {
+      "TextData": "Brothers of the Eternal Pyre Vertical Banner"
+    },
+    "MAPOBJECT_NAME_Police_Flag": {
+      "TextData": "PIDF Standard"
+    },
+    "MAPOBJECT_NAME_Police_Banner": {
+      "TextData": "PIDF Vertical Banner"
+    },
+    "MAPOBJECT_NAME_Scientist_Flag": {
+      "TextData": "PAL Genetic Research Unit Standard"
+    },
+    "MAPOBJECT_NAME_Scientist_Banner": {
+      "TextData": "PAL Genetic Research Unit Vertical Banner"
+    },
+    "MAPOBJECT_NAME_Ninja_Flag": {
+      "TextData": "Moonflower Standard"
+    },
+    "MAPOBJECT_NAME_Ninja_Banner": {
+      "TextData": "Moonflower Vertical Banner"
+    },
+    "MAPOBJECT_NAME_FishingPond1": {
+      "TextData": "Fishing Pond"
+    },
+    "MAPOBJECT_NAME_FishingPond2": {
+      "TextData": "Large Fishing Pond"
+    },
+    "MAPOBJECT_NAME_DamagableRock0019": {
+      "TextData": "Hexolite Quartz"
+    },
+    "MAPOBJECT_NAME_YakushimaBoss002_Relic": {
+      "TextData": "Moon Lord Statue"
+    },
+    "MAPOBJECT_NAME_Wooden_TriangleFoundation": {
+      "TextData": "Wooden Triangular Foundation"
+    },
+    "MAPOBJECT_NAME_Wooden_DiagonalWall": {
+      "TextData": "Wooden Diagonal Wall"
+    },
+    "MAPOBJECT_NAME_Wooden_TriangleRoof": {
+      "TextData": "Wooden Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Wooden_TriangleStairsCorner": {
+      "TextData": "Wooden Corner Roof"
+    },
+    "MAPOBJECT_NAME_Wood_TriangleWallReverse": {
+      "TextData": "Wooden Triangular Wall (Inverted)"
+    },
+    "MAPOBJECT_NAME_Wooden_WallGate": {
+      "TextData": "Wooden Pal Passage Entrance"
+    },
+    "MAPOBJECT_NAME_Wooden_SlopedRoofCorner": {
+      "TextData": "Wooden Slanted Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Wooden_PyramidRoof": {
+      "TextData": "Wooden Pyramid Roof"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleFoundation": {
+      "TextData": "Stone Triangular Foundation"
+    },
+    "MAPOBJECT_NAME_Stone_DiagonalWall": {
+      "TextData": "Stone Diagonal Wall"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleRoof": {
+      "TextData": "Stone Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleStairsCorner": {
+      "TextData": "Stone Corner Roof"
+    },
+    "MAPOBJECT_NAME_Stone_TriangleWallReverse": {
+      "TextData": "Stone Triangular Wall (Inverted)"
+    },
+    "MAPOBJECT_NAME_Stone_WallGate": {
+      "TextData": "Stone Pal Passage Entrance"
+    },
+    "MAPOBJECT_NAME_Stone_SlopedRoofCorner": {
+      "TextData": "Stone Slanted Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Stone_PyramidRoof": {
+      "TextData": "Stone Pyramid Roof"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleFoundation": {
+      "TextData": "Metal Triangular Foundation"
+    },
+    "MAPOBJECT_NAME_Iron_DiagonalWall": {
+      "TextData": "Metal Diagonal Wall"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleRoof": {
+      "TextData": "Metal Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleStairsCorner": {
+      "TextData": "Metal Corner Roof"
+    },
+    "MAPOBJECT_NAME_Iron_TriangleWallReverse": {
+      "TextData": "Metal Triangular Wall (Inverted)"
+    },
+    "MAPOBJECT_NAME_Iron_WallGate": {
+      "TextData": "Metal Pal Passage Entrance"
+    },
+    "MAPOBJECT_NAME_Iron_SlopedRoofCorner": {
+      "TextData": "Metal Slanted Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Iron_PyramidRoof": {
+      "TextData": "Metal Pyramid Roof"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleFoundation": {
+      "TextData": "Glass Triangular Foundation"
+    },
+    "MAPOBJECT_NAME_Glass_DiagonalWall": {
+      "TextData": "Glass Diagonal Wall"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleRoof": {
+      "TextData": "Glass Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleStairsCorner": {
+      "TextData": "Glass Corner Roof"
+    },
+    "MAPOBJECT_NAME_Glass_TriangleWallReverse": {
+      "TextData": "Glass Triangular Wall (Inverted)"
+    },
+    "MAPOBJECT_NAME_Glass_WallGate": {
+      "TextData": "Glass Pal Passage Entrance"
+    },
+    "MAPOBJECT_NAME_Glass_SlopedRoofCorner": {
+      "TextData": "Glass Slanted Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Glass_PyramidRoof": {
+      "TextData": "Glass Pyramid Roof"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleFoundation": {
+      "TextData": "Japanese-Style Triangular Foundation"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_DiagonalWall": {
+      "TextData": "Japanese-Style Diagonal Wall"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleRoof_01": {
+      "TextData": "Japanese-Style Triangular Roof A"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleRoof_02": {
+      "TextData": "Japanese-Style Triangular Roof B"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleStairsCorner_01": {
+      "TextData": "Japanese-Style Corner Roof"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleStairsCorner_02": {
+      "TextData": "en Text"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_TriangleWallReverse": {
+      "TextData": "Japanese-Style Triangular Wall (Inverted)"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_WallGate": {
+      "TextData": "Japanese-Style Pal Passage Entrance"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_SlopedRoofCorner": {
+      "TextData": "Japanese-Style Slanted Triangular Roof"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_PyramidRoof": {
+      "TextData": "Japanese-Style Pyramid Roof"
+    },
+    "MAPOBJECT_NAME_SF_TriangleFoundation": {
+      "TextData": "Clean Triangular Foundation"
+    },
+    "MAPOBJECT_NAME_SF_DiagonalWall": {
+      "TextData": "Clean Diagonal Wall"
+    },
+    "MAPOBJECT_NAME_SF_TriangleRoof": {
+      "TextData": "Clean Triangular Roof"
+    },
+    "MAPOBJECT_NAME_SF_TriangleStairsCorner": {
+      "TextData": "Clean Corner Roof"
+    },
+    "MAPOBJECT_NAME_SF_TriangleWallReverse": {
+      "TextData": "Clean Triangular Wall (Inverted)"
+    },
+    "MAPOBJECT_NAME_SF_WallGate": {
+      "TextData": "Clean Pal Passage Entrance"
+    },
+    "MAPOBJECT_NAME_SF_SlopedRoofCorner": {
+      "TextData": "Clean Slanted Triangular Roof"
+    },
+    "MAPOBJECT_NAME_SF_PyramidRoof": {
+      "TextData": "Clean Pyramid Roof"
+    },
+    "MAPOBJECT_NAME_AncientRelicRecycler": {
+      "TextData": "Ancient Relic Recycler"
+    },
+    "MAPOBJECT_NAME_DamagableBone0001": {
+      "TextData": "Ancient Remains"
+    },
+    "MAPOBJECT_NAME_DamagableRock0022": {
+      "TextData": "Ancient Lava"
+    },
+    "MAPOBJECT_NAME_AncientWorkBench": {
+      "TextData": "Ancient Workbench"
+    },
+    "MAPOBJECT_NAME_AncientElectricGenerator": {
+      "TextData": "Ancient Power Generator"
+    },
+    "MAPOBJECT_NAME_AncientBlastFurnace": {
+      "TextData": "Ancient Furnace"
+    },
+    "MAPOBJECT_NAME_AncientCookingStove": {
+      "TextData": "Ancient Kitchen"
+    },
+    "MAPOBJECT_NAME_AncientMultiProduct": {
+      "TextData": "Ancient Material Synthesizer"
+    },
+    "MAPOBJECT_NAME_AncientFarmBlock": {
+      "TextData": "Ancient Farm"
+    },
+    "MAPOBJECT_NAME_DefenseMachinegun_AutoTurret": {
+      "TextData": "Ancient Turret"
+    },
+    "MAPOBJECT_NAME_MultiElectricHatchingPalEggWithBreed": {
+      "TextData": "Ancient Hatchery"
+    },
+    "MAPOBJECT_NAME_DamagableRock0020": {
+      "TextData": "Soralite"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkHard03": {
+      "TextData": "Ancient Monitoring Stand"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleFoundation": {
+      "TextData": "Ancient Triangular Foundation"
+    },
+    "MAPOBJECT_NAME_Ancient_DiagonalWall": {
+      "TextData": "Ancient Diagonal Wall"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleRoof": {
+      "TextData": "Ancient Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleStairsCorner": {
+      "TextData": "Ancient Corner Roof"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleWallReverse": {
+      "TextData": "Ancient Triangular Wall (Inverted)"
+    },
+    "MAPOBJECT_NAME_Ancient_WallGate": {
+      "TextData": "Ancient Pal Passage Entrance"
+    },
+    "MAPOBJECT_NAME_Ancient_SlopedRoofCorner": {
+      "TextData": "Ancient Slanted Triangular Roof"
+    },
+    "MAPOBJECT_NAME_Ancient_PyramidRoof": {
+      "TextData": "Ancient Pyramid Roof"
+    },
+    "MAPOBJECT_NAME_Ancient_foundation": {
+      "TextData": "Ancient Foundation"
+    },
+    "MAPOBJECT_NAME_Ancient_wall": {
+      "TextData": "Ancient Wall"
+    },
+    "MAPOBJECT_NAME_Ancient_roof": {
+      "TextData": "Ancient Roof"
+    },
+    "MAPOBJECT_NAME_Ancient_stair": {
+      "TextData": "Ancient Stairs"
+    },
+    "MAPOBJECT_NAME_Ancient_DoorWall": {
+      "TextData": "Ancient Wall and Door"
+    },
+    "MAPOBJECT_NAME_Ancient_TriangleWall": {
+      "TextData": "Ancient Triangular Wall"
+    },
+    "MAPOBJECT_NAME_Ancient_SlantedRoof": {
+      "TextData": "Ancient Slanted Roof"
+    },
+    "MAPOBJECT_NAME_Ancient_WindowWall": {
+      "TextData": "Ancient Wall and Window"
+    },
+    "MAPOBJECT_NAME_Ancient_Pillars": {
+      "TextData": "Ancient Pillar"
+    },
+    "MAPOBJECT_NAME_Ancient_Fence": {
+      "TextData": "Ancient Fence"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Green": {
+      "TextData": "Faux Greenery A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Green": {
+      "TextData": "Faux Greenery B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Green": {
+      "TextData": "Faux Greenery C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Red": {
+      "TextData": "Faux Crimson Foliage A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Red": {
+      "TextData": "Faux Crimson Foliage B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Red": {
+      "TextData": "Faux Crimson Foliage C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Yellow": {
+      "TextData": "Faux Golden Foliage A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Yellow": {
+      "TextData": "Faux Golden Foliage B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Yellow": {
+      "TextData": "Faux Golden Foliage C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Cherry": {
+      "TextData": "Faux Cherry Blossoms A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Cherry": {
+      "TextData": "Faux Cherry Blossoms B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Cherry": {
+      "TextData": "Faux Cherry Blossoms C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Tropical": {
+      "TextData": "Faux Tropical Greenery A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Tropical": {
+      "TextData": "Faux Tropical Greenery B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Tropical": {
+      "TextData": "Faux Tropical Greenery C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Snow": {
+      "TextData": "Faux Snowy Greenery A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Snow": {
+      "TextData": "Faux Snowy Greenery B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Snow": {
+      "TextData": "Faux Snowy Greenery C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Desert": {
+      "TextData": "Faux Desert Greenery A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Desert": {
+      "TextData": "Faux Desert Greenery B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Desert": {
+      "TextData": "Faux Desert Greenery C"
+    },
+    "MAPOBJECT_NAME_FurnitureTree01_Bamboo": {
+      "TextData": "Faux Bamboo A"
+    },
+    "MAPOBJECT_NAME_FurnitureTree02_Bamboo": {
+      "TextData": "Faux Bamboo B"
+    },
+    "MAPOBJECT_NAME_FurnitureTree03_Bamboo": {
+      "TextData": "Faux Bamboo C"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Green": {
+      "TextData": "Faux Bush"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Yellow": {
+      "TextData": "Faux Golden Bush"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Flower": {
+      "TextData": "Faux Flowering Bush A"
+    },
+    "MAPOBJECT_NAME_FurnitureBush02_Flower": {
+      "TextData": "Faux Flowering Bush B"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Tropical": {
+      "TextData": "Faux Tropical Bush"
+    },
+    "MAPOBJECT_NAME_FurnitureBush01_Snow": {
+      "TextData": "Faux White Bush"
+    },
+    "MAPOBJECT_NAME_FurnitureStone01": {
+      "TextData": "Faux Rock"
+    },
+    "MAPOBJECT_NAME_TableCircular_Wood_None": {
+      "TextData": "Tidy Round Table"
+    },
+    "MAPOBJECT_NAME_TableSquare_Wood_None": {
+      "TextData": "Tidy Square Table"
+    },
+    "MAPOBJECT_NAME_JetDragonStatue": {
+      "TextData": "Jetragon Statue"
+    },
+    "MAPOBJECT_NAME_IceHorseStatue": {
+      "TextData": "Frostallion Statue"
+    },
+    "MAPOBJECT_NAME_ArcadeVideoGame": {
+      "TextData": "Arcade Game Cabinet"
+    },
+    "MAPOBJECT_NAME_Ancient_MedicalPalBed": {
+      "TextData": "Ancient Pal Bed"
+    },
+    "MAPOBJECT_NAME_Ancient_AirConditioner": {
+      "TextData": "Ancient Air Conditioner"
+    },
+    "MAPOBJECT_NAME_Ancient_Spa": {
+      "TextData": "Ancient Hot Spring"
+    },
+    "MAPOBJECT_NAME_Clinic": {
+      "TextData": "Clinic"
+    },
+    "MAPOBJECT_NAME_Ancient_Clinic": {
+      "TextData": "Ancient Clinic"
+    },
+    "MAPOBJECT_NAME_SkyIslandOrePit": {
+      "TextData": "Soralite Quarry"
+    },
+    "MAPOBJECT_NAME_DarkIsland_Flag": {
+      "TextData": "Feybreak Flag"
+    },
+    "MAPOBJECT_NAME_DarkIsland_Banner": {
+      "TextData": "Feybreak Banner"
+    },
+    "MAPOBJECT_NAME_SkyIsland_Flag": {
+      "TextData": "Azure Covenant Flag"
+    },
+    "MAPOBJECT_NAME_SkyIsland_Banner": {
+      "TextData": "Azure Covenant Banner"
+    },
+    "MAPOBJECT_NAME_StationDeforest3": {
+      "TextData": "Logging Site II"
+    },
+    "MAPOBJECT_NAME_BaseCampWorkHard02": {
+      "TextData": "High Quality Monitoring Stand"
+    },
+    "MAPOBJECT_NAME_Wooden_SlopedRoofCornerReverse": {
+      "TextData": "Wooden Slanted Corner Roof (Inverted)"
+    },
+    "MAPOBJECT_NAME_Stone_SlopedRoofCornerReverse": {
+      "TextData": "Stone Slanted Corner Roof (Inverted)"
+    },
+    "MAPOBJECT_NAME_Iron_SlopedRoofCornerReverse": {
+      "TextData": "Metal Slanted Corner Roof (Inverted)"
+    },
+    "MAPOBJECT_NAME_Glass_SlopedRoofCornerReverse": {
+      "TextData": "Glass Slanted Corner Roof (Inverted)"
+    },
+    "MAPOBJECT_NAME_JapaneseStyle_SlopedRoofCornerReverse": {
+      "TextData": "Japanese-Style Slanted Corner Roof (Inverted)"
+    },
+    "MAPOBJECT_NAME_SF_SlopedRoofCornerReverse": {
+      "TextData": "Clean Slanted Corner Roof (Inverted)"
+    },
+    "MAPOBJECT_NAME_Ancient_SlopedRoofCornerReverse": {
+      "TextData": "Ancient Slanted Triangular Roof (Inverted)"
+    },
+    "MAPOBJECT_NAME_OilPump02": {
+      "TextData": "High-Pressure Crude Oil Extractor"
+    },
+    "MAPOBJECT_NAME_DamagableWood0001": {
+      "TextData": "Ancient Bark"
+    }
+  }
+}

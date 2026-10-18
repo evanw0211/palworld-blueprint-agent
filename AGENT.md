@@ -103,7 +103,7 @@ PASS hut_wood_3x3.pwb9d.txt
 
 ## 红线
 
-1. 不操作游戏：不建造、不注入、不调用引擎渲染，全离线。
+1. 不操作游戏：不建造、不注入、不调用引擎渲染，全离线。这条边界的由来与被否方案见 [docs/decisions/0001-offline-only-rendering.md](docs/decisions/0001-offline-only-rendering.md)。
 2. 不编造 id，只用 `data/catalog.json` 里的。
 3. 不跳过校验；`--allow-problems` 仅供调试。
 4. 离线预览是真网格加类型色，不代表游戏内观感。
@@ -116,8 +116,11 @@ PASS hut_wood_3x3.pwb9d.txt
 ## Further Exploration
 
 - [tooling/README.md](tooling/README.md) - authoring 字段与 CLI 用法。
+- [examples/README.md](examples/README.md) - 可校验的样本清单，写不出形状时先对照重导。
+- [render/README.md](render/README.md) - 离线缩略图渲染页面、保真度证据与限制。
 - [data/format.md](data/format.md) - schema-9、PWB9D、网格与连接规则。
 - [data/catalog_summary.md](data/catalog_summary.md) - 快照版本与分类件数。
+- [archive/research/agent_blueprint_requirements.md](archive/research/agent_blueprint_requirements.md) - 选型与布局的 8 维审美自查清单（研究记录，非验收标准）。
 - [README.md](README.md) - 项目定位与首次结果。
 
 ## Dev Note

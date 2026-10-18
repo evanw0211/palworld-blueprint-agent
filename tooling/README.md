@@ -41,6 +41,8 @@ authoring 输入是 `export.py` 的唯一输入格式，字段语义以 `build()
 | `pieces[].x` `y` `z` | 否 | 厘米（默认 `0`），任意公共原点与朝向，导出时自动移除 anchor 帧 |
 | `pieces[].yaw` | 否 | 度（默认 `0`），UE yaw：`0`=+X、`90`=+Y |
 
+本目录还有两个不属于上面三个脚本的组件，契约归各自页面：数据刷新工具（dotnet CLI）见 [PalAssetExport/README.md](PalAssetExport/README.md)，本页不写它的命令；离线渲染页面与保真度对照图见 [../render/README.md](../render/README.md)。
+
 ## 运行
 
 重复运行覆盖同名输出。预览要先起 Chrome 调试端口（本机 9222 无监听，未复现，lead）；Chrome 默认装在 Program Files：

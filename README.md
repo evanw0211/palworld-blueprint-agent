@@ -82,12 +82,15 @@ kind: overview
 | 查导出/校验/预览脚本的命令行用法与 authoring 字段 | [tooling/README.md](tooling/README.md) |
 | 浏览 data/ 每个子项做什么 | [data/README.md](data/README.md) |
 | 刷新数据或判断快照是否过期 | [data/refresh.md](data/refresh.md) |
+| 用社区/参考样例做设计对照 | [examples/README.md](examples/README.md) |
+| 为什么不用引擎内渲染 | [docs/decisions/0001-offline-only-rendering.md](docs/decisions/0001-offline-only-rendering.md) |
 
 ## Further Exploration
 
 - [data/catalog_summary.md](data/catalog_summary.md) - 生成的可放置物统计（按分类与风格），选件时先扫一眼分布。
 - [data/sheets/_index.json](data/sheets/_index.json) - 分类拼图索引，决定该打开哪张 `sheet_*.png`。
-- [examples/](examples/) - 已交付样本（json + pwb9d），可直接校验或对照重导。
+- [examples/README.md](examples/README.md) - 已交付样本与社区参考样例（json + pwb9d），可直接校验或对照重导。
+- [render/README.md](render/README.md#保真度与对照证据) - `render/compare/` 的对照图：离线渲染与引擎内渲染几何投影一致、材质与光照不同的证据。
 
 ## Dev Note
 

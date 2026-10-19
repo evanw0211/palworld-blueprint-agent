@@ -83,7 +83,8 @@ kind: overview
 | 浏览 data/ 每个子项做什么 | [data/README.md](data/README.md) |
 | 刷新数据或判断快照是否过期 | [data/refresh.md](data/refresh.md) |
 | 用社区/参考样例做设计对照 | [examples/README.md](examples/README.md) |
-| 为什么不用引擎内渲染 | [docs/decisions/0001-offline-only-rendering.md](docs/decisions/0001-offline-only-rendering.md) |
+| 为什么不用引擎内渲染 | [docs/agent-notes/AN-0001-offline-only.md](docs/agent-notes/AN-0001-offline-only.md) |
+| 查本仓库的耐久决策（Agent Notes） | [docs/agent-notes/README.md](docs/agent-notes/README.md) |
 
 ## Further Exploration
 

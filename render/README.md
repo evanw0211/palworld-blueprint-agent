@@ -95,7 +95,7 @@ kind: "component-reference"
 - [../tooling/README.md](../tooling/README.md) - 启动命令、Chrome 端点与退出码（命令的唯一 owner）。
 - [../tooling/PalAssetExport/README.md](../tooling/PalAssetExport/README.md) - 从 pak 导出 GLB 与数据表的工具契约。
 - [../examples/README.md](../examples/README.md) - 可拿来渲染的样本清单与校验结果。
-- [../docs/decisions/0001-offline-only-rendering.md](../docs/decisions/0001-offline-only-rendering.md) - 为什么只做离线渲染。
+- [../docs/agent-notes/AN-0001-offline-only.md](../docs/agent-notes/AN-0001-offline-only.md) - 为什么只做离线渲染。
 - [../archive/research/mod_render_notes.md](../archive/research/mod_render_notes.md) - 冻结研究：mod 缩略图管线逐行证据与离线复刻边界。
 
 ## Dev Note

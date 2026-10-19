@@ -30,6 +30,7 @@ kind: "how-to"
 - authoring 字段契约、CLI 用法与退出码 → [tooling/README.md](tooling/README.md)
 - `data/` 目录清单 → [data/README.md](data/README.md)
 - 当前数据版本与件数 → [data/catalog_summary.md](data/catalog_summary.md)
+- 本仓库的耐久决策（离线边界、文档契约、生成器所有权、入库边界） → [docs/agent-notes/README.md](docs/agent-notes/README.md)
 
 ## 工作流（5步）
 
@@ -103,7 +104,7 @@ PASS hut_wood_3x3.pwb9d.txt
 
 ## 红线
 
-1. 不操作游戏：不建造、不注入、不调用引擎渲染，全离线。这条边界的由来与被否方案见 [docs/decisions/0001-offline-only-rendering.md](docs/decisions/0001-offline-only-rendering.md)。
+1. 不操作游戏：不建造、不注入、不调用引擎渲染，全离线。这条边界的由来与被否方案见 [docs/agent-notes/AN-0001-offline-only.md](docs/agent-notes/AN-0001-offline-only.md)。
 2. 不编造 id，只用 `data/catalog.json` 里的。
 3. 不跳过校验；`--allow-problems` 仅供调试。
 4. 离线预览是真网格加类型色，不代表游戏内观感。

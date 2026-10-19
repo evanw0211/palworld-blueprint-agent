@@ -51,13 +51,13 @@ kind: "index"
 
 - 路径按旧工作区书写（`帕鲁\...`、`blueprints\...`），本仓库里大多不存在；这些 `.md` 保留当时的时间戳与结论，与现状冲突时以当前 owner 页为准。
 - 探针是**只读**的（`FindRow`、`eval` 取数），可用于核对 id；任何渲染、建造、注入类操作仍属红线，禁止接进流程。
-- 本目录不提供安装步骤的复制粘贴路径，也不保证原工作区的 UEBridge 还在；复现实验前先读 [data/format.md](../data/format.md) 的红线与 [离线路线的决策记录](../docs/decisions/0001-offline-only-rendering.md)。
+- 本目录不提供安装步骤的复制粘贴路径，也不保证原工作区的 UEBridge 还在；复现实验前先读 [data/format.md](../data/format.md) 的红线与 [离线路线决策笔记](../docs/agent-notes/AN-0001-offline-only.md)。
 
 ## Further Exploration
 
 - [../render/compare/](../render/compare/) — 5 张对照图（mod / 离线 / 引擎内），上面结论的原始视觉证据。
 - [../render/README.md](../render/README.md) — 当前预览器契约，相机公式的当前 owner。
-- [../docs/decisions/0001-offline-only-rendering.md](../docs/decisions/0001-offline-only-rendering.md) — 由这些记录支撑的路线决策。
+- [../docs/agent-notes/AN-0001-offline-only.md](../docs/agent-notes/AN-0001-offline-only.md) — 由这些记录支撑的路线决策。
 - [../data/format.md](../data/format.md) — 硬约束的当前 owner（网格、层高、连接、ID）。
 
 ## Dev Note

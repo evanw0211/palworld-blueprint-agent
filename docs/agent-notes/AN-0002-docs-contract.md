@@ -24,7 +24,8 @@ kind: "decision-record"
 
 | 事实 | owner |
 |---|---|
-| schema-9 字段、PWB9D 帧、网格/高度/朝向常量、连接属性、id 语义、catalog 结构与计数 | [data/format.md](../../data/format.md) |
+| schema-9 字段、PWB9D 帧、网格/高度/朝向常量、连接属性、id 语义、catalog 结构 | [data/format.md](../../data/format.md) |
+| catalog 计数（快照版本与件数） | [data/catalog_summary.md](../../data/catalog_summary.md)（生成，勿手改） |
 | authoring 字段、CLI 用法与退出码 | [tooling/README.md](../../tooling/README.md) |
 | 数据刷新流程 | [data/refresh.md](../../data/refresh.md) |
 | 预览页契约与保真度证据 | [render/README.md](../../render/README.md) |
@@ -47,7 +48,7 @@ kind: "decision-record"
 
 ### 正面
 
-- 可机械校验：11 页手写文档 + 决策笔记，frontmatter、kind 映射、ToC↔H2、锚点、链接、摘要句数、数值所有权一次跑完 0 失败。
+- 可机械校验：`tooling/check_docs.ps1` 覆盖 frontmatter、kind 映射、入口节、ToC↔H2 锚点与相对链接（本轮实跑：14 页手写文档、222 条相对链接、0 失败）；摘要句数与数值所有权仍是人工红线。
 - 事实变更只需改 owner 页并修链接；评审时不必全库搜索同一句话。
 
 ### 负面
@@ -61,7 +62,7 @@ kind: "decision-record"
 
 ## 合规
 
-不变量：任何手写页面必须有 `kind` 且被校验脚本覆盖；同一事实不得在两个手写页里各写一份；命令类声明必须有实跑记录，或明确标注「未复现 + 责任人」。执行者：评审时的人工红线 + 校验脚本。
+不变量：任何手写页面必须有 `kind` 且被 [tooling/check_docs.ps1](../../tooling/check_docs.ps1) 覆盖；同一事实不得在两个手写页里各写一份；命令类声明必须有实跑记录，或明确标注「未复现 + 责任人」。执行者：评审时的人工红线 + 校验脚本。
 
 ## Dev Note
 

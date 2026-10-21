@@ -63,32 +63,35 @@ python tooling/validate.py out/<名字>.json --json
 node tooling/render_offline.mjs out/<名字>.json out/<名字>.png
 ```
 
-预览需要 127.0.0.1:9222 上已有 Chrome 调试端点；本页作者环境没有，未复现，只观察到 `connect ECONNREFUSED 127.0.0.1:9222`。验证责任人：本机装有 Chrome 的工作区维护者。
+预览需要 127.0.0.1:9222 上有 Chrome 调试端点；本机已实测可跑（Chrome/155.0.8059.84 headless），起端点命令、退出码与失败表现由 [tooling/README.md](tooling/README.md) 拥有。端点缺失时脚本以 exit 1 失败，不影响蓝图交付。
 
 ## 验收
 
-用 `demo_2x2_east_door` 实跑的输出（省略处已标注）：
+三条命令各跑一次，看判定；完整 JSON 的字段契约由 [tooling/README.md](tooling/README.md) 拥有。
+
+1. 导出：
+
+```powershell
+python tooling/export.py authoring/demo_2x2_east_door.json -o out
+```
+
+判定：输出里 `"ok": true`、`"problems": []`、`"warnings": []`，且末尾 `json` 与 `code` 指向 `out\` 下两个文件。
+
+2. 复核导出的 schema-9：
+
+```powershell
+python tooling/validate.py out/demo_2x2_east_door.json --json
+```
+
+判定：`"ok": true`、`"problems": []`。
+
+3. 复核 PWB9D 码：
+
+```powershell
+python tooling/validate.py examples/hut_wood_3x3.pwb9d.txt
+```
 
 ```text
-$ python tooling/export.py authoring/demo_2x2_east_door.json -o out
-{
- "name": "demo_2x2_east_door",
-  …（pieces/types/edges 省略）
- "ok": true,
- "problems": [],
- "warnings": [],
- "stats": {
-  …（stats 与文件路径省略）
-
-$ python tooling/validate.py out/demo_2x2_east_door.json --json
-{
-  …（file 省略）
- "ok": true,
- "problems": [],
- "stats": {
-  …（stats 省略）
-
-$ python tooling/validate.py examples/hut_wood_3x3.pwb9d.txt
 PASS hut_wood_3x3.pwb9d.txt
 ```
 

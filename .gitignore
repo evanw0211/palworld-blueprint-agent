@@ -6,6 +6,12 @@ __pycache__/
 out/*
 !out/.gitkeep
 
+# 完整几何资产：从 pak 导出的 469 个 GLB + 清单，618 MB。
+# 与 out/ 同理不入库——游戏美术的衍生物，且体积远超仓库应有量级。
+# 重新生成用 exportbps + exportall，命令契约见 tooling/PalAssetExport/README.md；
+# 本次试跑的布局 JSON 与缺口报告留在生产时的 out/（按 out/* 规则同样不入库）。
+meshes_new/
+
 # 依赖与缓存
 node_modules/
 .venv/

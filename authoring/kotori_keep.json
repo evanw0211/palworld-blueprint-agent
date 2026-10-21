@@ -1,0 +1,2526 @@
+{
+ "name": "kotori_keep",
+ "anchor": 0,
+ "pieces": [
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2400,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2000,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2000,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -2000,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -2000,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -2000,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -2000,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -2000,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -2000,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -2000,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -1600,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -1600,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1600,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1600,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1600,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1600,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1600,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1600,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -1600,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -1200,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -1200,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1200,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1200,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1200,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1200,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1200,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -1200,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -1200,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -800,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -800,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -800,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -800,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -800,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -800,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -800,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -800,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -800,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -400,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -400,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -400,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -400,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": -400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": -400,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 0,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 0,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 0,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 0,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 0,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 0,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 0,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 0,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 400,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 400,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 400,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 400,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 400,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 800,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 800,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 800,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 800,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 800,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 800,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 800,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 800,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 800,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 1200,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 1200,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1200,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1200,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1200,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1200,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1200,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1200,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 1200,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 1600,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 1600,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1600,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1600,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1600,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1600,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1600,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 1600,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 1600,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2000,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2000,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 2000,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 2000,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 2000,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 2000,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 2000,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_foundation",
+   "x": 2000,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2000,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_Foundation",
+   "x": 2400,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2400,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2400,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2000,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2000,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -1600,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -1600,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -1200,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -1200,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -800,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -800,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_DoorWall_01",
+   "x": -400,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -400,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_DoorWall_01",
+   "x": 0,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 0,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_DoorWall_01",
+   "x": 400,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 400,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 800,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 800,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 1200,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 1200,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 1600,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 1600,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2000,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2000,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2400,
+   "y": -1800,
+   "z": 0,
+   "yaw": 90
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2400,
+   "y": 1800,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": -1600,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": -1200,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": -800,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": -400,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": 0,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": 400,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": 800,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": 1200,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Wooden_wall",
+   "x": -2600,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Wooden_wall",
+   "x": 2600,
+   "y": 1600,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": -1800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -200,
+   "y": -1800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": -1800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2600,
+   "y": 1800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2600,
+   "y": -1800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2600,
+   "y": 1800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2600,
+   "y": -1800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2200,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1800,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1400,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1000,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2200,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1800,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1400,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1000,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2200,
+   "y": 600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2200,
+   "y": 1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": 600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": 1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -2200,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": -2200,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -2200,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -600,
+   "y": 400,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": -600,
+   "y": 800,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -600,
+   "y": 1200,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -2000,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": -1600,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": -1200,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -800,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -2000,
+   "y": 400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1600,
+   "y": 400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -2000,
+   "y": 800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1600,
+   "y": 800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -2000,
+   "y": 1200,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1600,
+   "y": 1200,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1200,
+   "y": 400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -800,
+   "y": 400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1200,
+   "y": 800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -800,
+   "y": 800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1200,
+   "y": 1200,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -800,
+   "y": 1200,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1000,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1400,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1800,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2200,
+   "y": 200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1000,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1400,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1800,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2200,
+   "y": 1400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": 600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": 1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2200,
+   "y": 600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2200,
+   "y": 1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 600,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": 600,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 600,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 2200,
+   "y": 400,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": 2200,
+   "y": 800,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 2200,
+   "y": 1200,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 800,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": 1200,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": 1600,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 2000,
+   "y": 1400,
+   "z": 0,
+   "yaw": 270
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 800,
+   "y": 400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1200,
+   "y": 400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 800,
+   "y": 800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1200,
+   "y": 800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 800,
+   "y": 1200,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1200,
+   "y": 1200,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1600,
+   "y": 400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 2000,
+   "y": 400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1600,
+   "y": 800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 2000,
+   "y": 800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1600,
+   "y": 1200,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 2000,
+   "y": 1200,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2200,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1800,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1400,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -1000,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2200,
+   "y": -600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -2200,
+   "y": -200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": -600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -600,
+   "y": -200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -2200,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": -2200,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -2200,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -600,
+   "y": -800,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": -600,
+   "y": -400,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": -600,
+   "y": 0,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -2000,
+   "y": -800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1600,
+   "y": -800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -2000,
+   "y": -400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1600,
+   "y": -400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -2000,
+   "y": 0,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1600,
+   "y": 0,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1200,
+   "y": -800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -800,
+   "y": -800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1200,
+   "y": -400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -800,
+   "y": -400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -1200,
+   "y": 0,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": -800,
+   "y": 0,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1000,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1400,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 1800,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2200,
+   "y": -1000,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": -600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 600,
+   "y": -200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2200,
+   "y": -600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 2200,
+   "y": -200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 600,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": 600,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 600,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 2200,
+   "y": -800,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_WindowWall",
+   "x": 2200,
+   "y": -400,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_wall_01",
+   "x": 2200,
+   "y": 0,
+   "z": 0,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 800,
+   "y": -800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1200,
+   "y": -800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 800,
+   "y": -400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1200,
+   "y": -400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 800,
+   "y": 0,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1200,
+   "y": 0,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1600,
+   "y": -800,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 2000,
+   "y": -800,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1600,
+   "y": -400,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 2000,
+   "y": -400,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 1600,
+   "y": 0,
+   "z": 325,
+   "yaw": 180
+  },
+  {
+   "id": "JapaneseStyle_SlantedRoof",
+   "x": 2000,
+   "y": 0,
+   "z": 325,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -200,
+   "y": -600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 200,
+   "y": -600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": -200,
+   "y": 600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Stone_pillar",
+   "x": 200,
+   "y": 600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "PalBoxV2",
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "PalFoodBox",
+   "x": -400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "CoolerPalFoodBox",
+   "x": 0,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Spa2",
+   "x": 0,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Spa2",
+   "x": 400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Spa2",
+   "x": -400,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Spa2",
+   "x": -400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "PalMedicineBox",
+   "x": 400,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MedicalPalBed_05",
+   "x": -800,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MedicalPalBed_05",
+   "x": -800,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MedicalPalBed_05",
+   "x": -800,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MedicalPalBed_05",
+   "x": 800,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MedicalPalBed_05",
+   "x": 800,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MedicalPalBed_05",
+   "x": 800,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "PlayerBed_03",
+   "x": -800,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "GuildChest",
+   "x": -1200,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ItemChest_03",
+   "x": -800,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ItemChest_03",
+   "x": -800,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "HugeKitchen",
+   "x": -1200,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ElectricGenerator",
+   "x": -1600,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "EnergyStorage_Electric",
+   "x": -1200,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Cooler",
+   "x": -2000,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Heater",
+   "x": -1600,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "WorkBench",
+   "x": 800,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "AncientWorkBench",
+   "x": 800,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "BlastFurnace",
+   "x": 800,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "BlastFurnace2",
+   "x": 1200,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Crusher",
+   "x": 1200,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FlourMill",
+   "x": 1200,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "IceCrusher",
+   "x": 1600,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ElectricGenerator_Large",
+   "x": 1600,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "CoolerBox",
+   "x": 1600,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ItemChest_03",
+   "x": 1200,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ItemChest_03",
+   "x": 1200,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ItemChest_03",
+   "x": 1600,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Silo",
+   "x": 1200,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "CoolerPalFoodBox",
+   "x": 1600,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Silo",
+   "x": 2400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Signboard",
+   "x": 2400,
+   "y": -400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "ItemChest_03",
+   "x": 2400,
+   "y": -800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_Berries",
+   "x": 0,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_Berries",
+   "x": -400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_wheet",
+   "x": 0,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_wheet",
+   "x": 400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_tomato",
+   "x": -400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_tomato",
+   "x": 0,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_Lettuce",
+   "x": 400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_Potato",
+   "x": -400,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FarmBlockV2_Carrot",
+   "x": 400,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MonsterFarm",
+   "x": 2400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "BreedFarm",
+   "x": 2400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "MonsterFarm",
+   "x": 2400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "PalFoodBox",
+   "x": 2400,
+   "y": 1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "GuardianDogStatue",
+   "x": 0,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "GuardianDogStatue",
+   "x": -400,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FlowerBed",
+   "x": 0,
+   "y": -1600,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Light_LightPole01",
+   "x": 400,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Light_LightPole01",
+   "x": -800,
+   "y": -1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Plant01_Plant",
+   "x": -2400,
+   "y": 800,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Plant02_Plant",
+   "x": -2400,
+   "y": 400,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "FurnitureBush01_Flower",
+   "x": -2400,
+   "y": 1200,
+   "z": 0,
+   "yaw": 0
+  },
+  {
+   "id": "Light_LightPole01",
+   "x": -2400,
+   "y": 0,
+   "z": 0,
+   "yaw": 0
+  }
+ ]
+}

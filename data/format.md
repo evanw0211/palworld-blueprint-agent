@@ -166,6 +166,6 @@ PWB9D. + Base64URL( VarUInt(json 字节数) | CRC32LE(json) | raw DEFLATE(json) 
 
 未复现、待验证：游戏内导入与两种粘贴输入、墙朝向与旋转周期、ConnectInfo 名称、mod 对 DEFLATE 块的接受范围、`x/p/s/w` 语义。责任人：lead（需游戏 + mod + pak）。
 
-本仓库无 git、无 CI，改动靠重跑命令复核；`validate.py` 的 docstring 与实现不一致（未知键不拒绝），已按实现写。
+本仓库有 git（提交历史即修订记录）、无 CI，改动靠重跑命令复核；`validate.py` 的 docstring 与实现不一致（未知键不拒绝），已按实现写。
 
 </details>

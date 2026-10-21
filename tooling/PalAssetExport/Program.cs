@@ -13,6 +13,60 @@ var PakDir = Environment.GetEnvironmentVariable("PALWORLD_PAKS") is { Length: > 
     ? envPakDir
     : DefaultPakDir;
 
+// Exit-code contract (documented in README): 0 = success, 1 = the command ran but some
+// input/export step failed, 2 = usage error (missing/unknown argument, a numeric option that
+// does not parse, outDir outside the repository root). This runs before every command,
+// including the reflection diagnostics, so a typo costs nothing and never mounts the pak.
+if (args.Length == 0)
+{
+    PrintUsage();
+    Environment.ExitCode = 2;
+    return;
+}
+
+var minArgs = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
+{
+    ["list"] = 2, ["info"] = 1, ["inspect"] = 2, ["dumptable"] = 3,
+    ["exporticons"] = 3, ["exporttex"] = 3, ["exportmesh"] = 3,
+    ["exportbps"] = 3, ["exportall"] = 3,
+    ["findapi"] = 2, ["probe"] = 1, ["mapapi"] = 1, ["convapi"] = 1,
+    ["whereis"] = 2, ["dump"] = 2,
+};
+if (!minArgs.TryGetValue(args[0], out var minArgCount))
+{
+    Console.Error.WriteLine($"ERROR: unknown command '{args[0]}'");
+    PrintUsage();
+    Environment.ExitCode = 2;
+    return;
+}
+if (args.Length < minArgCount)
+{
+    Console.Error.WriteLine($"ERROR: '{args[0]}' needs at least {minArgCount} argument(s) including the command name, got {args.Length}");
+    PrintUsage();
+    Environment.ExitCode = 2;
+    return;
+}
+
+// Numeric options that used to throw FormatException from int.Parse deep inside a case.
+if (args[0] == "list")
+{
+    for (int i = 2; i < args.Length - 1; i++)
+        if (args[i] == "--limit" && !int.TryParse(args[i + 1], out _))
+        {
+            Console.Error.WriteLine($"ERROR: --limit expects an integer, got '{args[i + 1]}'");
+            PrintUsage();
+            Environment.ExitCode = 2;
+            return;
+        }
+}
+if (args[0] == "exporticons" && args.Length > 3 && !int.TryParse(args[3], out _))
+{
+    Console.Error.WriteLine($"ERROR: exporticons [limit] expects an integer, got '{args[3]}'");
+    PrintUsage();
+    Environment.ExitCode = 2;
+    return;
+}
+
 // `findapi <Name>` locates an extension method without guessing namespaces.
 if (args.Length > 0 && args[0] == "findapi")
 {
@@ -157,12 +211,76 @@ if (args.Length > 0 && args[0] == "dump")
     return;
 }
 
-if (args.Length == 0)
+static void PrintUsage()
 {
-    Console.WriteLine("usage:");
+    Console.WriteLine("usage (exit codes: 0 success, 1 export/input failure, 2 usage error):");
     Console.WriteLine("  list <substring> [--exclude <substring>] [--limit N]");
     Console.WriteLine("  info");
-    return;
+    Console.WriteLine("  inspect <packagePath> [outJson]");
+    Console.WriteLine("  dumptable <assetPath> <outJson>");
+    Console.WriteLine("  exporticons <iconTableJson> <outDir> [limit]");
+    Console.WriteLine("  exporttex <meshObjectPath> <outDir>             (outDir must be inside the repo root)");
+    Console.WriteLine("  exporttex --all <outDir> [meshesDir]            (outDir must be inside the repo root)");
+    Console.WriteLine("  exportmesh <objectPath> <outDir>");
+    Console.WriteLine("  exportbps <layoutJson> <outDir>");
+    Console.WriteLine("  exportall <meshrefsJson> <outDir>");
+    Console.WriteLine("  findapi|whereis|dump <name...>");
+    Console.WriteLine("  probe|mapapi|convapi");
+}
+
+// The render page's server root is the repository root (render_offline.mjs serves ROOT), so
+// texmap values are only meaningful as repo-root-relative URLs. Locate that root the same way
+// the usmap search does: walk up from the current directory and the executable.
+static string? FindRepoRoot()
+{
+    foreach (var start in new[] { Directory.GetCurrentDirectory(), AppContext.BaseDirectory })
+    {
+        for (DirectoryInfo? dir = new DirectoryInfo(start); dir != null; dir = dir.Parent)
+        {
+            if (File.Exists(Path.Combine(dir.FullName, "render", "modsrender.html")) ||
+                Directory.Exists(Path.Combine(dir.FullName, "tooling", "PalAssetExport")))
+                return dir.FullName;
+        }
+    }
+    return null;
+}
+
+// Validates that outDir really lives inside the repo root and returns the URL prefix under the
+// server root ("/out/textured/"). Previously the prefix was built from the raw argument, so an
+// absolute outDir silently produced bare file names and a relative one drifted with the CWD.
+// Returns false (after printing the reason) when outDir resolves outside the root.
+static bool TryGetRepoUrlPrefix(string outDir, string repoRoot, out string prefix)
+{
+    prefix = "";
+    var full = Path.GetFullPath(outDir);
+    var relative = Path.GetRelativePath(repoRoot, full);
+    if (relative == ".")
+    {
+        prefix = "/";
+        return true;
+    }
+    if (Path.IsPathRooted(relative)
+        || relative == ".."
+        || relative.StartsWith(".." + Path.DirectorySeparatorChar, StringComparison.Ordinal)
+        || relative.StartsWith("../", StringComparison.Ordinal))
+    {
+        Console.Error.WriteLine(
+            $"ERROR: outDir '{outDir}' resolves to '{full}', which is outside the repository root '{repoRoot}'.");
+        Console.Error.WriteLine(
+            "       texmap values are repo-root-relative URLs, so they cannot be expressed there; nothing was written.");
+        return false;
+    }
+    prefix = "/" + relative.Replace('\\', '/').TrimEnd('/') + "/";
+    return true;
+}
+
+// Stable, process-independent suffix for file-name collisions. string.GetHashCode() is
+// randomized per process, which made reruns produce differently named PNGs and left stale
+// files behind; SHA256 of the texture object path is reproducible.
+static string StableSuffix(string value)
+{
+    var hash = System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(value));
+    return Convert.ToHexString(hash)[..8].ToLowerInvariant();
 }
 
 var provider = new DefaultFileProvider(
@@ -335,6 +453,650 @@ switch (args[0])
         break;
     }
 
+    case "exporttex":
+    {
+        // exporttex <meshObjectPath> <outDir>             -- one mesh (single mode)
+        // exporttex --all <outDir> [meshesDir]            -- every mesh of <meshesDir>/_meshrefs.json
+        //                                                    plus two merged texmaps (batch mode)
+        // outDir must resolve inside the repository root: texmap values are repo-root-relative
+        // URLs for the render page (render_offline.mjs serves the repo root). Exit 2 otherwise.
+        var repoRoot = FindRepoRoot();
+        if (repoRoot == null)
+        {
+            Console.Error.WriteLine("ERROR: could not locate the repository root (looked for render/modsrender.html or tooling/PalAssetExport, walking up from the CWD and the executable).");
+            Console.Error.WriteLine("       texmap values must be repo-root-relative URLs, so nothing was written.");
+            Environment.ExitCode = 2;
+            break;
+        }
+
+        if (args[1] == "--all")
+        {
+            var batchDir = args[2];
+            var meshDir = args.Length > 3 ? args[3] : "meshes";
+            if (!TryGetRepoUrlPrefix(batchDir, repoRoot, out var batchUrlPrefix))
+            {
+                Environment.ExitCode = 2;
+                break;
+            }
+
+            // Validate the input before creating anything: a missing or garbled _meshrefs.json
+            // used to leave an empty outDir behind and still exit 0.
+            var refsPath = Path.Combine(meshDir, "_meshrefs.json");
+            if (!File.Exists(refsPath))
+            {
+                Console.Error.WriteLine($"ERROR: meshrefs file not found: {refsPath}");
+                Console.Error.WriteLine("       run `exportbps` first, or pass [meshesDir] as the 4th argument; nothing was written.");
+                Environment.ExitCode = 1;
+                break;
+            }
+            Newtonsoft.Json.Linq.JObject refs;
+            try
+            {
+                refs = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(refsPath));
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"ERROR: cannot parse {refsPath}: {ex.GetType().Name}: {ex.Message}; nothing was written.");
+                Environment.ExitCode = 1;
+                break;
+            }
+
+            Directory.CreateDirectory(batchDir);
+
+            // Parameter names differ per material family: stone/wood use "Base Texture"/"Normal Map"/
+            // "MetallicRoughnessOcclusionSpecularTexture", glass uses "BaseColorMap"/"NormalMap"/
+            // "MaskMap". Accept both. "ChangeColor Mask"/"PM" paint masks are NOT the ORM map.
+            var batchBaseNames = new[] { "Base Texture", "BaseColorMap", "BaseColor", "Diffuse" };
+            var batchNormalNames = new[] { "Normal Map", "NormalMap", "Normal" };
+            var batchOrmNames = new[] { "MetallicRoughnessOcclusionSpecularTexture", "MaskMap", "ORM", "MetallicRoughness" };
+
+            var safeMap = new Newtonsoft.Json.Linq.JObject();
+            var ormMap = new Newtonsoft.Json.Linq.JObject();
+            var emitted = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase); // texture path -> url
+            var fileOwners = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase); // file name -> texture path
+            var processed = new HashSet<string>(StringComparer.OrdinalIgnoreCase);            // material names
+            var warnings = new List<string>();                                                 // non-fatal (name collisions)
+            // Failures are written to <batchDir>/_failures.json and force exit code 1; a run never
+            // reports success while texmap entries are missing.
+            var failures = new List<Newtonsoft.Json.Linq.JObject>();
+            void AddFailure(string kind, string context, string objectName, string reason)
+                => failures.Add(new Newtonsoft.Json.Linq.JObject
+                {
+                    ["kind"] = kind,
+                    ["context"] = context,
+                    ["object"] = objectName,
+                    ["reason"] = reason,
+                });
+
+            byte[]? BatchEncodePng(CUE4Parse.UE4.Assets.Exports.Texture.UTexture2D tex)
+            {
+                var ctexture = CUE4Parse_Conversion.Textures.TextureDecoder.Decode(
+                    tex, CUE4Parse.UE4.Assets.Exports.Texture.ETexturePlatform.DesktopMobile);
+                if (ctexture == null) return null;
+                return CUE4Parse_Conversion.Textures.TextureEncoder.Encode(
+                    ctexture, CUE4Parse_Conversion.Options.ETextureFormat.Png, false, out _, 100);
+            }
+
+            // Decode one texture to <batchDir>/<TextureName>.png, deduped by texture object path, and
+            // return its URL. Returns null on encode failure.
+            string? EmitPng(CUE4Parse.UE4.Assets.Exports.Texture.UTexture2D tex, ref long bytesOut, out long sizeOut)
+            {
+                sizeOut = 0;
+                var texObjPath = tex.GetPathName();
+                if (emitted.TryGetValue(texObjPath, out var known))
+                {
+                    var existing = Path.Combine(batchDir, Path.GetFileName(known));
+                    if (File.Exists(existing)) sizeOut = new FileInfo(existing).Length;
+                    return known;
+                }
+
+                var bytes = BatchEncodePng(tex);
+                if (bytes == null || bytes.Length == 0) return null;
+
+                var fileName = tex.Name + ".png";
+                if (fileOwners.TryGetValue(fileName, out var owner) && !string.Equals(owner, texObjPath, StringComparison.OrdinalIgnoreCase))
+                {
+                    // Two different textures with the same short name: disambiguate with a stable
+                    // hash instead of letting one silently overwrite/alias the other.
+                    fileName = tex.Name + "_" + StableSuffix(texObjPath) + ".png";
+                    var msg = $"name collision '{tex.Name}' -> '{fileName}' (also used by {owner})";
+                    warnings.Add(msg);
+                    Console.WriteLine($"    WARNING: {msg}");
+                }
+                fileOwners[fileName] = texObjPath;
+                File.WriteAllBytes(Path.Combine(batchDir, fileName), bytes);
+                bytesOut += bytes.Length;
+                sizeOut = bytes.Length;
+                var url = batchUrlPrefix + fileName;
+                emitted[texObjPath] = url;
+                return url;
+            }
+
+            // Resolve one material instance's three maps into both texmaps. Returns the tally so the
+            // caller can aggregate without capturing ref parameters (C# forbids that in local funcs).
+            (int Ok, int Fail, int Missing, long Bytes, string Detail) ProcessMaterial(
+                CUE4Parse.UE4.Assets.Exports.UObject matObj,
+                string origin)
+            {
+                var matName = matObj.Name;
+                if (matObj is not CUE4Parse.UE4.Assets.Exports.Material.UMaterialInstanceConstant mic)
+                {
+                    var why = $"'{matName}' is {matObj.GetType().Name}, not UMaterialInstanceConstant -- no TextureParameterValues";
+                    AddFailure("material", origin, matName, why);
+                    return (0, 1, 0, 0, why);
+                }
+
+                CUE4Parse.UE4.Objects.UObject.FPackageIndex? baseIdx = null, normalIdx = null, ormIdx = null;
+                foreach (var tp in mic.TextureParameterValues)
+                {
+                    var pName = tp.ParameterInfo.Name.Text;
+                    if (baseIdx == null && batchBaseNames.Contains(pName, StringComparer.OrdinalIgnoreCase)) baseIdx = tp.ParameterValue;
+                    else if (normalIdx == null && batchNormalNames.Contains(pName, StringComparer.OrdinalIgnoreCase)) normalIdx = tp.ParameterValue;
+                    else if (ormIdx == null && batchOrmNames.Contains(pName, StringComparer.OrdinalIgnoreCase)) ormIdx = tp.ParameterValue;
+                }
+
+                var safeEntry = new Newtonsoft.Json.Linq.JObject();
+                var ormEntry = new Newtonsoft.Json.Linq.JObject();
+                var labels = new List<string>();
+                int ok = 0, fail = 0, missing = 0;
+                long bytes = 0;
+
+                void Load(string role, Newtonsoft.Json.Linq.JObject safe, Newtonsoft.Json.Linq.JObject orm)
+                {
+                    var idx = role switch { "base" => baseIdx, "normal" => normalIdx, _ => ormIdx };
+                    if (idx == null || idx.IsNull)
+                    {
+                        missing++;
+                        var avail = string.Join(", ", mic.TextureParameterValues.Select(t => t.ParameterInfo.Name.Text));
+                        var why = $"no {role} parameter (has: {avail})";
+                        AddFailure("texture", origin, matName, why);
+                        labels.Add($"{role}=<absent>");
+                        return;
+                    }
+                    if (idx.Load() is not CUE4Parse.UE4.Assets.Exports.Texture.UTexture2D tex)
+                    {
+                        fail++;
+                        var why = $"{role} value is not a UTexture2D";
+                        AddFailure("texture", origin, matName, why);
+                        labels.Add($"{role}=<not UTexture2D>");
+                        return;
+                    }
+                    var url = EmitPng(tex, ref bytes, out var size);
+                    if (url == null)
+                    {
+                        fail++;
+                        var why = $"{role} '{tex.Name}' failed to encode";
+                        AddFailure("texture", origin, matName, why);
+                        labels.Add($"{role}={tex.Name}<encode failed>");
+                        return;
+                    }
+                    ok++;
+                    labels.Add($"{role}={tex.Name}({size:N0}B)");
+                    if (role == "base") { safe["map"] = url; orm["map"] = url; }
+                    else if (role == "normal") { safe["normalMap"] = url; orm["normalMap"] = url; }
+                    else { orm["roughnessMap"] = url; orm["metalnessMap"] = url; } // raw ORM: packing unconfirmed
+                }
+
+                Load("base", safeEntry, ormEntry);
+                Load("normal", safeEntry, ormEntry);
+                Load("orm", safeEntry, ormEntry);
+
+                // The key is written even when a channel is absent, so the texmap key set can match
+                // the GLB material union; the absent channel is reported, never hidden.
+                safeMap[matName] = safeEntry;
+                ormMap[matName] = ormEntry;
+                processed.Add(matName);
+
+                return (ok, fail, missing, bytes, $"{matName}  {string.Join("  ", labels)}");
+            }
+
+            List<string> GlbMaterialNames(string glbPath)
+            {
+                var list = new List<string>();
+                try
+                {
+                    var b = File.ReadAllBytes(glbPath);
+                    if (b.Length < 20 || b[0] != (byte)'g' || b[1] != (byte)'l' || b[2] != (byte)'T' || b[3] != (byte)'F')
+                    {
+                        AddFailure("glb", glbPath, Path.GetFileName(glbPath), "not a GLB file (bad magic or short header)");
+                        return list;
+                    }
+                    var jsonLen = (int)BitConverter.ToUInt32(b, 12);
+                    if (jsonLen <= 0 || jsonLen > b.Length - 20)
+                    {
+                        AddFailure("glb", glbPath, Path.GetFileName(glbPath), "truncated or invalid GLB JSON chunk");
+                        return list;
+                    }
+                    var o = Newtonsoft.Json.Linq.JObject.Parse(System.Text.Encoding.UTF8.GetString(b, 20, jsonLen));
+                    if (o["materials"] is Newtonsoft.Json.Linq.JArray mats)
+                        foreach (var m in mats)
+                        {
+                            var nm = (string?)m["name"];
+                            if (!string.IsNullOrEmpty(nm)) list.Add(nm!);
+                        }
+                }
+                catch (Exception ex)
+                {
+                    AddFailure("glb", glbPath, Path.GetFileName(glbPath), $"{ex.GetType().Name}: {ex.Message}");
+                    Console.WriteLine($"  GLB read failed {Path.GetFileName(glbPath)}: {ex.Message}");
+                }
+                return list;
+            }
+
+            // ---- pass 1: every mesh reachable from _meshrefs.json ----
+            var meshJobs = new List<(string Bp, string ObjPath)>();
+            int refKeysWithoutMeshes = 0;
+            foreach (var prop in refs.Properties())
+            {
+                if (prop.Value["meshes"] is not Newtonsoft.Json.Linq.JArray meshArr) { refKeysWithoutMeshes++; continue; }
+                foreach (var mm in meshArr)
+                {
+                    var op = (string?)mm["object_path"];
+                    if (!string.IsNullOrEmpty(op)) meshJobs.Add((prop.Name, op!));
+                }
+            }
+            Console.WriteLine($"  _meshrefs.json: {refs.Count} key(s), {meshJobs.Count} mesh object path(s), {refKeysWithoutMeshes} without meshes (skipped)");
+
+            int meshOkCount = 0, meshFailCount = 0;
+            foreach (var job in meshJobs)
+            {
+                try
+                {
+                    var obj = provider.LoadPackageObject(job.ObjPath) ?? provider.SafeLoadPackageObject(job.ObjPath);
+                    if (obj is not CUE4Parse.UE4.Assets.Exports.StaticMesh.UStaticMesh mesh)
+                    {
+                        meshFailCount++;
+                        AddFailure("mesh", $"[{job.Bp}]", job.ObjPath, "not a UStaticMesh");
+                        Console.WriteLine($"  [{job.Bp}] {job.ObjPath}: not a UStaticMesh -- skipped");
+                        continue;
+                    }
+                    var meshSlots = mesh.StaticMaterials ?? Array.Empty<CUE4Parse.UE4.Assets.Exports.StaticMesh.FStaticMaterial>();
+                    int mOk = 0, mFail = 0, mMissing = 0;
+                    long mBytes = 0;
+                    var names = new List<string>();
+                    foreach (var slot in meshSlots)
+                    {
+                        var iface = slot.MaterialInterface;
+                        if (iface == null || iface.IsNull)
+                        {
+                            AddFailure("mesh", mesh.Name, slot.MaterialSlotName.Text, "null material interface");
+                            Console.WriteLine($"    [{mesh.Name}] slot '{slot.MaterialSlotName.Text}': null material interface");
+                            continue;
+                        }
+                        var matObj = iface.Load();
+                        if (matObj == null)
+                        {
+                            mFail++;
+                            AddFailure("material", mesh.Name, slot.MaterialSlotName.Text, "material slot did not load");
+                            continue;
+                        }
+                        if (processed.Contains(matObj.Name)) { if (!names.Contains(matObj.Name + "(dedup)")) names.Add(matObj.Name + "(dedup)"); continue; }
+                        names.Add(matObj.Name);
+                        var r = ProcessMaterial(matObj, mesh.Name);
+                        mOk += r.Ok; mFail += r.Fail; mMissing += r.Missing; mBytes += r.Bytes;
+                        Console.WriteLine($"    {r.Detail}");
+                    }
+                    meshOkCount++;
+                    Console.WriteLine($"  [{job.Bp}] {mesh.Name}: {meshSlots.Length} slot(s), {names.Count} material(s) [{string.Join(", ", names)}] tex ok={mOk} fail={mFail} absent={mMissing} {mBytes:N0} B");
+                }
+                catch (Exception ex)
+                {
+                    meshFailCount++;
+                    AddFailure("mesh", $"[{job.Bp}]", job.ObjPath, $"{ex.GetType().Name}: {ex.Message}");
+                    Console.WriteLine($"  [{job.Bp}] {job.ObjPath}: ERROR {ex.GetType().Name}: {ex.Message}");
+                }
+            }
+
+            // ---- pass 2: materials present in meshes/*.glb but not reachable from _meshrefs.json ----
+            var glbUnion = new List<string>();
+            var glbByName = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase);
+            foreach (var glb in Directory.GetFiles(meshDir, "*.glb").OrderBy(x => x, StringComparer.OrdinalIgnoreCase))
+            {
+                var mats = GlbMaterialNames(glb);
+                glbByName[Path.GetFileNameWithoutExtension(glb)] = mats;
+                foreach (var m in mats) if (!glbUnion.Contains(m)) glbUnion.Add(m);
+            }
+            Console.WriteLine($"  {meshDir}/*.glb: {glbByName.Count} GLB(s), union of materials[].name = {glbUnion.Count}");
+
+            Dictionary<string, string>? miIndex = null;
+            string? FindMiPath(string name)
+            {
+                if (miIndex == null)
+                {
+                    miIndex = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                    foreach (var k in provider.Files.Keys)
+                    {
+                        if (!k.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase)) continue;
+                        var fn = k[(k.LastIndexOf('/') + 1)..^".uasset".Length];
+                        if (!fn.StartsWith("MI_", StringComparison.OrdinalIgnoreCase)) continue;
+                        miIndex[fn] = k[..^".uasset".Length];
+                    }
+                }
+                return miIndex.TryGetValue(name, out var p) ? p : null;
+            }
+
+            foreach (var kv in glbByName)
+            {
+                foreach (var matName in kv.Value)
+                {
+                    if (processed.Contains(matName)) continue;
+                    var miPath = FindMiPath(matName);
+                    if (miPath == null)
+                    {
+                        AddFailure("glb", kv.Key, matName, "in GLB but no MI_ package found in pak");
+                        Console.WriteLine($"  [glb-only] {kv.Key} -> {matName}: no MI_ package in pak -- UNRESOLVED");
+                        continue;
+                    }
+                    try
+                    {
+                        var matObj = provider.LoadPackageObject(miPath) ?? provider.SafeLoadPackageObject(miPath);
+                        if (matObj == null)
+                        {
+                            AddFailure("glb", kv.Key, matName, $"{miPath} did not load");
+                            Console.WriteLine($"  [glb-only] {kv.Key} -> {matName}: load failed -- UNRESOLVED");
+                            continue;
+                        }
+                        int gOk = 0, gFail = 0, gMissing = 0;
+                        long gBytes = 0;
+                        var gr = ProcessMaterial(matObj, $"glb-only:{kv.Key}");
+                        gOk += gr.Ok; gFail += gr.Fail; gMissing += gr.Missing; gBytes += gr.Bytes;
+                        Console.WriteLine($"    {gr.Detail}");
+                        Console.WriteLine($"  [glb-only] {kv.Key} -> {matName}: not in _meshrefs.json, resolved via {miPath[(miPath.LastIndexOf('/') + 1)..]} tex ok={gOk} fail={gFail} absent={gMissing} {gBytes:N0} B");
+                    }
+                    catch (Exception ex)
+                    {
+                        AddFailure("glb", kv.Key, matName, $"{ex.GetType().Name}: {ex.Message}");
+                        Console.WriteLine($"  [glb-only] {kv.Key} -> {matName}: ERROR {ex.GetType().Name}: {ex.Message}");
+                    }
+                }
+            }
+
+            // ---- emit merged texmaps and prove the key sets ----
+            var safePath = Path.Combine(batchDir, "_texmap_all.json");
+            var ormPath = Path.Combine(batchDir, "_texmap_all_orm.json");
+            File.WriteAllText(safePath, safeMap.ToString(Newtonsoft.Json.Formatting.Indented));
+            File.WriteAllText(ormPath, ormMap.ToString(Newtonsoft.Json.Formatting.Indented));
+
+            var unionSet = glbUnion.ToHashSet(StringComparer.OrdinalIgnoreCase);
+            var safeKeys = safeMap.Properties().Select(p => p.Name).ToHashSet(StringComparer.OrdinalIgnoreCase);
+            var ormKeys = ormMap.Properties().Select(p => p.Name).ToHashSet(StringComparer.OrdinalIgnoreCase);
+            // Count only the files this run produced (the caller's dir may hold unrelated PNGs),
+            // and only ones that really exist on disk.
+            var payloadFiles = emitted.Values
+                .Select(u => Path.Combine(batchDir, Path.GetFileName(u)))
+                .Where(File.Exists)
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .OrderBy(x => x, StringComparer.OrdinalIgnoreCase)
+                .ToList();
+            long payloadBytes = payloadFiles.Sum(f => new FileInfo(f).Length);
+
+            Console.WriteLine();
+            Console.WriteLine($"  meshes processed: ok={meshOkCount} fail={meshFailCount} of {meshJobs.Count}");
+            Console.WriteLine($"  materials resolved: {processed.Count} of {glbUnion.Count} in GLB union");
+            Console.WriteLine($"  _texmap_all.json      keys={safeKeys.Count}  setEqualToGlbUnion={unionSet.SetEquals(safeKeys)}  missingKeys=[{string.Join(", ", unionSet.Except(safeKeys))}]");
+            Console.WriteLine($"  _texmap_all_orm.json  keys={ormKeys.Count}  setEqualToGlbUnion={unionSet.SetEquals(ormKeys)}  missingKeys=[{string.Join(", ", unionSet.Except(ormKeys))}]");
+            Console.WriteLine($"  payload: {payloadFiles.Count} PNG in {batchDir}, {payloadBytes:N0} B ({payloadBytes / 1048576.0:N1} MB)");
+            if (warnings.Count > 0)
+            {
+                Console.WriteLine($"  {warnings.Count} warning(s):");
+                foreach (var w in warnings) Console.WriteLine($"    - {w}");
+            }
+
+            // Failure report: the run must not look successful while texmap entries are missing.
+            var failuresPath = Path.Combine(batchDir, "_failures.json");
+            if (failures.Count > 0)
+            {
+                var failureDoc = new Newtonsoft.Json.Linq.JObject
+                {
+                    ["command"] = "exporttex --all",
+                    ["generated"] = DateTimeOffset.Now.ToString("o"),
+                    ["failures"] = new Newtonsoft.Json.Linq.JArray(failures),
+                };
+                File.WriteAllText(failuresPath, failureDoc.ToString(Newtonsoft.Json.Formatting.Indented));
+                Console.WriteLine($"  {failures.Count} failure(s) reported -- wrote {failuresPath}");
+                foreach (var f in failures)
+                    Console.WriteLine($"    - [{f["kind"]}] {f["context"]} {f["object"]}: {f["reason"]}");
+                Environment.ExitCode = 1;
+            }
+            else
+            {
+                try { if (File.Exists(failuresPath)) File.Delete(failuresPath); } catch { /* stale report is inert */ }
+                Console.WriteLine("  no failures: texmaps are complete for the GLB material union");
+            }
+            Console.WriteLine($"  wrote {safePath}");
+            Console.WriteLine($"  wrote {ormPath}");
+            break;
+        }
+
+        // ---- single-mesh mode ----
+        // exporttex <meshObjectPath> <outDir> -- decode one static mesh's base-colour and normal
+        // textures to PNG, plus <outDir>/_texmap.json keyed by the glTF material name.
+        var objPath = args[1];
+        var texDir = args[2];
+        if (!TryGetRepoUrlPrefix(texDir, repoRoot, out var urlPrefix))
+        {
+            Environment.ExitCode = 2;
+            break;
+        }
+
+        CUE4Parse.UE4.Assets.Exports.UObject? meshObj;
+        try
+        {
+            meshObj = provider.LoadPackageObject(objPath);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"ERROR: cannot load '{objPath}': {ex.GetType().Name}: {ex.Message}");
+            Console.Error.WriteLine("       nothing was written");
+            Environment.ExitCode = 1;
+            break;
+        }
+        Console.WriteLine($"  loaded: {meshObj?.GetType().Name}  {meshObj?.Name}");
+        if (meshObj is not CUE4Parse.UE4.Assets.Exports.StaticMesh.UStaticMesh sm)
+        {
+            Console.Error.WriteLine("ERROR: not a UStaticMesh -- nothing written");
+            Environment.ExitCode = 1;
+            break;
+        }
+        // Only create the output directory once the input resolved (no empty dirs on bad input).
+        Directory.CreateDirectory(texDir);
+
+        // Parameter names differ per material family: stone/wood use "Base Texture"/"Normal Map",
+        // glass and Japanese style use "BaseColorMap"/"MaskMap"/"NormalMap". Accept both.
+        var baseParamNames = new[] { "Base Texture", "BaseColorMap", "BaseColor", "Diffuse" };
+        var normalParamNames = new[] { "Normal Map", "NormalMap", "Normal" };
+
+        var texmap = new Newtonsoft.Json.Linq.JObject();
+        var emittedTex = new Dictionary<string, (string Url, string FileName)>(StringComparer.OrdinalIgnoreCase); // texture object path -> what we wrote
+        var texFileOwners = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);                     // file name -> texture object path
+        var texWarnings = new List<string>();
+        int ok = 0, fail = 0;
+
+        byte[]? EncodePng(CUE4Parse.UE4.Assets.Exports.Texture.UTexture2D tex)
+        {
+            var ctexture = CUE4Parse_Conversion.Textures.TextureDecoder.Decode(
+                tex, CUE4Parse.UE4.Assets.Exports.Texture.ETexturePlatform.DesktopMobile);
+            if (ctexture == null) return null;
+            return CUE4Parse_Conversion.Textures.TextureEncoder.Encode(
+                ctexture, CUE4Parse_Conversion.Options.ETextureFormat.Png, false, out _, 100);
+        }
+
+        // Decode tex to <texDir>/<TextureName>.png, deduped by texture OBJECT PATH (not by short
+        // name), and return its URL. Different packages can hold textures with the same short
+        // name; those get the same stable "_<sha256 prefix>" suffix the batch mode uses instead
+        // of silently letting one overwrite or alias the other. Returns null when nothing was
+        // written, and in that case the caller must not register a texmap entry.
+        string? EmitTexture(CUE4Parse.UE4.Assets.Exports.Texture.UTexture2D tex, out long sizeOut)
+        {
+            sizeOut = 0;
+            var texObjPath = tex.GetPathName();
+            if (emittedTex.TryGetValue(texObjPath, out var known))
+            {
+                var existing = Path.Combine(texDir, known.FileName);
+                if (File.Exists(existing)) sizeOut = new FileInfo(existing).Length;
+                return known.Url;
+            }
+
+            var bytes = EncodePng(tex);
+            if (bytes == null || bytes.Length == 0) return null;
+
+            var fileName = tex.Name + ".png";
+            if (texFileOwners.TryGetValue(fileName, out var owner) && !string.Equals(owner, texObjPath, StringComparison.OrdinalIgnoreCase))
+            {
+                fileName = tex.Name + "_" + StableSuffix(texObjPath) + ".png";
+                var msg = $"texture name collision '{tex.Name}': '{texObjPath}' and '{owner}' both want '{tex.Name}.png'; disambiguated to '{fileName}'";
+                texWarnings.Add(msg);
+                Console.WriteLine($"    WARNING: {msg}");
+            }
+            texFileOwners[fileName] = texObjPath;
+            File.WriteAllBytes(Path.Combine(texDir, fileName), bytes);
+            sizeOut = bytes.Length;
+            var url = urlPrefix + fileName;
+            emittedTex[texObjPath] = (url, fileName);
+            return url;
+        }
+
+        var slots = sm.StaticMaterials ?? Array.Empty<CUE4Parse.UE4.Assets.Exports.StaticMesh.FStaticMaterial>();
+        Console.WriteLine($"  {slots.Length} material slot(s)");
+        foreach (var slot in slots)
+        {
+            var slotName = slot.MaterialSlotName.Text;
+            var iface = slot.MaterialInterface;
+            if (iface == null || iface.IsNull)
+            {
+                Console.WriteLine($"  [{slotName}] null material interface -- skipped");
+                continue;
+            }
+
+            var matObj = iface.Load();
+            if (matObj == null)
+            {
+                fail++;
+                Console.WriteLine($"  [{slotName}] material could not be loaded -- skipped");
+                continue;
+            }
+
+            // CUE4Parse's glTF writer names the exported glTF material after the material object
+            // itself, so this is the key the renderer's texmap has to use -- not the slot name.
+            var gltfMatName = matObj.Name;
+            Console.WriteLine($"  [{slotName}] material {matObj.GetType().Name} '{gltfMatName}'");
+
+            if (matObj is not CUE4Parse.UE4.Assets.Exports.Material.UMaterialInstanceConstant mic)
+            {
+                fail++;
+                Console.WriteLine("    not a UMaterialInstanceConstant -- no TextureParameterValues");
+                continue;
+            }
+
+            CUE4Parse.UE4.Objects.UObject.FPackageIndex? baseIdx = null, normalIdx = null;
+            var baseParam = "";
+            var normalParam = "";
+            foreach (var tp in mic.TextureParameterValues)
+            {
+                var pName = tp.ParameterInfo.Name.Text;
+                if (baseIdx == null && baseParamNames.Contains(pName, StringComparer.OrdinalIgnoreCase))
+                {
+                    baseIdx = tp.ParameterValue;
+                    baseParam = pName;
+                }
+                else if (normalIdx == null && normalParamNames.Contains(pName, StringComparer.OrdinalIgnoreCase))
+                {
+                    normalIdx = tp.ParameterValue;
+                    normalParam = pName;
+                }
+            }
+
+            if (baseIdx != null && !baseIdx.IsNull)
+            {
+                var tex = baseIdx.Load() as CUE4Parse.UE4.Assets.Exports.Texture.UTexture2D;
+                if (tex == null)
+                {
+                    fail++;
+                    Console.WriteLine($"    base '{baseParam}': not a UTexture2D -- skipped");
+                }
+                else
+                {
+                    try
+                    {
+                        var url = EmitTexture(tex, out var size);
+                        if (url == null)
+                        {
+                            fail++;
+                            Console.WriteLine($"    base   '{baseParam}' {tex.Name}: encode produced nothing");
+                        }
+                        else
+                        {
+                            // Only the base colour goes into _texmap.json: the render page applies
+                            // texmap entries as MeshStandardMaterial.map (colour), not as normalMap.
+                            texmap[gltfMatName] = url;
+                            ok++;
+                            var filePath = Path.Combine(texDir, Path.GetFileName(url));
+                            Console.WriteLine($"    base   '{baseParam}' {tex.Name} -> {size:N0} B  {filePath}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        fail++;
+                        Console.WriteLine($"    base   '{baseParam}' {tex.Name}: {ex.GetType().Name}: {ex.Message}");
+                    }
+                }
+            }
+            else
+            {
+                fail++;
+                Console.WriteLine("    no base-colour parameter found in: " +
+                    string.Join(", ", mic.TextureParameterValues.Select(t => t.ParameterInfo.Name.Text)));
+            }
+
+            // Normal map: decoded for evidence only -- the render page has no normalMap hook yet.
+            if (normalIdx != null && !normalIdx.IsNull)
+            {
+                var ntex = normalIdx.Load() as CUE4Parse.UE4.Assets.Exports.Texture.UTexture2D;
+                if (ntex == null)
+                {
+                    Console.WriteLine($"    normal '{normalParam}': not a UTexture2D -- skipped");
+                }
+                else
+                {
+                    try
+                    {
+                        var url = EmitTexture(ntex, out var nsize);
+                        if (url == null)
+                        {
+                            Console.WriteLine($"    normal '{normalParam}' {ntex.Name}: encode produced nothing");
+                        }
+                        else
+                        {
+                            var nfilePath = Path.Combine(texDir, Path.GetFileName(url));
+                            Console.WriteLine($"    normal '{normalParam}' {ntex.Name} -> {nsize:N0} B  {nfilePath}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"    normal '{normalParam}' {ntex.Name}: {ex.GetType().Name}: {ex.Message}");
+                    }
+                }
+            }
+        }
+
+        var texmapPath = Path.Combine(texDir, "_texmap.json");
+        File.WriteAllText(texmapPath, texmap.ToString(Newtonsoft.Json.Formatting.Indented));
+        Console.WriteLine($"  textures ok={ok} fail={fail} dir={texDir}");
+        if (texWarnings.Count > 0)
+        {
+            Console.WriteLine($"  {texWarnings.Count} warning(s):");
+            foreach (var w in texWarnings) Console.WriteLine($"    - {w}");
+        }
+        if (fail > 0)
+        {
+            // Incomplete texmap: keep the partial result for inspection but never report success.
+            Console.Error.WriteLine($"ERROR: {fail} texture/channel failure(s) -- _texmap.json is incomplete");
+            Environment.ExitCode = 1;
+        }
+        Console.WriteLine($"  wrote {texmapPath}");
+        break;
+    }
+
     case "exportmesh":
     {
         var objPath = args[1];
@@ -403,15 +1165,27 @@ switch (args[0])
             .Where(k => k.StartsWith(BpDir, StringComparison.OrdinalIgnoreCase) && k.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase))
             .Select(k => k[BpDir.Length..^".uasset".Length])
             .ToHashSet(StringComparer.OrdinalIgnoreCase);
-        Console.WriteLine($"  {packageNames.Count} build-object blueprints available in the pak");
+
+        // BuildObject/ has subdirectories (Furniture/, MultiProduct/, LabResearchSpace/, Base/,
+        // ForDevelop/). Keys under them are "Furniture/BP_BuildObject_Chair01_Wood", which the
+        // exact-name checks below could never match -- that silently dropped 219/481 (45%) of the
+        // catalog on the first full run. Index by BARE package name as well, preferring top level.
+        var byBare = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var p in packageNames)
+        {
+            var barePkg = p[(p.LastIndexOf('/') + 1)..];
+            if (!byBare.TryGetValue(barePkg, out var seen) || seen.Contains('/')) byBare[barePkg] = p;
+        }
+        Console.WriteLine($"  {packageNames.Count} build-object blueprints available in the pak"
+                          + $" ({packageNames.Count(n => n.Contains('/'))} of them in subdirectories)");
 
         string? ResolveBp(string bp)
         {
             var bare = bp.StartsWith("BP_BuildObject_") ? bp["BP_BuildObject_".Length..] : bp;
             if (packageNames.Contains(bp)) return bp;
-            if (aliases.TryGetValue(bare, out var alias) && packageNames.Contains("BP_BuildObject_" + alias))
-                return "BP_BuildObject_" + alias;
-            if (packageNames.Contains("BP_BuildObject_" + bare)) return "BP_BuildObject_" + bare;
+            if (aliases.TryGetValue(bare, out var alias) && byBare.TryGetValue("BP_BuildObject_" + alias, out var viaAlias))
+                return viaAlias;
+            if (byBare.TryGetValue("BP_BuildObject_" + bare, out var viaName)) return viaName;
             return null;
         }
 

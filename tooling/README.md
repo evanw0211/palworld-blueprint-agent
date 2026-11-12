@@ -53,7 +53,7 @@ python tooling/farm_stack.py --layers 24 --crops tomato,carrot -o out --name far
 
 退出码：0 = 写出并通过离线检查；1 = 有 problems 或输入不可用（不写文件）；2 = 命令行参数错误（argparse）。
 
-同一个生成器的网页版：[`web/farm-stack/index.html`](../web/farm-stack/index.html)（离线单页，双击即开；实时预览、粘贴旧码作模板、一键复制/下载，校验全在浏览器本地完成，永不联网）。
+同一个生成器的网页版：[`web/farm-stack/index.html`](../web/farm-stack/index.html)（离线单页，双击即开；作物序列即层数、真实比例剖面预览、本机自动保存、一键复制，校验全在浏览器本地完成，永不联网）。
 
 本目录还有两个不属于上面三个脚本的组件，契约归各自页面：数据刷新工具（dotnet CLI）见 [PalAssetExport/README.md](PalAssetExport/README.md)，本页不写它的命令；离线渲染页面与保真度对照图见 [../render/README.md](../render/README.md)。
 

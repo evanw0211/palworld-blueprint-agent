@@ -1,5 +1,5 @@
 ---
-description: "tooling/ 三个脚本的命令与退出码：导出 authoring、离线校验、可选预览。"
+description: "tooling/ 四个脚本的命令与退出码：导出 authoring、离线校验、可选预览、农场堆叠生成。"
 kind: "component-reference"
 ---
 
@@ -7,7 +7,7 @@ kind: "component-reference"
 
 ## 摘要
 
-把 authoring JSON 变成 `schema-9 JSON + PWB9D 文本码`，用 `validate.py` 离线复核；`render_offline.mjs` 可选出缩略图。适合导出后立刻复核，也适合交付前当门禁。边界：不判设计好坏，也不验证游戏内能否放置。
+把 authoring JSON 变成 `schema-9 JSON + PWB9D 文本码`，用 `validate.py` 离线复核；`render_offline.mjs` 可选出缩略图；`farm_stack.py` 按已有农场堆塔码批量生成加高版本。适合导出后立刻复核，也适合交付前当门禁。边界：不判设计好坏，也不验证游戏内能否放置。
 
 ## 目录
 
@@ -40,6 +40,20 @@ authoring 输入是 `export.py` 的唯一输入格式，字段语义以 `build()
 | `pieces[].id` | 是 | BuildObjectId，须来自 `data/catalog.json`；未知 id 只警告 |
 | `pieces[].x` `y` `z` | 否 | 厘米（默认 `0`），任意公共原点与朝向，导出时自动移除 anchor 帧 |
 | `pieces[].yaw` | 否 | 度（默认 `0`），UE yaw：`0`=+X、`90`=+Y |
+
+### 农场堆塔生成（farm_stack.py）
+
+按已验证的「农田垂直堆叠」码生产可粘贴码：层间距默认 48.777 cm（木凳座高，实测 0.4877736 m），每层以属性 1（ConnectInfoAnyPlace）的存档连接串链。`--from` 以一份现有码为模板，`--layers` 控制层数；`--crops` 换作物（`wheet`/`tomato`/`carrot` 等别名循环）；只有 `--keep-world`/`--keep-support` 才复制模板的原位吸附 `w` 与外部木凳支撑 `x`，默认不复制以便换基地使用。
+
+~~~powershell
+python tooling/farm_stack.py --decode out/farm_stack_22.pwb9d.txt
+python tooling/farm_stack.py --from out/farm_stack_source_11.pwb9d.txt --layers 40 -o out --name farm_stack_40
+python tooling/farm_stack.py --layers 24 --crops tomato,carrot -o out --name farm_stack_24_mixed
+~~~
+
+退出码：0 = 写出并通过离线检查；1 = 有 problems 或输入不可用（不写文件）；2 = 命令行参数错误（argparse）。
+
+同一个生成器的网页版：[`web/farm-stack/index.html`](../web/farm-stack/index.html)（离线单页，双击即开；实时预览、粘贴旧码作模板、一键复制/下载，校验全在浏览器本地完成，永不联网）。
 
 本目录还有两个不属于上面三个脚本的组件，契约归各自页面：数据刷新工具（dotnet CLI）见 [PalAssetExport/README.md](PalAssetExport/README.md)，本页不写它的命令；离线渲染页面与保真度对照图见 [../render/README.md](../render/README.md)。
 

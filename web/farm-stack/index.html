@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>帕鲁农田堆塔生成器</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --panel2: #1d222b; --line: #2a3140;
+    --text: #e8ecf4; --muted: #9aa6b8; --accent: #7cc4ff; --ok: #55d68a;
+    --warn: #f2c14e; --bad: #ff6b6b; --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+  body { font: 13px/1.55 "Segoe UI", "Microsoft YaHei", system-ui, sans-serif; }
+  a { color: var(--accent); }
+  header { padding: 18px 22px 10px; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: baseline; }
+  header h1 { margin: 0; font-size: 20px; letter-spacing: .5px; }
+  header p { margin: 0; color: var(--muted); font-size: 12px; }
+  .presets { margin-left: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+  .presets button { font-size: 12px; }
+  main { display: grid; grid-template-columns: minmax(300px, 380px) minmax(420px, 1fr); gap: 14px; padding: 10px 22px 26px; align-items: start; }
+  @media (max-width: 980px) { main { grid-template-columns: 1fr; } }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; }
+  .panel h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .9px; color: var(--muted); margin: 0 0 10px; font-weight: 600; }
+  .group + .group { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 14px; }
+  label.field { display: flex; align-items: center; gap: 8px; margin: 8px 0; color: var(--muted); }
+  label.field input[type=number] { width: 90px; }
+  label.field input[type=range] { flex: 1; min-width: 80px; }
+  label.check { display: flex; align-items: center; gap: 8px; margin: 8px 0; color: var(--muted); }
+  label.check input { margin: 0; }
+  textarea, input[type=number], select {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--line);
+    border-radius: 8px; padding: 7px 9px; font: inherit; outline: none;
+  }
+  textarea:focus, input:focus, select:focus { border-color: var(--accent); }
+  button {
+    background: #2a3444; color: var(--text); border: 1px solid #37445a;
+    border-radius: 8px; padding: 6px 11px; font: inherit; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1f4f78; border-color: #2f6c9d; }
+  button.ghost { background: transparent; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 8px 0; }
+  .hint { color: var(--muted); font-size: 11.5px; line-height: 1.45; margin: 6px 0 0; }
+  #tplInput { width: 100%; height: 64px; resize: vertical; font-family: ui-monospace, Consolas, monospace; font-size: 11px; }
+  #tplInfo { min-height: 16px; }
+  .chips { display: flex; flex-direction: column; gap: 5px; max-height: 240px; overflow: auto; padding-right: 2px; }
+  .badge { margin-left: 6px; padding: 1px 8px; border-radius: 20px; background: #24344a; border: 1px solid #34486a; color: #9fd0ff; font-size: 11px; letter-spacing: 0; text-transform: none; }
+  .empty { color: var(--muted); font-size: 12px; border: 1px dashed var(--line); border-radius: 8px; padding: 12px; text-align: center; }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button:disabled:hover { border-color: #37445a; }
+  .chip { display: flex; align-items: center; gap: 7px; background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; }
+  .chip .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .chip .name { flex: 1; }
+  .chip .layers { color: var(--muted); font-size: 11px; }
+  .chip button { padding: 1px 6px; font-size: 11px; line-height: 1.2; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 8px; margin-bottom: 12px; }
+  .stat { background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+  .stat .v { font-size: 17px; font-weight: 600; }
+  .stat .k { color: var(--muted); font-size: 11px; }
+  .preview-wrap { position: relative; background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 6px; margin-bottom: 12px; }
+  #preview { display: block; width: 100%; height: 330px; }
+  #tooltip { position: absolute; pointer-events: none; background: #0b0d11ee; border: 1px solid var(--line);
+    border-radius: 7px; padding: 4px 8px; font-size: 11.5px; display: none; white-space: nowrap; z-index: 5; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 6px; }
+  .tabs button.active { background: #1f4f78; border-color: #2f6c9d; }
+  #output { width: 100%; height: 150px; resize: vertical; font-family: ui-monospace, Consolas, monospace;
+    font-size: 11px; line-height: 1.45; word-break: break-all; }
+  #status { margin-top: 8px; font-size: 12px; }
+  .status-ok { color: var(--ok); }
+  .status-bad { color: var(--bad); }
+  .status-warn { color: var(--warn); }
+  #materials { color: var(--muted); font-size: 11.5px; margin-top: 4px; }
+  details { margin-top: 12px; color: var(--muted); font-size: 12px; }
+  details summary { cursor: pointer; color: var(--text); }
+  details code { color: var(--accent); font-family: ui-monospace, Consolas, monospace; }
+  .toast { position: fixed; right: 20px; bottom: 20px; background: #173d2a; color: #c8f5d8;
+    border: 1px solid #2b6a45; border-radius: 9px; padding: 9px 14px; opacity: 0; transition: opacity .18s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>帕鲁农田堆塔生成器</h1>
+    <p>离线 · 零依赖 · 与 Simple Building Blueprints 0.21.5 的 PWB9D 剪贴板码同格式</p>
+  </div>
+  <div class="presets">
+    <button data-preset="11">原版 11 层</button>
+    <button data-preset="22">22 层</button>
+    <button data-preset="40">40 层</button>
+    <button data-preset="tomato">纯番茄 22</button>
+    <button data-preset="random">随机 24</button>
+  </div>
+</header>
+
+<main>
+  <section class="panel">
+    <div class="group">
+      <h2>模板（可选）</h2>
+      <textarea id="tplInput" placeholder="粘贴一段现有 PWB9D 蓝图码，解析后按它的作物序列/朝向继续加高"></textarea>
+      <div class="row">
+        <button id="loadTpl" class="primary">解析模板</button>
+        <button id="clearTpl" class="ghost">清空模板</button>
+      </div>
+      <div id="tplInfo" class="hint">未加载模板：使用下方参数从零生成。</div>
+    </div>
+
+    <div class="group">
+      <h2>作物序列 <span id="layerBadge" class="badge">11 层</span></h2>
+      <div id="cropList" class="chips"></div>
+      <div class="row">
+        <select id="cropPick"></select>
+        <button id="cropAdd">添加一层</button>
+        <button id="cropClear" class="ghost">一键清空</button>
+      </div>
+      <p class="hint">序列里排几项就是几层（第 1 项在最底层）；加到 22 项就是 22 层。每层固定按木凳座高 48.777 cm 堆叠，载入旧码模板时沿用模板的实测间距。</p>
+      <p class="hint" id="saveInfo">序列会保存在本机浏览器，刷新或重开自动恢复。</p>
+    </div>
+
+    <div class="group">
+      <h2>朝向 / 附加</h2>
+      <label class="check"><input type="radio" name="yaw" value="alt" checked> 交替 0° / 180°</label>
+      <label class="check"><input type="radio" name="yaw" value="zero"> 全部 0°</label>
+      <label class="check hidden" id="yawTemplateWrap"><input type="radio" name="yaw" value="template"> 跟随模板朝向</label>
+      <label class="check"><input type="checkbox" id="keepWorld" disabled> 保留原位吸附 w（模板原基地坐标）</label>
+      <label class="check"><input type="checkbox" id="keepSupport" disabled> 保留外部支撑 x（模板底部木凳）</label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="stats" id="stats"></div>
+    <div class="preview-wrap">
+      <svg id="preview" viewBox="0 0 560 330" preserveAspectRatio="xMidYMid meet"></svg>
+      <div id="tooltip"></div>
+    </div>
+    <div class="tabs">
+      <button data-tab="code" class="active">蓝图码</button>
+      <button data-tab="json">schema-9 JSON</button>
+    </div>
+    <textarea id="output" readonly spellcheck="false"></textarea>
+    <div class="row">
+      <button id="copy" class="primary">复制当前内容</button>
+      <button id="downloadCode">下载 .pwb9d.txt</button>
+      <button id="downloadJson">下载 .json</button>
+      <span id="materials"></span>
+    </div>
+    <div id="status"></div>
+    <details>
+      <summary>用法与约束</summary>
+      <p>1. 在游戏里打开 mod 的蓝图界面，把“蓝图码”粘贴进去导入（仓库文档记的按键是 B → K，未在本仓库实机复现，按你的键位）。</p>
+      <p>2. 加高就往序列里加项：序列长度 = 层数，层间存档连接自动按原模式串链；全部校验在浏览器本地完成。</p>
+      <p>3. 默认不复制模板的 <code>w</code>（原基地原位吸附）和 <code>x</code>（底部木凳外部支撑），换基地也能用；要完整复刻原码效果就勾选保留。</p>
+      <p>4. 序列、模板和勾选状态自动保存在本机浏览器（localStorage），刷新/重开自动恢复；清浏览器数据或换浏览器会丢失。</p>
+      <p>5. 本页只生产蓝图码，不验证游戏内建造结果。</p>
+    </details>
+  </section>
+</main>
+
+<div id="toast" class="toast">已复制</div>
+<script src="core.js"></script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var state = {
+    template: null,
+    crops: [],
+    yaw: "alt",
+    keepWorld: false,
+    keepSupport: false,
+    tab: "code"
+  };
+  var lastResult = null;
+  var toastTimer = null;
+  var STORAGE_KEY = "farm-stack-sequence-v1";
+
+  function toast(text) {
+    var el = $("toast");
+    el.textContent = text;
+    el.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove("show"); }, 1400);
+  }
+
+  function defaultSequence() {
+    return FarmStack.defaultCrops(11);
+  }
+
+  function readSavedState() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      var data = JSON.parse(raw);
+      if (!data || !Array.isArray(data.crops)) return null;
+      var crops = data.crops.filter(function (id) {
+        return FarmStack.CROPS.some(function (c) { return c.id === id; });
+      });
+      return {
+        crops: crops,
+        yaw: typeof data.yaw === "string" ? data.yaw : "alt",
+        template: typeof data.template === "string" ? data.template : null,
+        keepWorld: data.keepWorld === true,
+        keepSupport: data.keepSupport === true
+      };
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function saveState() {
+    try {
+      var data = {
+        crops: currentCrops().slice(),
+        yaw: readYaw(),
+        template: null,
+        keepWorld: false,
+        keepSupport: false
+      };
+      if (state.template) {
+        data.template = FarmStack.encodePWB9D(state.template);
+        data.keepWorld = $("keepWorld").checked === true;
+        data.keepSupport = $("keepSupport").checked === true;
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      $("saveInfo").textContent = data.crops.length
+        ? "已自动保存到本机浏览器：" + data.crops.length + " 层（刷新后恢复）"
+        : "本机保存已清空，刷新后仍为空序列。";
+    } catch (error) {
+      $("saveInfo").textContent = "本机保存不可用：" + error.message;
+    }
+  }
+
+  function currentCrops() {
+    if (!Array.isArray(state.crops)) state.crops = [];
+    return state.crops;
+  }
+
+  function cropName(id) { return FarmStack.cropMeta(id).label; }
+
+  function renderCropList() {
+    var crops = currentCrops();
+    var counts = {};
+    crops.forEach(function (id) { counts[id] = (counts[id] || 0) + 1; });
+    var box = $("cropList");
+    box.innerHTML = "";
+    $("layerBadge").textContent = crops.length + " 层";
+    if (!crops.length) {
+      var empty = document.createElement("div");
+      empty.className = "empty";
+      empty.textContent = "序列为空：下面选作物点「添加一层」，或点右上角预设快速填充。";
+      box.appendChild(empty);
+      return;
+    }
+    crops.forEach(function (id, index) {
+      var meta = FarmStack.cropMeta(id);
+      var chip = document.createElement("div");
+      chip.className = "chip";
+      var dot = document.createElement("span"); dot.className = "dot"; dot.style.background = meta.color;
+      var name = document.createElement("span"); name.className = "name";
+      name.textContent = (index + 1) + ". " + meta.label;
+      var count = document.createElement("span"); count.className = "layers";
+      count.textContent = counts[id] + " 层";
+      chip.appendChild(dot); chip.appendChild(name); chip.appendChild(count);
+      if (index > 0) {
+        var up = document.createElement("button"); up.textContent = "↑"; up.title = "上移";
+        up.onclick = function () { var list = currentCrops().slice(); var t = list[index - 1]; list[index - 1] = list[index]; list[index] = t; state.crops = list; renderCropList(); render(); };
+        chip.appendChild(up);
+      }
+      if (index < crops.length - 1) {
+        var down = document.createElement("button"); down.textContent = "↓"; down.title = "下移";
+        down.onclick = function () { var list = currentCrops().slice(); var t = list[index + 1]; list[index + 1] = list[index]; list[index] = t; state.crops = list; renderCropList(); render(); };
+        chip.appendChild(down);
+      }
+      var del = document.createElement("button"); del.textContent = "×"; del.title = "删除";
+      del.onclick = function () { var list = currentCrops().slice(); list.splice(index, 1); state.crops = list; renderCropList(); render(); };
+      chip.appendChild(del);
+      box.appendChild(chip);
+    });
+  }
+
+  function fillCropPicker() {
+    var select = $("cropPick");
+    select.innerHTML = "";
+    FarmStack.CROPS.forEach(function (c) {
+      var option = document.createElement("option");
+      option.value = c.id; option.textContent = c.label + "（" + c.id + "）";
+      select.appendChild(option);
+    });
+  }
+
+  function templateInfo(text) {
+    $("tplInfo").textContent = text;
+  }
+
+  function installTemplate(bp) {
+    var info = FarmStack.summarize(bp);
+    state.template = bp;
+    $("yawTemplateWrap").classList.remove("hidden");
+    $("keepWorld").disabled = !info.hasWorld;
+    $("keepSupport").disabled = !info.hasSupport;
+    templateInfo("已加载：" + info.layers + " 层（序列 " + info.crops.length + " 项），沿用模板间距 " + info.pitch +
+      " cm；原位吸附 w：" + (info.hasWorld ? "有" : "无") + "，外部支撑 x：" + (info.hasSupport ? "有" : "无") + "。");
+    return info;
+  }
+
+  function loadTemplate() {
+    var raw = $("tplInput").value.trim();
+    if (!raw) { toast("先粘贴一段蓝图码"); return; }
+    var bp;
+    try { bp = FarmStack.decodePWB9D(raw); }
+    catch (error) {
+      templateInfo("解析失败：" + error.message);
+      toast("解析失败");
+      return;
+    }
+    var info = installTemplate(bp);
+    state.crops = info.crops.slice();
+    state.yaw = "template";
+    document.querySelector('input[name=yaw][value=template]').checked = true;
+    $("keepWorld").checked = false;
+    $("keepSupport").checked = false;
+    renderCropList();
+    render();
+  }
+
+  function restoreState() {
+    var saved = readSavedState();
+    if (!saved) return;
+    state.crops = saved.crops.slice();
+    if (saved.template) {
+      var bp = null;
+      try { bp = FarmStack.decodePWB9D(saved.template); } catch (error) { bp = null; }
+      if (bp) {
+        $("tplInput").value = saved.template;
+        installTemplate(bp);
+        $("keepWorld").checked = saved.keepWorld && !$("keepWorld").disabled;
+        $("keepSupport").checked = saved.keepSupport && !$("keepSupport").disabled;
+      }
+    }
+    var yaw = saved.yaw;
+    if (yaw === "template" && !state.template) yaw = "alt";
+    var radio = document.querySelector('input[name=yaw][value="' + yaw + '"]');
+    if (radio) radio.checked = true;
+    state.yaw = radio ? yaw : "alt";
+  }
+
+  function clearTemplate() {
+    state.template = null;
+    $("tplInput").value = "";
+    templateInfo("未加载模板：使用下方参数从零生成。");
+    $("yawTemplateWrap").classList.add("hidden");
+    $("keepWorld").disabled = true;
+    $("keepSupport").disabled = true;
+    $("keepWorld").checked = false;
+    $("keepSupport").checked = false;
+    var altRadio = document.querySelector('input[name=yaw][value=alt]');
+    altRadio.checked = true;
+    state.yaw = "alt";
+  }
+
+  function readYaw() {
+    var checked = document.querySelector('input[name=yaw]:checked');
+    return checked ? checked.value : "alt";
+  }
+
+  function buildBlueprint() {
+    var crops = currentCrops().slice();
+    if (!crops.length) throw new Error("作物序列为空，先添加至少一层");
+    var yaw = readYaw();
+    var options = { layers: crops.length, crops: crops, yaw: yaw };
+    if (state.template) {
+      options.keepWorld = $("keepWorld").checked && !$("keepWorld").disabled;
+      options.keepSupport = $("keepSupport").checked && !$("keepSupport").disabled;
+      return FarmStack.buildFromTemplate(state.template, options);
+    }
+    options.pitch = FarmStack.PITCH;
+    if (yaw === "template") options.yaw = "alt";
+    return FarmStack.build(options);
+  }
+
+  function fmtHeight(cm) {
+    if (cm == null) return "—";
+    return (cm / 100).toFixed(2) + " m";
+  }
+
+  function renderStats(result, info) {
+    var stats = result.stats;
+    var layers = info.layers;
+    var cards = [
+      ["层数", String(layers)],
+      ["总高", fmtHeight(info.totalHeight)],
+      ["代码长度", String(lastResult.code.length) + " 字符"],
+      ["JSON", String(lastResult.json.length) + " 字节"],
+      ["连接边", String(stats.edges)],
+      ["作物种类", String(Object.keys(stats.counts).length)]
+    ];
+    $("stats").innerHTML = "";
+    cards.forEach(function (pair) {
+      var div = document.createElement("div");
+      div.className = "stat";
+      div.innerHTML = '<div class="v"></div><div class="k"></div>';
+      div.children[0].textContent = pair[1];
+      div.children[1].textContent = pair[0];
+      $("stats").appendChild(div);
+    });
+    var parts = Object.keys(stats.materials).sort().map(function (item) {
+      return item + " ×" + stats.materials[item];
+    });
+    $("materials").textContent = parts.length ? "材料合计：" + parts.join("，") : "";
+  }
+
+  var COLORS = {};
+
+  function renderPreview(info) {
+    var svg = $("preview");
+    var W = 560, H = 330;
+    var rows = info.rows;
+    var padTop = 18, padBottom = 24, padLeft = 52, padRight = 96;
+    var usableH = H - padTop - padBottom;
+    var n = rows.length;
+    var maxLayers = Math.max(1, Math.min(n, 120));
+    var pitchPx = Math.min(26, usableH / Math.max(1, maxLayers));
+    var barH = Math.max(1.2, pitchPx * (41.673 / 48.777));
+    var gap = Math.max(0.5, pitchPx - barH);
+    var width = Math.min(230, 120 + n * 1.2);
+    var cx = padLeft + (W - padLeft - padRight) / 2;
+    var shown = rows.length > 120 ? sampleRows(rows, 120) : rows;
+    var maxZ = rows[rows.length - 1].z;
+    var scale = (usableH - pitchPx) / Math.max(1, maxZ);
+    svg.innerHTML = "";
+    var bg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    bg.setAttribute("x", 0); bg.setAttribute("y", 0); bg.setAttribute("width", W); bg.setAttribute("height", H);
+    bg.setAttribute("fill", "transparent");
+    svg.appendChild(bg);
+    // ground line
+    var ground = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    ground.setAttribute("x1", padLeft); ground.setAttribute("x2", W - padRight + 10);
+    ground.setAttribute("y1", H - padBottom); ground.setAttribute("y2", H - padBottom);
+    ground.setAttribute("stroke", "#3a465c"); ground.setAttribute("stroke-width", "2");
+    svg.appendChild(ground);
+    var groundLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    groundLabel.setAttribute("x", padLeft - 6); groundLabel.setAttribute("y", H - padBottom + 4);
+    groundLabel.setAttribute("text-anchor", "end"); groundLabel.setAttribute("fill", "#9aa6b8");
+    groundLabel.setAttribute("font-size", "11"); groundLabel.textContent = "0";
+    svg.appendChild(groundLabel);
+    // top height label
+    var topLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    topLabel.setAttribute("x", padLeft - 6);
+    topLabel.setAttribute("y", padTop + 10);
+    topLabel.setAttribute("text-anchor", "end"); topLabel.setAttribute("fill", "#9aa6b8");
+    topLabel.setAttribute("font-size", "11");
+    topLabel.textContent = (maxZ / 100).toFixed(1) + " m";
+    svg.appendChild(topLabel);
+    shown.forEach(function (row) {
+      var meta = FarmStack.cropMeta(row.type);
+      var y = H - padBottom - (row.z / Math.max(1, maxZ)) * (usableH - pitchPx * 0.4) - barH;
+      var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      rect.setAttribute("x", cx - width / 2);
+      rect.setAttribute("y", Math.max(padTop, y));
+      rect.setAttribute("width", width);
+      rect.setAttribute("height", barH);
+      rect.setAttribute("rx", Math.min(3, barH / 2));
+      rect.setAttribute("fill", meta.color);
+      rect.setAttribute("fill-opacity", "0.9");
+      rect.setAttribute("data-i", row.index);
+      rect.onmousemove = function (event) {
+        var tooltip = $("tooltip");
+        tooltip.textContent = "第 " + row.index + " 层 · " + meta.label + " · z=" + row.z + " cm · yaw=" + Math.round(row.yaw) + "°";
+        tooltip.style.display = "block";
+        var wrap = $("preview").parentNode.getBoundingClientRect();
+        tooltip.style.left = Math.min(event.clientX - wrap.left + 12, wrap.width - 220) + "px";
+        tooltip.style.top = (event.clientY - wrap.top - 30) + "px";
+      };
+      rect.onmouseleave = function () { $("tooltip").style.display = "none"; };
+      svg.appendChild(rect);
+    });
+    // layer count annotation
+    var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", W - padRight + 14);
+    label.setAttribute("y", padTop + 10);
+    label.setAttribute("fill", "#9aa6b8"); label.setAttribute("font-size", "11");
+    label.textContent = shown.length === rows.length ? rows.length + " 层" : "抽样 " + shown.length + "/" + rows.length + " 层";
+    svg.appendChild(label);
+  }
+
+  function sampleRows(rows, limit) {
+    var out = [];
+    for (var i = 0; i < limit; i++) out.push(rows[Math.round(i * (rows.length - 1) / (limit - 1))]);
+    return out;
+  }
+
+  function renderStatus(result) {
+    var status = $("status");
+    status.className = "";
+    if (!result.ok) {
+      status.textContent = "FAIL：" + result.problems.join("；");
+      status.classList.add("status-bad");
+      return;
+    }
+    var text = "离线校验通过：schema-9 / 连接可达 / 无重复槽位";
+    if (result.warnings.length) text += "。" + result.warnings.join("；");
+    status.textContent = text;
+    status.classList.add("status-ok");
+  }
+
+  function setExportEnabled(enabled) {
+    $("copy").disabled = !enabled;
+    $("downloadCode").disabled = !enabled;
+    $("downloadJson").disabled = !enabled;
+  }
+
+  function renderEmptyState() {
+    lastResult = null;
+    $("stats").innerHTML = "";
+    $("materials").textContent = "";
+    $("output").value = "";
+    var svg = $("preview");
+    svg.innerHTML = "";
+    var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    text.setAttribute("x", "50%"); text.setAttribute("y", "50%");
+    text.setAttribute("text-anchor", "middle");
+    text.setAttribute("fill", "#5c6a80"); text.setAttribute("font-size", "13");
+    text.textContent = "序列为空 · 添加作物后这里显示堆叠剖面";
+    svg.appendChild(text);
+    $("status").textContent = "序列为空：先添加一层（或点右上角预设）。";
+    $("status").className = "";
+    setExportEnabled(false);
+    saveState();
+  }
+
+  function render() {
+    if (!currentCrops().length) { renderEmptyState(); return; }
+    var bp, result, info;
+    try {
+      bp = buildBlueprint();
+      result = FarmStack.validate(bp);
+      info = FarmStack.summarize(bp);
+      var json = FarmStack.canonicalJson(bp);
+      var code = FarmStack.encodePWB9D(json);
+      lastResult = { bp: bp, result: result, info: info, json: json, code: code };
+    } catch (error) {
+      $("status").textContent = "生成失败：" + error.message;
+      $("status").className = "status-bad";
+      return;
+    }
+    renderStats(result, info);
+    renderPreview(info);
+    $("output").value = state.tab === "code" ? lastResult.code : lastResult.json;
+    renderStatus(result);
+    setExportEnabled(true);
+    saveState();
+    var dl = "farm_stack_" + info.layers;
+    $("downloadCode").textContent = "下载 .pwb9d.txt";
+    $("downloadJson").textContent = "下载 .json";
+    $("downloadCode").dataset.name = dl;
+  }
+
+  function copyCurrent() {
+    if (!lastResult) return;
+    var text = state.tab === "code" ? lastResult.code : lastResult.json;
+    var done = function () { toast(state.tab === "code" ? "蓝图码已复制" : "JSON 已复制"); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else { fallback(); }
+    function fallback() {
+      var area = $("output");
+      area.value = text;
+      area.select();
+      try { document.execCommand("copy"); done(); } catch (error) { toast("复制失败，请手动全选复制"); }
+    }
+  }
+
+  function downloadText(text, filename) {
+    var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(url); a.remove(); }, 200);
+  }
+
+  function repeatSequence(count) {
+    var base = defaultSequence();
+    var out = [];
+    for (var i = 0; i < count; i++) out.push(base[i % base.length]);
+    return out;
+  }
+
+  function applyPreset(name) {
+    clearTemplate();
+    state.template = null;
+    if (name === "11") { state.crops = repeatSequence(11); }
+    else if (name === "22") { state.crops = repeatSequence(22); }
+    else if (name === "40") { state.crops = repeatSequence(40); }
+    else if (name === "tomato") { state.crops = new Array(22).fill("FarmBlockV2_tomato"); }
+    else if (name === "random") {
+      var pool = FarmStack.CROPS.map(function (c) { return c.id; });
+      var list = [];
+      for (var i = 0; i < 24; i++) list.push(pool[Math.floor(Math.random() * pool.length)]);
+      state.crops = list;
+    }
+    document.querySelector('input[name=yaw][value=alt]').checked = true;
+    state.yaw = "alt";
+    renderCropList();
+    render();
+  }
+
+  function wire() {
+    fillCropPicker();
+    restoreState();
+    renderCropList();
+    $("loadTpl").onclick = loadTemplate;
+    $("clearTpl").onclick = function () { clearTemplate(); render(); };
+    $("cropAdd").onclick = function () { var id = $("cropPick").value; var list = currentCrops().slice(); list.push(id); state.crops = list; renderCropList(); render(); };
+    $("cropClear").onclick = function () { state.crops = []; renderCropList(); render(); };
+    document.querySelectorAll('input[name=yaw]').forEach(function (radio) {
+      radio.onchange = function () { state.yaw = readYaw(); render(); };
+    });
+    $("keepWorld").onchange = render;
+    $("keepSupport").onchange = render;
+    document.querySelectorAll(".presets button").forEach(function (button) {
+      button.onclick = function () { applyPreset(button.dataset.preset); };
+    });
+    document.querySelectorAll(".tabs button").forEach(function (button) {
+      button.onclick = function () {
+        state.tab = button.dataset.tab;
+        document.querySelectorAll(".tabs button").forEach(function (b) { b.classList.toggle("active", b === button); });
+        if (lastResult) $("output").value = state.tab === "code" ? lastResult.code : lastResult.json;
+      };
+    });
+    $("copy").onclick = copyCurrent;
+    $("downloadCode").onclick = function () { if (lastResult) downloadText(lastResult.code + "\n", "farm_stack_" + lastResult.info.layers + ".pwb9d.txt"); };
+    $("downloadJson").onclick = function () { if (lastResult) downloadText(lastResult.json + "\n", "farm_stack_" + lastResult.info.layers + ".json"); };
+  }
+
+  wire();
+  render();
+})();
+</script>
+</body>
+</html>

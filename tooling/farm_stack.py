@@ -173,6 +173,7 @@ def build_from_template(bp, layers, crops=None, pitch=None, yaws=None,
     yaw_seq = [r["yaw"] for r in base_layers]
     if yaws:
         yaw_seq = yaws
+    rank_by_index = {row["index"]: pos + 1 for pos, row in enumerate(rows)}
     z_last = rows[-1]["z"] if rows else 0.0
     out_types, edges = [], []
     b = []
@@ -196,6 +197,10 @@ def build_from_template(bp, layers, crops=None, pitch=None, yaws=None,
     if keep_support and bp.get("x"):
         x = json.loads(json.dumps(bp["x"]))
         for edge in x:                       # [source 1-based, target type 1-based, ...]
+            # Map the template piece to its z-rank in the new tower (the anchor
+            # is always the bottom layer here), so a kept external support stays
+            # attached to the same physical layer.
+            edge[0] = rank_by_index.get(edge[0], 1)
             if edge[0] > layers:
                 edge[0] = 1
             target_type = bp["t"][edge[1] - 1]

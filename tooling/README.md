@@ -43,12 +43,13 @@ authoring 输入是 `export.py` 的唯一输入格式，字段语义以 `build()
 
 ### 农场堆塔生成（farm_stack.py）
 
-按已验证的「农田垂直堆叠」码生产可粘贴码：层间距默认 48.777 cm（木凳座高，实测 0.4877736 m），每层以属性 1（ConnectInfoAnyPlace）的存档连接串链。`--from` 以一份现有码为模板，`--layers` 控制层数；`--crops` 换作物（`wheet`/`tomato`/`carrot` 等别名循环）；只有 `--keep-world`/`--keep-support` 才复制模板的原位吸附 `w` 与外部木凳支撑 `x`，默认不复制以便换基地使用。
+按已验证的「垂直堆叠」码生产可粘贴码：层间距取模板实测值（农田模板 48.777 cm = 木凳座高；堆床模板 146.332 cm）。`--from` 以一份现有码为模板，`--layers` 控制层数，并保留模板的逐层 x/y 偏移与朝向；`--crops` 换作物（`wheet`/`tomato` 等别名循环）。模板有存档连接时按属性 1（ConnectInfoAnyPlace）串链，模板本来没有连接（例如堆床这类手动物件）时不会编造连接。只有 `--keep-world`/`--keep-support` 才复制模板的原位吸附 `w` 与外部支撑 `x`，默认不复制以便换基地使用；`--allow-problems` 可在离线连通性检查不通过时仍写出（无连接蓝图必然触发该规则）。
 
 ~~~powershell
 python tooling/farm_stack.py --decode out/farm_stack_22.pwb9d.txt
 python tooling/farm_stack.py --from out/farm_stack_source_11.pwb9d.txt --layers 40 -o out --name farm_stack_40
 python tooling/farm_stack.py --layers 24 --crops tomato,carrot -o out --name farm_stack_24_mixed
+python tooling/farm_stack.py --from out/bed_2.pwb9d.txt --layers 20 --allow-problems -o out --name bed_stack_20
 ~~~
 
 退出码：0 = 写出并通过离线检查；1 = 有 problems 或输入不可用（不写文件）；2 = 命令行参数错误（argparse）。

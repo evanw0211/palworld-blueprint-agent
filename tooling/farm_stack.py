@@ -177,20 +177,20 @@ def build_from_template(bp, layers, crops=None, pitch=None, yaws=None,
     out_types, edges = [], []
     b = []
     for i in range(layers):
+        pattern = rows[i % len(rows)] if rows else None
         if i < len(base_layers):
             z = base_layers[i]["z"]
             yaw = yaw_seq[i % len(yaw_seq)]
         else:
             z = tidy(z_last + step * (i - len(base_layers) + 1))
-            if yaws:
-                yaw = yaw_seq[i % len(yaw_seq)]
-            else:
-                yaw = yaw_seq[i % len(yaw_seq)]
+            yaw = yaw_seq[i % len(yaw_seq)]
         crop = crop_seq[i % len(crop_seq)]
         if crop not in out_types:
             out_types.append(crop)
         q = q_yaw(yaw)
-        b.append([out_types.index(crop) + 1, 0, 0, tidy(z),
+        px = pattern["x"] if pattern is not None else 0
+        py = pattern["y"] if pattern is not None else 0
+        b.append([out_types.index(crop) + 1, tidy(px), tidy(py), tidy(z),
                   tidy(q[0], 7), tidy(q[1], 7), tidy(q[2], 7), tidy(q[3], 7)])
     x = None
     if keep_support and bp.get("x"):
@@ -204,7 +204,12 @@ def build_from_template(bp, layers, crops=None, pitch=None, yaws=None,
             edge[1] = out_types.index(target_type) + 1
     w = json.loads(json.dumps(bp["w"])) if keep_world and bp.get("w") else None
     out = {"v": 9, "t": out_types, "b": b, "a": 1}
-    out["c"] = chain_edges(layers)
+    # Only rebuild the saved-connection chain when the template actually has
+    # saved connections.  Mod-exported manual-object towers (e.g. stacked beds)
+    # legitimately carry no connection records, and inventing them can break
+    # the in-game connector restore.
+    if bp.get("c"):
+        out["c"] = chain_edges(layers)
     if x:
         out["x"] = x
     if w:
@@ -243,6 +248,8 @@ def main():
     ap.add_argument("--yaws", help="comma-separated yaw degrees per layer (cycled)")
     ap.add_argument("--keep-world", action="store_true", help="copy the template anchor world transform (w)")
     ap.add_argument("--keep-support", action="store_true", help="copy the template external support (x)")
+    ap.add_argument("--allow-problems", action="store_true",
+                    help="write even if offline checks complain (e.g. templates without saved connections)")
     ap.add_argument("--decode", help="only print a summary of an existing code/json")
     ap.add_argument("-o", "--outdir", default=None)
     ap.add_argument("--name")
@@ -282,7 +289,7 @@ def main():
               "has_world": "w" in out, "has_external_support": "x" in out,
               "ok": not problems, "problems": problems, "warnings": warnings,
               "stats": stats}
-    if problems:
+    if problems and not args.allow_problems:
         print(json.dumps(report, ensure_ascii=False, indent=1))
         return 1
 
